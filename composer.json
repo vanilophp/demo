@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "vanilo/demo",
+    "description": "Vanilo Demo Application",
+    "keywords": ["vanilo", "laravel", "ecommerce"],
     "license": "MIT",
     "type": "project",
     "require": {

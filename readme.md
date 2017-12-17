@@ -9,3 +9,10 @@ believe it's easy to keep focus on how to use Vanilo's shop features.
 For more information refer to the [Vanilo Documentation](https://vanilo.io/docs/).
 
 ## Installation
+
+```bash
+php artisan migrate --seed
+php artisan appshell:super
+yarn install
+yarn run dev
+```
