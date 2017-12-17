@@ -28,14 +28,12 @@ composer install
 Create a database for your application, and add the credentials to the `.env` file in the app's root
 directory.
 
-**4. Install the application**:
+**4. Install Database**:
 
 Run these commands in your terminal:
 
 ```bash
 php artisan migrate --seed
-yarn install
-yarn run dev
 ```
 **5. Create the first admin user**:
 
