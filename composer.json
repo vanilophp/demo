@@ -39,7 +39,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "[ -f .env ] || (cp .env.example .env && @php artisan key:generate)"
+            "[ -f .env ] || (cp .env.example .env && php artisan key:generate)"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
