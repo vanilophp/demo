@@ -1,4 +1,5 @@
 # Vanilo Demo Application
+##### 0.1
 
 This is a minimalistic Laravel 5.5 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains Vanilo's admin panel.
