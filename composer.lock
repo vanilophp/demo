@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b240ac52fc7b611689f595f4b47a91e",
+    "content-hash": "ca8b2412e4843d7d28753c25389abe01",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -594,16 +594,16 @@
         },
         {
             "name": "konekt/acl",
-            "version": "0.9.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/acl.git",
-                "reference": "db10a3a3f6839584fb30349f047a01689c95ba15"
+                "reference": "6af8f87feba1bc188b0be29a0ca78089dd68926c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/acl/zipball/db10a3a3f6839584fb30349f047a01689c95ba15",
-                "reference": "db10a3a3f6839584fb30349f047a01689c95ba15",
+                "url": "https://api.github.com/repos/artkonekt/acl/zipball/6af8f87feba1bc188b0be29a0ca78089dd68926c",
+                "reference": "6af8f87feba1bc188b0be29a0ca78089dd68926c",
                 "shasum": ""
             },
             "require": {
@@ -611,13 +611,12 @@
                 "illuminate/container": "~5.4",
                 "illuminate/contracts": "~5.4",
                 "illuminate/database": "~5.4",
-                "konekt/concord": ">=0.9.0",
+                "konekt/concord": "~1.1",
                 "php": ">=7.0"
             },
             "require-dev": {
-                "monolog/monolog": "^1.22",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "~6.0"
+                "phpunit/phpunit": "5.7 - 7.0"
             },
             "type": "library",
             "autoload": {
@@ -655,7 +654,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2017-12-11T20:12:44+00:00"
+            "time": "2018-02-18T22:15:18+00:00"
         },
         {
             "name": "konekt/address",
@@ -704,22 +703,22 @@
         },
         {
             "name": "konekt/appshell",
-            "version": "0.9.3",
+            "version": "0.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/appshell.git",
-                "reference": "284524602ad9957c10ae6d462a2af234dee18a9e"
+                "reference": "8285999020971ac948ddee9afb36c34d7955ca10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/284524602ad9957c10ae6d462a2af234dee18a9e",
-                "reference": "284524602ad9957c10ae6d462a2af234dee18a9e",
+                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/8285999020971ac948ddee9afb36c34d7955ca10",
+                "reference": "8285999020971ac948ddee9afb36c34d7955ca10",
                 "shasum": ""
             },
             "require": {
-                "cviebrock/eloquent-sluggable": "~4.3",
-                "davejamesmiller/laravel-breadcrumbs": "^3.0.2|~4.0",
-                "konekt/acl": ">=0.9.0",
+                "cviebrock/eloquent-sluggable": "~4.2",
+                "davejamesmiller/laravel-breadcrumbs": "3.0.2 - 5.0",
+                "konekt/acl": "~1.0",
                 "konekt/concord": ">=0.9.10",
                 "konekt/customer": ">=0.9.4",
                 "konekt/menu": "~1.0",
@@ -753,20 +752,20 @@
                 "concord-box",
                 "laravel"
             ],
-            "time": "2017-12-11T20:37:10+00:00"
+            "time": "2018-02-18T23:20:42+00:00"
         },
         {
             "name": "konekt/concord",
-            "version": "0.9.10",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/concord.git",
-                "reference": "ffd64f647d40ffbdd9e8bba7e1a717758f00fc45"
+                "reference": "7f2a82d5c865539efc8dba665ee2e861a953e882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/concord/zipball/ffd64f647d40ffbdd9e8bba7e1a717758f00fc45",
-                "reference": "ffd64f647d40ffbdd9e8bba7e1a717758f00fc45",
+                "url": "https://api.github.com/repos/artkonekt/concord/zipball/7f2a82d5c865539efc8dba665ee2e861a953e882",
+                "reference": "7f2a82d5c865539efc8dba665ee2e861a953e882",
                 "shasum": ""
             },
             "require": {
@@ -778,7 +777,7 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "~6.0"
+                "phpunit/phpunit": "6.0 - 7.0"
             },
             "type": "library",
             "extra": {
@@ -814,7 +813,7 @@
                 }
             ],
             "description": "Concord is a Laravel Extension for building modular Laravel Applications",
-            "time": "2017-12-11T17:34:11+00:00"
+            "time": "2018-02-18T14:28:44+00:00"
         },
         {
             "name": "konekt/customer",
@@ -2970,16 +2969,16 @@
         },
         {
             "name": "vanilo/address",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/address.git",
-                "reference": "cb0b72da8bae7cd3421e43af3846737390ca6c35"
+                "reference": "48ea0ecaa864982f3c14352490b412d0a4df148f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/address/zipball/cb0b72da8bae7cd3421e43af3846737390ca6c35",
-                "reference": "cb0b72da8bae7cd3421e43af3846737390ca6c35",
+                "url": "https://api.github.com/repos/vanilophp/address/zipball/48ea0ecaa864982f3c14352490b412d0a4df148f",
+                "reference": "48ea0ecaa864982f3c14352490b412d0a4df148f",
                 "shasum": ""
             },
             "require": {
@@ -2989,8 +2988,8 @@
                 "vanilo/support": "0.2.*"
             },
             "require-dev": {
-                "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "~6.2"
+                "orchestra/testbench": "3.4.2",
+                "phpunit/phpunit": "6.2 - 7.0"
             },
             "type": "library",
             "extra": {
@@ -3021,31 +3020,32 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2017-12-26T11:01:31+00:00"
+            "time": "2018-02-19T00:12:55+00:00"
         },
         {
             "name": "vanilo/cart",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "9051f24111fc44f72714638577aa3f0cd290be66"
+                "reference": "d4c24a51c9e8ed27c5d51c04010912d7ebab595d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/9051f24111fc44f72714638577aa3f0cd290be66",
-                "reference": "9051f24111fc44f72714638577aa3f0cd290be66",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/d4c24a51c9e8ed27c5d51c04010912d7ebab595d",
+                "reference": "d4c24a51c9e8ed27c5d51c04010912d7ebab595d",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": ">=0.9.10",
+                "konekt/concord": "~1.1",
                 "php": ">=7.0.0",
                 "vanilo/contracts": "0.2.*",
                 "vanilo/support": "0.2.*"
             },
             "require-dev": {
+                "ext-sqlite3": "*",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "~6.2"
+                "phpunit/phpunit": "6.2 - 7.0"
             },
             "type": "library",
             "extra": {
@@ -3081,30 +3081,30 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2017-12-26T11:26:48+00:00"
+            "time": "2018-02-19T00:23:47+00:00"
         },
         {
             "name": "vanilo/checkout",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/checkout.git",
-                "reference": "05b923eeb866f483ab07c43cc714d3bfd2efaa18"
+                "reference": "bc218bb9fbacafbbc4e08c2d0baf592ce7eb2255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/05b923eeb866f483ab07c43cc714d3bfd2efaa18",
-                "reference": "05b923eeb866f483ab07c43cc714d3bfd2efaa18",
+                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/bc218bb9fbacafbbc4e08c2d0baf592ce7eb2255",
+                "reference": "bc218bb9fbacafbbc4e08c2d0baf592ce7eb2255",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": ">=0.9.10",
+                "konekt/concord": "~1.1",
                 "php": ">=7.0.0",
                 "vanilo/contracts": "0.2.*"
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "~6.2"
+                "phpunit/phpunit": "6.2 - 7.0"
             },
             "type": "library",
             "extra": {
@@ -3135,20 +3135,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2017-12-26T11:17:57+00:00"
+            "time": "2018-02-19T00:25:53+00:00"
         },
         {
             "name": "vanilo/contracts",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "9187195c55dd142c9a7fe972de92365c9b118c10"
+                "reference": "5c6df72903ab03e757af1e3293cd1d41ae150bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/9187195c55dd142c9a7fe972de92365c9b118c10",
-                "reference": "9187195c55dd142c9a7fe972de92365c9b118c10",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/5c6df72903ab03e757af1e3293cd1d41ae150bca",
+                "reference": "5c6df72903ab03e757af1e3293cd1d41ae150bca",
                 "shasum": ""
             },
             "require": {
@@ -3183,37 +3183,37 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2017-12-26T10:53:27+00:00"
+            "time": "2018-02-19T00:15:45+00:00"
         },
         {
             "name": "vanilo/framework",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "764f4d61d1481e84c5b02167744e19a5945974b4"
+                "reference": "fb517ba732a3d3d46d09853160241b73abbae5a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/764f4d61d1481e84c5b02167744e19a5945974b4",
-                "reference": "764f4d61d1481e84c5b02167744e19a5945974b4",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/fb517ba732a3d3d46d09853160241b73abbae5a4",
+                "reference": "fb517ba732a3d3d46d09853160241b73abbae5a4",
                 "shasum": ""
             },
             "require": {
-                "konekt/appshell": ">=0.9.3",
+                "konekt/appshell": ">=0.9.6",
                 "php": ">=7.0.0",
-                "vanilo/address": "0.2.*",
-                "vanilo/cart": "0.2.*",
-                "vanilo/checkout": "0.2.*",
-                "vanilo/contracts": "0.2.*",
-                "vanilo/order": "0.2.*",
-                "vanilo/product": "0.2.*",
-                "vanilo/support": "0.2.*"
+                "vanilo/address": "^0.2",
+                "vanilo/cart": "^0.2",
+                "vanilo/checkout": "^0.2",
+                "vanilo/contracts": "^0.2",
+                "vanilo/order": "^0.2",
+                "vanilo/product": "^0.2",
+                "vanilo/support": "^0.2"
             },
             "require-dev": {
                 "monolog/monolog": "^1.22",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "~6.2"
+                "phpunit/phpunit": "6.2 - 7.0"
             },
             "type": "library",
             "extra": {
@@ -3240,24 +3240,24 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2017-12-26T11:50:31+00:00"
+            "time": "2018-02-19T00:44:50+00:00"
         },
         {
             "name": "vanilo/order",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/order.git",
-                "reference": "6ddcc1614c582c62df6617cb2a222dee0a2b4a90"
+                "reference": "f81665b45ae5596268927c4d90e681cdc0b0c249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/order/zipball/6ddcc1614c582c62df6617cb2a222dee0a2b4a90",
-                "reference": "6ddcc1614c582c62df6617cb2a222dee0a2b4a90",
+                "url": "https://api.github.com/repos/vanilophp/order/zipball/f81665b45ae5596268927c4d90e681cdc0b0c249",
+                "reference": "f81665b45ae5596268927c4d90e681cdc0b0c249",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": ">=0.9.10",
+                "konekt/concord": "~1.1",
                 "konekt/user": ">=0.9.0",
                 "php": ">=7.0.0",
                 "vanilo/address": "0.2.*",
@@ -3266,7 +3266,7 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "~6.2"
+                "phpunit/phpunit": "6.2 - 7.0"
             },
             "type": "library",
             "extra": {
@@ -3297,30 +3297,30 @@
                 "order",
                 "vanilo"
             ],
-            "time": "2017-12-26T11:23:25+00:00"
+            "time": "2018-02-19T00:27:22+00:00"
         },
         {
             "name": "vanilo/product",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/product.git",
-                "reference": "f9ffd032eb5c3b0f55ca0f1c2274dba44dcba7e8"
+                "reference": "d1db4d7b7e182054412af9e3dedccf8616591cea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/product/zipball/f9ffd032eb5c3b0f55ca0f1c2274dba44dcba7e8",
-                "reference": "f9ffd032eb5c3b0f55ca0f1c2274dba44dcba7e8",
+                "url": "https://api.github.com/repos/vanilophp/product/zipball/d1db4d7b7e182054412af9e3dedccf8616591cea",
+                "reference": "d1db4d7b7e182054412af9e3dedccf8616591cea",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": ">=0.9.10",
+                "konekt/concord": "~1.1",
                 "php": ">=7.0.0"
             },
             "require-dev": {
                 "cviebrock/eloquent-sluggable": "~4.2",
-                "orchestra/testbench": "~3.5",
-                "phpunit/phpunit": "~6.3"
+                "orchestra/testbench": "~3.4",
+                "phpunit/phpunit": "6.3 - 7.0"
             },
             "type": "library",
             "extra": {
@@ -3351,20 +3351,20 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2017-12-26T11:09:54+00:00"
+            "time": "2018-02-19T00:20:15+00:00"
         },
         {
             "name": "vanilo/support",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "5f2f13a997ca67922b34267ee77b41a39cb8ef27"
+                "reference": "29118d894b70cd9608e6a6de79c9c7661507f30b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/5f2f13a997ca67922b34267ee77b41a39cb8ef27",
-                "reference": "5f2f13a997ca67922b34267ee77b41a39cb8ef27",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/29118d894b70cd9608e6a6de79c9c7661507f30b",
+                "reference": "29118d894b70cd9608e6a6de79c9c7661507f30b",
                 "shasum": ""
             },
             "require": {
@@ -3380,10 +3380,7 @@
             "autoload": {
                 "psr-4": {
                     "Vanilo\\Support\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3402,7 +3399,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2017-12-26T10:55:50+00:00"
+            "time": "2018-02-19T00:17:42+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5139,9 +5136,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.0.0"

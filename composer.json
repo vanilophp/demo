@@ -9,7 +9,7 @@
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "vanilo/framework": "0.2.*"
+        "vanilo/framework": "^0.2"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -35,9 +35,6 @@
         "laravel": {
             "dont-discover": [
             ]
-        },
-        "branch-alias": {
-            "dev-master": "0.2.x-dev"
         }
     },
     "scripts": {
@@ -53,7 +50,5 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
