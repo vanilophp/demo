@@ -10,7 +10,7 @@ using the Vanilo framework. It also contains Vanilo's admin panel.
 
 **1. Get the app**:
 
-Either download and uncompress [the zipball](https://github.com/vanilophp/demo/archive/master.zip)
+Either download and uncompress [the zipball](https://github.com/vanilophp/demo/archive/0.2.0.zip)
 or use git:
 
 ```bash
