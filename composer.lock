@@ -3244,16 +3244,16 @@
         },
         {
             "name": "vanilo/order",
-            "version": "0.2.0",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/order.git",
-                "reference": "f81665b45ae5596268927c4d90e681cdc0b0c249"
+                "reference": "a131cbcd92d5966e2800f6263a56061c1905690d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/order/zipball/f81665b45ae5596268927c4d90e681cdc0b0c249",
-                "reference": "f81665b45ae5596268927c4d90e681cdc0b0c249",
+                "url": "https://api.github.com/repos/vanilophp/order/zipball/a131cbcd92d5966e2800f6263a56061c1905690d",
+                "reference": "a131cbcd92d5966e2800f6263a56061c1905690d",
                 "shasum": ""
             },
             "require": {
@@ -3297,7 +3297,7 @@
                 "order",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:27:22+00:00"
+            "time": "2018-04-01T17:40:44+00:00"
         },
         {
             "name": "vanilo/product",
