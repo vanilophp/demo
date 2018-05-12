@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca8b2412e4843d7d28753c25389abe01",
+    "content-hash": "9eff7645827f7d86f3ca6a387f93ff17",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -504,6 +504,141 @@
                 "trusted proxy"
             ],
             "time": "2017-06-15T17:19:42+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "3603dbcc9a17d307533473246a6c58c31cf17919"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/3603dbcc9a17d307533473246a6c58c31cf17919",
+                "reference": "3603dbcc9a17d307533473246a6c58c31cf17919",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.com",
+                    "homepage": "http://olivervogel.com/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2017-09-21T16:29:17+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1480,6 +1615,119 @@
             "time": "2017-08-06T17:41:04+00:00"
         },
         {
+            "name": "league/glide",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/glide.git",
+                "reference": "bd29f65c9666abd72e66916e0573801e435ca878"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/bd29f65c9666abd72e66916e0573801e435ca878",
+                "reference": "bd29f65c9666abd72e66916e0573801e435ca878",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "^2.1",
+                "league/flysystem": "^1.0",
+                "php": "^5.4 | ^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/php-token-stream": "^1.4",
+                "phpunit/phpunit": "~4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Glide\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "homepage": "http://reinink.ca"
+                }
+            ],
+            "description": "Wonderfully easy on-demand image manipulation library with an HTTP based API.",
+            "homepage": "http://glide.thephpleague.com",
+            "keywords": [
+                "ImageMagick",
+                "editing",
+                "gd",
+                "image",
+                "imagick",
+                "league",
+                "manipulation",
+                "processing"
+            ],
+            "time": "2018-02-12T23:28:25+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "95922b6324955974675fd4923f987faa598408af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/95922b6324955974675fd4923f987faa598408af",
+                "reference": "95922b6324955974675fd4923f987faa598408af",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">= 7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "time": "2018-02-09T09:26:57+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.23.0",
             "source": {
@@ -1803,6 +2051,56 @@
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -2050,6 +2348,286 @@
                 "uuid"
             ],
             "time": "2017-09-22T20:46:04+00:00"
+        },
+        {
+            "name": "spatie/image",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image.git",
+                "reference": "d4cb6afff1b98fd6e17396d91e0e584c3d91bb23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image/zipball/d4cb6afff1b98fd6e17396d91e0e584c3d91bb23",
+                "reference": "d4cb6afff1b98fd6e17396d91e0e584c3d91bb23",
+                "shasum": ""
+            },
+            "require": {
+                "league/glide": "^1.2",
+                "php": "^7.0",
+                "spatie/image-optimizer": "^1.0",
+                "spatie/temporary-directory": "^1.0.0",
+                "symfony/process": "^3.0|^4.0"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.1",
+                "phpunit/phpunit": "^6.0|^7.0",
+                "symfony/var-dumper": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manipulate images with an expressive API",
+            "homepage": "https://github.com/spatie/image",
+            "keywords": [
+                "image",
+                "spatie"
+            ],
+            "time": "2018-05-05T21:44:52+00:00"
+        },
+        {
+            "name": "spatie/image-optimizer",
+            "version": "1.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image-optimizer.git",
+                "reference": "91603599eb29024cc9849a4a511a629ebce97850"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/91603599eb29024cc9849a4a511a629ebce97850",
+                "reference": "91603599eb29024cc9849a4a511a629ebce97850",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "psr/log": "^1.0",
+                "symfony/process": "^2.8|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2|^7.0",
+                "symfony/var-dumper": "^3.0|^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ImageOptimizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily optimize images using PHP",
+            "homepage": "https://github.com/spatie/image-optimizer",
+            "keywords": [
+                "image-optimizer",
+                "spatie"
+            ],
+            "time": "2018-03-07T13:42:33+00:00"
+        },
+        {
+            "name": "spatie/laravel-medialibrary",
+            "version": "7.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-medialibrary.git",
+                "reference": "c85726e022316ecd20e63d045a4fabe3e8a7fb2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/c85726e022316ecd20e63d045a4fabe3e8a7fb2f",
+                "reference": "c85726e022316ecd20e63d045a4fabe3e8a7fb2f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/bus": "~5.5.0|~5.6.0",
+                "illuminate/console": "~5.5.0|~5.6.0",
+                "illuminate/database": "~5.5.0|~5.6.0",
+                "illuminate/pipeline": "~5.5.0|~5.6.0",
+                "illuminate/support": "~5.5.0|~5.6.0",
+                "league/flysystem": "^1.0.8",
+                "maennchen/zipstream-php": "~0.4",
+                "php": "^7.1",
+                "spatie/image": "^1.4.0",
+                "spatie/pdf-to-image": "^1.2",
+                "spatie/temporary-directory": "^1.1"
+            },
+            "conflict": {
+                "php-ffmpeg/php-ffmpeg": "<0.6.1"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.5.2",
+                "ext-pdo_sqlite": "*",
+                "guzzlehttp/guzzle": "^6.3",
+                "league/flysystem-aws-s3-v3": "^1.0.13",
+                "mockery/mockery": "^1.0.0",
+                "orchestra/testbench": "~3.5.0|~3.6.0",
+                "phpunit/phpunit": "^7.0",
+                "spatie/phpunit-snapshot-assertions": "^1.2"
+            },
+            "suggest": {
+                "league/flysystem-aws-s3-v3": "Required to use AWS S3 file storage",
+                "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\MediaLibrary\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://murze.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Associate files with Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-medialibrary",
+            "keywords": [
+                "cms",
+                "conversion",
+                "downloads",
+                "images",
+                "laravel",
+                "laravel-medialibrary",
+                "media",
+                "spatie"
+            ],
+            "time": "2018-05-09T16:59:46+00:00"
+        },
+        {
+            "name": "spatie/pdf-to-image",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/pdf-to-image.git",
+                "reference": "9a5cb264a99e87e010c65d4ece03b51f821d55bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/pdf-to-image/zipball/9a5cb264a99e87e010c65d4ece03b51f821d55bd",
+                "reference": "9a5cb264a99e87e010c65d4ece03b51f821d55bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\PdfToImage\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Convert a pdf to an image",
+            "homepage": "https://github.com/spatie/pdf-to-image",
+            "keywords": [
+                "convert",
+                "image",
+                "pdf",
+                "pdf-to-image",
+                "spatie"
+            ],
+            "time": "2016-12-14T15:37:00+00:00"
+        },
+        {
+            "name": "spatie/temporary-directory",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/temporary-directory.git",
+                "reference": "5e1799fa2297363ebfb4df296fea90afbd4ef9b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/5e1799fa2297363ebfb4df296fea90afbd4ef9b7",
+                "reference": "5e1799fa2297363ebfb4df296fea90afbd4ef9b7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TemporaryDirectory\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily create, use and destroy temporary directories",
+            "homepage": "https://github.com/spatie/temporary-directory",
+            "keywords": [
+                "spatie",
+                "temporary-directory"
+            ],
+            "time": "2018-04-12T09:34:43+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2969,23 +3547,23 @@
         },
         {
             "name": "vanilo/address",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/address.git",
-                "reference": "48ea0ecaa864982f3c14352490b412d0a4df148f"
+                "reference": "945f6cf39eaab83ad179f3bf49b37137d9854b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/address/zipball/48ea0ecaa864982f3c14352490b412d0a4df148f",
-                "reference": "48ea0ecaa864982f3c14352490b412d0a4df148f",
+                "url": "https://api.github.com/repos/vanilophp/address/zipball/945f6cf39eaab83ad179f3bf49b37137d9854b62",
+                "reference": "945f6cf39eaab83ad179f3bf49b37137d9854b62",
                 "shasum": ""
             },
             "require": {
                 "konekt/address": ">=0.9.6",
                 "php": ">=7.0.0",
-                "vanilo/contracts": "0.2.*",
-                "vanilo/support": "0.2.*"
+                "vanilo/contracts": "0.3.*",
+                "vanilo/support": "0.3.*"
             },
             "require-dev": {
                 "orchestra/testbench": "3.4.2",
@@ -2994,7 +3572,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -3020,27 +3598,27 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:12:55+00:00"
+            "time": "2018-02-19T20:32:33+00:00"
         },
         {
             "name": "vanilo/cart",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "d4c24a51c9e8ed27c5d51c04010912d7ebab595d"
+                "reference": "2f94b48d4acef90a2f04bd1a1d2dc33d79f62745"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/d4c24a51c9e8ed27c5d51c04010912d7ebab595d",
-                "reference": "d4c24a51c9e8ed27c5d51c04010912d7ebab595d",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/2f94b48d4acef90a2f04bd1a1d2dc33d79f62745",
+                "reference": "2f94b48d4acef90a2f04bd1a1d2dc33d79f62745",
                 "shasum": ""
             },
             "require": {
                 "konekt/concord": "~1.1",
                 "php": ">=7.0.0",
-                "vanilo/contracts": "0.2.*",
-                "vanilo/support": "0.2.*"
+                "vanilo/contracts": "0.3.*",
+                "vanilo/support": "0.3.*"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
@@ -3050,7 +3628,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.3.x-dev"
                 },
                 "laravel": {
                     "aliases": {
@@ -3081,26 +3659,26 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:23:47+00:00"
+            "time": "2018-03-15T16:46:17+00:00"
         },
         {
             "name": "vanilo/checkout",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/checkout.git",
-                "reference": "bc218bb9fbacafbbc4e08c2d0baf592ce7eb2255"
+                "reference": "8b9121f8ede76464dc1cefa59daf515c669129b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/bc218bb9fbacafbbc4e08c2d0baf592ce7eb2255",
-                "reference": "bc218bb9fbacafbbc4e08c2d0baf592ce7eb2255",
+                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/8b9121f8ede76464dc1cefa59daf515c669129b8",
+                "reference": "8b9121f8ede76464dc1cefa59daf515c669129b8",
                 "shasum": ""
             },
             "require": {
                 "konekt/concord": "~1.1",
                 "php": ">=7.0.0",
-                "vanilo/contracts": "0.2.*"
+                "vanilo/contracts": "0.3.*"
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
@@ -3109,7 +3687,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -3135,20 +3713,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:25:53+00:00"
+            "time": "2018-02-19T20:40:23+00:00"
         },
         {
             "name": "vanilo/contracts",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "5c6df72903ab03e757af1e3293cd1d41ae150bca"
+                "reference": "2db7ff47b4b806b2b9fa69c5f633a18dea91aabc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/5c6df72903ab03e757af1e3293cd1d41ae150bca",
-                "reference": "5c6df72903ab03e757af1e3293cd1d41ae150bca",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/2db7ff47b4b806b2b9fa69c5f633a18dea91aabc",
+                "reference": "2db7ff47b4b806b2b9fa69c5f633a18dea91aabc",
                 "shasum": ""
             },
             "require": {
@@ -3158,7 +3736,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -3183,42 +3761,43 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:15:45+00:00"
+            "time": "2018-05-12T07:24:29+00:00"
         },
         {
             "name": "vanilo/framework",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "fb517ba732a3d3d46d09853160241b73abbae5a4"
+                "reference": "76051b18d5cd0a53ddbd6c0495390f2941610f2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/fb517ba732a3d3d46d09853160241b73abbae5a4",
-                "reference": "fb517ba732a3d3d46d09853160241b73abbae5a4",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/76051b18d5cd0a53ddbd6c0495390f2941610f2e",
+                "reference": "76051b18d5cd0a53ddbd6c0495390f2941610f2e",
                 "shasum": ""
             },
             "require": {
                 "konekt/appshell": ">=0.9.6",
-                "php": ">=7.0.0",
-                "vanilo/address": "^0.2",
-                "vanilo/cart": "^0.2",
-                "vanilo/checkout": "^0.2",
-                "vanilo/contracts": "^0.2",
-                "vanilo/order": "^0.2",
-                "vanilo/product": "^0.2",
-                "vanilo/support": "^0.2"
+                "php": "^7.1.3",
+                "spatie/laravel-medialibrary": "^7.3",
+                "vanilo/address": "0.3.*",
+                "vanilo/cart": "0.3.*",
+                "vanilo/checkout": "0.3.*",
+                "vanilo/contracts": "0.3.*",
+                "vanilo/order": "0.3.*",
+                "vanilo/product": "0.3.*",
+                "vanilo/support": "0.3.*"
             },
             "require-dev": {
                 "monolog/monolog": "^1.22",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.0"
+                "phpunit/phpunit": "6.2 - 7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2-dev"
+                    "dev-master": "0.3-dev"
                 }
             },
             "autoload": {
@@ -3240,29 +3819,29 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-02-19T00:44:50+00:00"
+            "time": "2018-05-12T18:32:40+00:00"
         },
         {
             "name": "vanilo/order",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/order.git",
-                "reference": "f81665b45ae5596268927c4d90e681cdc0b0c249"
+                "reference": "636d7d289318c47a7275fc3316c1ce6d1195de3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/order/zipball/f81665b45ae5596268927c4d90e681cdc0b0c249",
-                "reference": "f81665b45ae5596268927c4d90e681cdc0b0c249",
+                "url": "https://api.github.com/repos/vanilophp/order/zipball/636d7d289318c47a7275fc3316c1ce6d1195de3d",
+                "reference": "636d7d289318c47a7275fc3316c1ce6d1195de3d",
                 "shasum": ""
             },
             "require": {
                 "konekt/concord": "~1.1",
                 "konekt/user": ">=0.9.0",
                 "php": ">=7.0.0",
-                "vanilo/address": "0.2.*",
-                "vanilo/contracts": "0.2.*",
-                "vanilo/support": "0.2.*"
+                "vanilo/address": "0.3.*",
+                "vanilo/contracts": "0.3.*",
+                "vanilo/support": "0.3.*"
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
@@ -3271,7 +3850,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -3297,20 +3876,20 @@
                 "order",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:27:22+00:00"
+            "time": "2018-04-01T17:55:45+00:00"
         },
         {
             "name": "vanilo/product",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/product.git",
-                "reference": "d1db4d7b7e182054412af9e3dedccf8616591cea"
+                "reference": "0bafaaa057a059ee410692e9da3dd38421b3f017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/product/zipball/d1db4d7b7e182054412af9e3dedccf8616591cea",
-                "reference": "d1db4d7b7e182054412af9e3dedccf8616591cea",
+                "url": "https://api.github.com/repos/vanilophp/product/zipball/0bafaaa057a059ee410692e9da3dd38421b3f017",
+                "reference": "0bafaaa057a059ee410692e9da3dd38421b3f017",
                 "shasum": ""
             },
             "require": {
@@ -3325,7 +3904,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -3351,20 +3930,20 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:20:15+00:00"
+            "time": "2018-05-12T17:01:36+00:00"
         },
         {
             "name": "vanilo/support",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "29118d894b70cd9608e6a6de79c9c7661507f30b"
+                "reference": "0376b9b79fdd56f7b16ef46b2420c6078f363827"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/29118d894b70cd9608e6a6de79c9c7661507f30b",
-                "reference": "29118d894b70cd9608e6a6de79c9c7661507f30b",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/0376b9b79fdd56f7b16ef46b2420c6078f363827",
+                "reference": "0376b9b79fdd56f7b16ef46b2420c6078f363827",
                 "shasum": ""
             },
             "require": {
@@ -3374,7 +3953,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -3399,7 +3978,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-02-19T00:17:42+00:00"
+            "time": "2018-05-12T18:24:37+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5136,9 +5715,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.0.0"
