@@ -29,7 +29,7 @@
                             </div>
                         @endif
 
-                        <img src="/images/product.jpg" class="product-image" />
+                        <img src="{{ $product->getThumbnailUrl() ?: '/images/product.jpg' }}" class="product-image" />
 
                         <p>{{ $product->description }}</p>
 

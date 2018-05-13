@@ -41,7 +41,11 @@
                             @foreach($products as $product)
                                 <article class="col-xs-12 col-sm-6 col-md-4 product">
                                     <a href="{{ route('shop.product', $product) }}">
-                                        <img src="/images/product.jpg"/>
+                                        @if($product->hasImage())
+                                            <img src="{{ $product->getThumbnailUrl() }}"/>
+                                        @else
+                                            <img src="/images/product.jpg"/>
+                                        @endif
                                         <h5>{{ $product->name }}</h5>
                                     </a>
                                     <div class="product-attrs">

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9eff7645827f7d86f3ca6a387f93ff17",
+    "content-hash": "fb49f52231f467dea94e7daf64d75071",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -3769,12 +3769,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "76051b18d5cd0a53ddbd6c0495390f2941610f2e"
+                "reference": "9af4d4393b0ac9c18aba514dd7b4def0fc683b47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/76051b18d5cd0a53ddbd6c0495390f2941610f2e",
-                "reference": "76051b18d5cd0a53ddbd6c0495390f2941610f2e",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/9af4d4393b0ac9c18aba514dd7b4def0fc683b47",
+                "reference": "9af4d4393b0ac9c18aba514dd7b4def0fc683b47",
                 "shasum": ""
             },
             "require": {
@@ -3819,7 +3819,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-05-12T18:32:40+00:00"
+            "time": "2018-05-13T06:43:06+00:00"
         },
         {
             "name": "vanilo/order",
@@ -5720,7 +5720,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0.0"
+        "php": "^7.1.3"
     },
     "platform-dev": []
 }

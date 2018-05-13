@@ -37,7 +37,7 @@
                                 <tbody>
                                     @foreach(Cart::getItems() as $item)
                                         <tr>
-                                            <td width="55"><img src="/images/product.jpg" class="product-image"/></td>
+                                            <td width="55"><img src="{{ $item->product->getThumbnailUrl() ?: '/images/product.jpg' }}" class="product-image"/></td>
                                             <td>
                                                 <a href="{{ route('shop.product', $item->product) }}">
                                                     {{ $item->product->getName() }}
