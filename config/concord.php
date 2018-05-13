@@ -8,6 +8,16 @@ return [
                 'url' => '/admin/product'
             ]
         ],
-        Vanilo\Framework\Providers\ModuleServiceProvider::class
+        Vanilo\Framework\Providers\ModuleServiceProvider::class => [
+            'image' => [
+                'variants' => [
+                    'thumbnail' => [
+                        'width'  => 250,
+                        'height' => 188,
+                        'fit' => 'crop'
+                    ]
+                ]
+            ],
+        ]
     ]
 ];
