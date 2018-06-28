@@ -52,26 +52,26 @@ http://127.0.0.1:8000
 
 #### Front Page
 
-![Front Page](docs/ss_01.png)
+![Front Page](docs/ss03_01.png)
 
 #### Product List
 
-![Product list](docs/ss_02.png)
+![Product list](docs/ss03_02.png)
 
 #### Cart
 
-![Cart](docs/ss_03.png)
+![Cart](docs/ss03_03.png)
 
 #### Checkout
 
-![Checkout](docs/ss_04.png)
+![Checkout](docs/ss03_04.png)
 
 #### Orders Admin
 
-![Orders Admin](docs/ss_05.png)
+![Orders Admin](docs/ss03_05.png)
 
 #### Products Admin
 
-![Products Admin](docs/ss_06.png)
+![Products Admin](docs/ss03_06.png)
 
 For further details refer to the [Vanilo Documentation](https://vanilo.io/docs/).
