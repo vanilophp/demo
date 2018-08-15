@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a64ff9118d59031579cfef9027b74ab3",
+    "content-hash": "b6f430ed9b7c2538765e0725a8916758",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -886,16 +886,16 @@
         },
         {
             "name": "konekt/appshell",
-            "version": "0.9.8",
+            "version": "0.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/appshell.git",
-                "reference": "9a75d708d5def02964a1b24016b7da6bc39f6112"
+                "reference": "9c537164f51e96c16085cc0381221a237dc9a591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/9a75d708d5def02964a1b24016b7da6bc39f6112",
-                "reference": "9a75d708d5def02964a1b24016b7da6bc39f6112",
+                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/9c537164f51e96c16085cc0381221a237dc9a591",
+                "reference": "9c537164f51e96c16085cc0381221a237dc9a591",
                 "shasum": ""
             },
             "require": {
@@ -905,7 +905,7 @@
                 "konekt/concord": "~1.1",
                 "konekt/customer": ">=0.9.4",
                 "konekt/gears": "~1.0",
-                "konekt/menu": "~1.0",
+                "konekt/menu": "~1.2",
                 "konekt/user": ">=0.9.0",
                 "laracasts/flash": "~3.0",
                 "laravelcollective/html": "~5.4",
@@ -941,20 +941,20 @@
                 "concord-box",
                 "laravel"
             ],
-            "time": "2018-06-09T18:57:11+00:00"
+            "time": "2018-07-23T13:59:36+00:00"
         },
         {
             "name": "konekt/concord",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/concord.git",
-                "reference": "7f2a82d5c865539efc8dba665ee2e861a953e882"
+                "reference": "7379f847fe1e90f9b71ce3f435dd9617ab8dfff5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/concord/zipball/7f2a82d5c865539efc8dba665ee2e861a953e882",
-                "reference": "7f2a82d5c865539efc8dba665ee2e861a953e882",
+                "url": "https://api.github.com/repos/artkonekt/concord/zipball/7379f847fe1e90f9b71ce3f435dd9617ab8dfff5",
+                "reference": "7379f847fe1e90f9b71ce3f435dd9617ab8dfff5",
                 "shasum": ""
             },
             "require": {
@@ -1002,7 +1002,7 @@
                 }
             ],
             "description": "Concord is a Laravel Extension for building modular Laravel Applications",
-            "time": "2018-02-18T14:28:44+00:00"
+            "time": "2018-08-11T08:25:39+00:00"
         },
         {
             "name": "konekt/customer",
@@ -1161,16 +1161,16 @@
         },
         {
             "name": "konekt/gears",
-            "version": "1.0.0-rc.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/gears.git",
-                "reference": "4cda9499f51c4eda5353e6d2a776a849d61581fc"
+                "reference": "c08a16c7945ca974b03c3e27e05205ce5272a8b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/gears/zipball/4cda9499f51c4eda5353e6d2a776a849d61581fc",
-                "reference": "4cda9499f51c4eda5353e6d2a776a849d61581fc",
+                "url": "https://api.github.com/repos/artkonekt/gears/zipball/c08a16c7945ca974b03c3e27e05205ce5272a8b6",
+                "reference": "c08a16c7945ca974b03c3e27e05205ce5272a8b6",
                 "shasum": ""
             },
             "require": {
@@ -1182,7 +1182,7 @@
             "require-dev": {
                 "illuminate/events": "~5.4",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.0"
+                "phpunit/phpunit": "6.2 - 7.3"
             },
             "type": "library",
             "extra": {
@@ -1218,20 +1218,20 @@
                 "laravel",
                 "preferences"
             ],
-            "time": "2018-06-09T15:24:29+00:00"
+            "time": "2018-08-11T10:22:56+00:00"
         },
         {
             "name": "konekt/menu",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/menu.git",
-                "reference": "a91434a01bbb174207fb0001456e61f10fb6d3b5"
+                "reference": "a8559927d7738742edcd8a225182767432b868f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/menu/zipball/a91434a01bbb174207fb0001456e61f10fb6d3b5",
-                "reference": "a91434a01bbb174207fb0001456e61f10fb6d3b5",
+                "url": "https://api.github.com/repos/artkonekt/menu/zipball/a8559927d7738742edcd8a225182767432b868f3",
+                "reference": "a8559927d7738742edcd8a225182767432b868f3",
                 "shasum": ""
             },
             "require": {
@@ -1240,9 +1240,9 @@
                 "php": ">=7.0.0"
             },
             "require-dev": {
-                "mockery/mockery": "^1.0@dev",
+                "mockery/mockery": "~1.0",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "6.0 - 7.1"
             },
             "type": "library",
             "extra": {
@@ -1278,7 +1278,7 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2017-10-23T16:05:45+00:00"
+            "time": "2018-07-23T13:44:45+00:00"
         },
         {
             "name": "konekt/user",
@@ -3681,16 +3681,16 @@
         },
         {
             "name": "vanilo/address",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/address.git",
-                "reference": "945f6cf39eaab83ad179f3bf49b37137d9854b62"
+                "reference": "0c6ea14237911bb7afa9442f7e79e4c6d7a8377f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/address/zipball/945f6cf39eaab83ad179f3bf49b37137d9854b62",
-                "reference": "945f6cf39eaab83ad179f3bf49b37137d9854b62",
+                "url": "https://api.github.com/repos/vanilophp/address/zipball/0c6ea14237911bb7afa9442f7e79e4c6d7a8377f",
+                "reference": "0c6ea14237911bb7afa9442f7e79e4c6d7a8377f",
                 "shasum": ""
             },
             "require": {
@@ -3700,8 +3700,8 @@
                 "vanilo/support": "0.3.*"
             },
             "require-dev": {
-                "orchestra/testbench": "3.4.2",
-                "phpunit/phpunit": "6.2 - 7.0"
+                "orchestra/testbench": "^3.4.2",
+                "phpunit/phpunit": "6.2 - 7.3"
             },
             "type": "library",
             "extra": {
@@ -3732,20 +3732,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-02-19T20:32:33+00:00"
+            "time": "2018-08-11T10:45:37+00:00"
         },
         {
             "name": "vanilo/cart",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "cbb1a11b8820df21e9f0e6c85f58984738a7f5ed"
+                "reference": "e3e7020341c3c16b48f7d530e33d70879cd86b00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/cbb1a11b8820df21e9f0e6c85f58984738a7f5ed",
-                "reference": "cbb1a11b8820df21e9f0e6c85f58984738a7f5ed",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/e3e7020341c3c16b48f7d530e33d70879cd86b00",
+                "reference": "e3e7020341c3c16b48f7d530e33d70879cd86b00",
                 "shasum": ""
             },
             "require": {
@@ -3757,7 +3757,7 @@
             "require-dev": {
                 "ext-sqlite3": "*",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.0"
+                "phpunit/phpunit": "6.2 - 7.3"
             },
             "type": "library",
             "extra": {
@@ -3793,20 +3793,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-06-24T20:21:06+00:00"
+            "time": "2018-08-11T12:16:29+00:00"
         },
         {
             "name": "vanilo/checkout",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/checkout.git",
-                "reference": "8b9121f8ede76464dc1cefa59daf515c669129b8"
+                "reference": "001188cd32371f7882c59342e0dd4edff4651d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/8b9121f8ede76464dc1cefa59daf515c669129b8",
-                "reference": "8b9121f8ede76464dc1cefa59daf515c669129b8",
+                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/001188cd32371f7882c59342e0dd4edff4651d6e",
+                "reference": "001188cd32371f7882c59342e0dd4edff4651d6e",
                 "shasum": ""
             },
             "require": {
@@ -3816,7 +3816,8 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.0"
+                "phpunit/phpunit": "6.2 - 7.3",
+                "vanilo/support": "^0.3.1"
             },
             "type": "library",
             "extra": {
@@ -3847,20 +3848,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-02-19T20:40:23+00:00"
+            "time": "2018-08-11T20:42:28+00:00"
         },
         {
             "name": "vanilo/contracts",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "2db7ff47b4b806b2b9fa69c5f633a18dea91aabc"
+                "reference": "ebd5d62a87d0f92515b174250b23ddec417a6e71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/2db7ff47b4b806b2b9fa69c5f633a18dea91aabc",
-                "reference": "2db7ff47b4b806b2b9fa69c5f633a18dea91aabc",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/ebd5d62a87d0f92515b174250b23ddec417a6e71",
+                "reference": "ebd5d62a87d0f92515b174250b23ddec417a6e71",
                 "shasum": ""
             },
             "require": {
@@ -3895,7 +3896,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-05-12T07:24:29+00:00"
+            "time": "2018-08-11T10:50:15+00:00"
         },
         {
             "name": "vanilo/framework",
@@ -3957,16 +3958,16 @@
         },
         {
             "name": "vanilo/order",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/order.git",
-                "reference": "636d7d289318c47a7275fc3316c1ce6d1195de3d"
+                "reference": "0c743cc9068bc3f212fe5361551413047c8fc71f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/order/zipball/636d7d289318c47a7275fc3316c1ce6d1195de3d",
-                "reference": "636d7d289318c47a7275fc3316c1ce6d1195de3d",
+                "url": "https://api.github.com/repos/vanilophp/order/zipball/0c743cc9068bc3f212fe5361551413047c8fc71f",
+                "reference": "0c743cc9068bc3f212fe5361551413047c8fc71f",
                 "shasum": ""
             },
             "require": {
@@ -3979,7 +3980,7 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.0"
+                "phpunit/phpunit": "6.2 - 7.3"
             },
             "type": "library",
             "extra": {
@@ -4010,20 +4011,20 @@
                 "order",
                 "vanilo"
             ],
-            "time": "2018-04-01T17:55:45+00:00"
+            "time": "2018-08-15T21:14:58+00:00"
         },
         {
             "name": "vanilo/product",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/product.git",
-                "reference": "0bafaaa057a059ee410692e9da3dd38421b3f017"
+                "reference": "f15a8e644f1e57501f64dd7a9954b8afea74e514"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/product/zipball/0bafaaa057a059ee410692e9da3dd38421b3f017",
-                "reference": "0bafaaa057a059ee410692e9da3dd38421b3f017",
+                "url": "https://api.github.com/repos/vanilophp/product/zipball/f15a8e644f1e57501f64dd7a9954b8afea74e514",
+                "reference": "f15a8e644f1e57501f64dd7a9954b8afea74e514",
                 "shasum": ""
             },
             "require": {
@@ -4032,8 +4033,8 @@
             },
             "require-dev": {
                 "cviebrock/eloquent-sluggable": "~4.2",
-                "orchestra/testbench": "~3.4",
-                "phpunit/phpunit": "6.3 - 7.0"
+                "orchestra/testbench": "^3.4.2",
+                "phpunit/phpunit": "6.2 - 7.3"
             },
             "type": "library",
             "extra": {
@@ -4064,25 +4065,28 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2018-05-12T17:01:36+00:00"
+            "time": "2018-08-15T20:34:18+00:00"
         },
         {
             "name": "vanilo/support",
-            "version": "dev-master",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "0376b9b79fdd56f7b16ef46b2420c6078f363827"
+                "reference": "fac2d62ea37503f734cf557d52da2c742d428cf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/0376b9b79fdd56f7b16ef46b2420c6078f363827",
-                "reference": "0376b9b79fdd56f7b16ef46b2420c6078f363827",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/fac2d62ea37503f734cf557d52da2c742d428cf6",
+                "reference": "fac2d62ea37503f734cf557d52da2c742d428cf6",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "5.*",
                 "php": ">=7.0.0"
+            },
+            "suggest": {
+                "spatie/laravel-medialibrary": "Allows associating images (or other files) with Eloquent models"
             },
             "type": "library",
             "extra": {
@@ -4092,7 +4096,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Vanilo\\Support\\": "src/"
+                    "Vanilo\\Support\\": "src/",
+                    "Vanilo\\Support\\Tests\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4112,7 +4117,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-05-12T18:24:37+00:00"
+            "time": "2018-08-11T19:59:35+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5803,7 +5808,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "ext-gd": "*"
     },
     "platform-dev": []
 }
