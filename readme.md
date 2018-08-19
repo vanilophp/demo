@@ -1,6 +1,6 @@
 # Vanilo Demo Application
 
-![0.3.0](https://img.shields.io/badge/version-0.3.0-green.svg)
+![0.3.0](https://img.shields.io/badge/version-dev--master-green.svg)
 
 This is a minimalistic Laravel 5.6 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains Vanilo's admin panel.
