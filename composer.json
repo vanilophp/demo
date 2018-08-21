@@ -10,7 +10,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
-        "vanilo/framework": "^0.3"
+        "vanilo/framework": "^0.4"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
