@@ -3807,6 +3807,60 @@
             "time": "2018-09-14T19:49:17+00:00"
         },
         {
+            "name": "vanilo/category",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vanilophp/category.git",
+                "reference": "2581bc73799c3d1fff75b0326ad61aa6c6dff726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilophp/category/zipball/2581bc73799c3d1fff75b0326ad61aa6c6dff726",
+                "reference": "2581bc73799c3d1fff75b0326ad61aa6c6dff726",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "~1.1",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "cviebrock/eloquent-sluggable": "~4.2",
+                "orchestra/testbench": "^3.4.2",
+                "phpunit/phpunit": "6.2 - 7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vanilo\\Category\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Vanilo Category Module",
+            "keywords": [
+                "artkonekt",
+                "category",
+                "ecommerce",
+                "laravel",
+                "vanilo"
+            ],
+            "time": "2018-09-14T19:45:26+00:00"
+        },
+        {
             "name": "vanilo/checkout",
             "version": "dev-master",
             "source": {
@@ -3915,12 +3969,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "0e3ae8370cbbe02b2efa010b1b5cb04f99b010e6"
+                "reference": "1ecc3dad27b3c214b23717b8289cbe53f3d7228d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/0e3ae8370cbbe02b2efa010b1b5cb04f99b010e6",
-                "reference": "0e3ae8370cbbe02b2efa010b1b5cb04f99b010e6",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/1ecc3dad27b3c214b23717b8289cbe53f3d7228d",
+                "reference": "1ecc3dad27b3c214b23717b8289cbe53f3d7228d",
                 "shasum": ""
             },
             "require": {
@@ -3929,6 +3983,7 @@
                 "spatie/laravel-medialibrary": "^7.3",
                 "vanilo/address": "0.4.*",
                 "vanilo/cart": "0.4.*",
+                "vanilo/category": "0.4.*",
                 "vanilo/checkout": "0.4.*",
                 "vanilo/contracts": "0.4.*",
                 "vanilo/order": "0.4.*",
@@ -3965,7 +4020,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-09-21T20:53:08+00:00"
+            "time": "2018-09-22T07:09:53+00:00"
         },
         {
             "name": "vanilo/order",
