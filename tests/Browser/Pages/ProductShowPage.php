@@ -42,4 +42,9 @@ class ProductShowPage extends Page
     {
         $browser->assertSee($this->product->name);
     }
+
+    public function addToCart(Browser $browser)
+    {
+        $browser->press("Add to cart");
+    }
 }

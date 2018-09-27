@@ -45,9 +45,6 @@ class CheckoutTest extends DuskTestCase
     public function it_can_not_checkout_without_cart()
     {
         $this->browse(function (Browser $browser) {
-            //@todo:review this section
-            $browser->driver->manage()->deleteAllCookies();
-
             $browser
                 ->loginAs($this->user)
                 ->visit(new CheckoutPage())
@@ -60,12 +57,10 @@ class CheckoutTest extends DuskTestCase
     public function it_can_checkout_without_company_billing()
     {
         $this->browse(function (Browser $browser) {
-            $browser->driver->manage()->deleteAllCookies();
-
             $browser
                 ->loginAs($this->user)
                 ->visit(new ProductShowPage($this->product))
-                ->press("Add to cart")
+                ->addToCart()
                 ->visit(new CheckoutPage())
                 ->assertSee('Submit Order')
                 ->type('@billpayerFirstname', 'John')
@@ -98,12 +93,10 @@ class CheckoutTest extends DuskTestCase
     public function it_can_not_checkout_with_missing_data()
     {
         $this->browse(function (Browser $browser) {
-            $browser->driver->manage()->deleteAllCookies();
-
             $browser
                 ->loginAs($this->user)
                 ->visit(new ProductShowPage($this->product))
-                ->press("Add to cart")
+                ->addToCart()
                 ->visit(new CheckoutPage())
                 ->select('@billpayerAddressCountry', 'RO')
                 ->type('@billpayerAddress', 'Common Street')
@@ -118,12 +111,10 @@ class CheckoutTest extends DuskTestCase
     public function it_can_checkout_with_different_shipping_address()
     {
         $this->browse(function (Browser $browser) {
-            $browser->driver->manage()->deleteAllCookies();
-
             $browser
                 ->loginAs($this->user)
                 ->visit(new ProductShowPage($this->product))
-                ->press("Add to cart")
+                ->addToCart()
                 ->visit(new CheckoutPage())
                 ->assertSee('Submit Order')
                 ->type('@billpayerFirstname', 'Batman')
