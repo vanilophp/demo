@@ -49,7 +49,7 @@
                                                 <form action="{{ route('cart.remove', $item) }}"
                                                       style="display: inline-block" method="post">
                                                     {{ csrf_field() }}
-                                                    <button class="btn btn-link btn-sm"><span class="text-danger">&xotime;</span></button>
+                                                    <button dusk="cart-delete-{{ $item->getBuyable()->id }}" class="btn btn-link btn-sm"><span class="text-danger">&xotime;</span></button>
                                                 </form>
                                             </td>
                                         </tr>
