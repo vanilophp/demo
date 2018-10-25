@@ -27,8 +27,11 @@ composer install
 
 **3. Configure the environment**:
 
-Create a database for your application, and add the credentials to the `.env` file in the app's root
-directory.
+> The `.env` file is in the app's [root directory](https://laravel.com/docs/5.7/configuration#environment-configuration).
+
+- Create a database for your application.
+- Initialize .env (quickly: `cp .env.example .env && php artisan key:generate`.
+- add the DB credentials to the `.env` file.
 
 **4. Install Database**:
 
