@@ -3823,12 +3823,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/category.git",
-                "reference": "297fdf41ab31fc60d57ee9329bcbbf2bbde1b756"
+                "reference": "2281fe3b4b186c87385216ada0e42f362798bfa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/category/zipball/297fdf41ab31fc60d57ee9329bcbbf2bbde1b756",
-                "reference": "297fdf41ab31fc60d57ee9329bcbbf2bbde1b756",
+                "url": "https://api.github.com/repos/vanilophp/category/zipball/2281fe3b4b186c87385216ada0e42f362798bfa2",
+                "reference": "2281fe3b4b186c87385216ada0e42f362798bfa2",
                 "shasum": ""
             },
             "require": {
@@ -3869,7 +3869,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-10-27T20:17:25+00:00"
+            "time": "2018-10-28T20:27:48+00:00"
         },
         {
             "name": "vanilo/checkout",
@@ -3980,12 +3980,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "0996cb27d5c12e5fbf49fad5276ab3838f79c552"
+                "reference": "b4926a412f861da3b56bae5ab1322a9e113bd64a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/0996cb27d5c12e5fbf49fad5276ab3838f79c552",
-                "reference": "0996cb27d5c12e5fbf49fad5276ab3838f79c552",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/b4926a412f861da3b56bae5ab1322a9e113bd64a",
+                "reference": "b4926a412f861da3b56bae5ab1322a9e113bd64a",
                 "shasum": ""
             },
             "require": {
@@ -4031,7 +4031,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-10-27T23:07:03+00:00"
+            "time": "2018-10-28T20:47:05+00:00"
         },
         {
             "name": "vanilo/order",
