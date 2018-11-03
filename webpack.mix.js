@@ -10,16 +10,7 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-mix.autoload({
-		jquery: ['$', 'jQuery', 'window.jQuery'],
-		tether: ['Tether', 'window.Tether'],
-		'popper.js/dist/umd/popper.js': ['Popper']
-	})
-	.js('resources/assets/js/app.js', 'public/js')
-		.scripts([
-		'public/js/app.js',
-		'vendor/konekt/appshell/src/resources/assets/js/appshell.js'
-    	], 'public/js/app.js'
-	)
-    .sass('vendor/konekt/appshell/src/resources/assets/sass/appshell.sass', 'public/css');
+mix
+	.js('resources/js/app.js', 'public/js')
+	.js('vendor/konekt/appshell/src/resources/assets/js/appshell.standalone.js', 'public/js/appshell.js')
+	.sass('vendor/konekt/appshell/src/resources/assets/sass/appshell.sass', 'public/css');
