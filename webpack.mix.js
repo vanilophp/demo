@@ -11,6 +11,10 @@ let mix = require('laravel-mix');
  |
  */
 mix
+    .autoload({
+        'popper.js/dist/umd/popper.js': ['Popper']
+    })
 	.js('resources/js/app.js', 'public/js')
+
 	.js('vendor/konekt/appshell/src/resources/assets/js/appshell.standalone.js', 'public/js/appshell.js')
-	.sass('vendor/konekt/appshell/src/resources/assets/sass/appshell.sass', 'public/css');
+    .sass('vendor/konekt/appshell/src/resources/assets/sass/appshell.sass', 'public/css');
