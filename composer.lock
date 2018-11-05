@@ -888,16 +888,16 @@
         },
         {
             "name": "konekt/appshell",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/appshell.git",
-                "reference": "edcf66fa0970bd4613bf735c39ddb00fa892b182"
+                "reference": "33dbc4325e528e767ac23a3996fe04bf6a375e98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/edcf66fa0970bd4613bf735c39ddb00fa892b182",
-                "reference": "edcf66fa0970bd4613bf735c39ddb00fa892b182",
+                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/33dbc4325e528e767ac23a3996fe04bf6a375e98",
+                "reference": "33dbc4325e528e767ac23a3996fe04bf6a375e98",
                 "shasum": ""
             },
             "require": {
@@ -944,7 +944,7 @@
                 "concord-box",
                 "laravel"
             ],
-            "time": "2018-11-02T14:55:49+00:00"
+            "time": "2018-11-04T12:43:00+00:00"
         },
         {
             "name": "konekt/concord",
