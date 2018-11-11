@@ -1,62 +1,63 @@
 @extends('layouts.app')
 
+@section('breadcrumbs')
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    @if($taxon)
+        @include('shop._breadcrumbs')
+    @else
+        <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">All Products</a></li>
+    @endif
+@stop
+
 @section('content')
-    <style>
-        .product {
-            margin-bottom: 1.35em;
-        }
-
-        .product h5 {
-            margin-bottom: 0;
-        }
-
-        .product a h5 {
-            text-decoration: none;
-        }
-
-        .product img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .product-attrs {
-            margin-top: 0;
-        }
-    </style>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Product List</div>
 
-                    <div class="panel-body">
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
+            <div class="col-md-4">
+                @foreach($taxonomies as $taxonomy)
+                <div class="card card-default mb-3">
+                    <div class="card-header">{{ $taxonomy->name }}</div>
+                    <div class="card-body">
+                        @include('shop._category_level', ['taxons' => $taxonomy->rootLevelTaxons()])
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            <div class="col-md-8">
+                @if($taxon && $products->isEmpty() && $taxon->children->count())
+                    <div class="card card-default mb-4">
+                        <div class="card-header">{{ $taxon->name }} Subcategories</div>
+
+                        <div class="card-body">
+                            <div class="row">
+                            @foreach($taxon->children as $child)
+                                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                    @include('shop._category', ['taxon' => $child])
+                                </div>
+                            @endforeach
                             </div>
-                        @endif
+                        </div>
+                    </div>
+                @endif
 
+                @if(!$products->isEmpty())
+                <div class="card card-default">
+                    <div class="card-header">{{ $taxon ?  'Products in ' . $taxon->name : 'All Products' }}</div>
+
+                    <div class="card-body">
                         <div class="row">
 
                             @foreach($products as $product)
-                                <article class="col-xs-12 col-sm-6 col-md-4 product">
-                                    <a href="{{ route('shop.product', $product) }}">
-                                        @if($product->hasImage())
-                                            <img src="{{ $product->getThumbnailUrl() }}"/>
-                                        @else
-                                            <img src="/images/product.jpg"/>
-                                        @endif
-                                        <h5>{{ $product->name }}</h5>
-                                    </a>
-                                    <div class="product-attrs">
-                                        <span class="price">{{ format_price($product->price) }}</span>
-                                    </div>
-                                </article>
+                                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                    @include('shop._product')
+                                </div>
                             @endforeach
 
                         </div>
                     </div>
                 </div>
+                @endif
             </div>
         </div>
     </div>

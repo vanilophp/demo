@@ -21,12 +21,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'shop', 'as' => 'shop.'], function() {
     Route::get('index', 'ShopController@index')->name('index');
-    Route::get('product/{product}', 'ShopController@product')->name('product');
+    Route::get('c/{taxonomyName}/{taxon}', 'ShopController@category')->name('category');
+    Route::get('p/{product}', 'ShopController@product')->name('product');
 });
 
 Route::group(['prefix' => 'cart', 'as' => 'cart.'], function() {
     Route::get('show', 'CartController@show')->name('show');
     Route::post('add/{product}', 'CartController@add')->name('add');
+    Route::post('update/{cart_item}', 'CartController@update')->name('update');
     Route::post('remove/{cart_item}', 'CartController@remove')->name('remove');
 });
 

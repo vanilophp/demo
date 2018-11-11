@@ -15,6 +15,10 @@ return [
                         'width'  => 250,
                         'height' => 188,
                         'fit' => 'crop'
+                    ],
+                    'medium' => [
+                        'width'  => 540,
+                        'height' => 406,
                     ]
                 ]
             ],

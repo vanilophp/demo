@@ -13,8 +13,11 @@ class CheckoutRequest extends FormRequest
     public function rules()
     {
         return [
-            'billpayer.firstname'  => 'required|min:2|max:255',
-            'billpayer.lastname'  => 'required|min:2|max:255'
+            'billpayer.firstname' => 'required|min:2|max:255',
+            'billpayer.lastname'  => 'required|min:2|max:255',
+            'billpayer.company_name' => 'required_if:billpayer.is_organization,1',
+            'billpayer.address.address' => 'required|min:2|max:255',
+            'shippingAddress.address' => 'required_unless:ship_to_billing_address,1'
         ];
     }
 

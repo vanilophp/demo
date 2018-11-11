@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+@section('breadcrumbs')
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('cart.show') }}">Cart</a></li>
+    <li class="breadcrumb-item">Checkout</li>
+
+@stop
+
 @section('content')
     <style>
         .product-image {
@@ -10,11 +17,11 @@
     </style>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Checkout</div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Checkout</div>
 
-                    <div class="panel-body">
+                    <div class="card-body">
                         @unless ($checkout)
                             <div class="alert alert-warning">
                                 <p>Hey, nothing to check out here!</p>
@@ -27,32 +34,33 @@
 
                                 @include('checkout._billpayer', ['billpayer' => $checkout->getBillPayer()])
 
-                                <div>
+                                <div class="mb-4">
                                     <input type="hidden" name="ship_to_billing_address" value="0" />
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" name="ship_to_billing_address" value="1"
-                                                   v-model="shipToBillingAddress">
-                                            Ship to the same address
-                                        </label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="chk_ship_to_billing_address" type="checkbox" name="ship_to_billing_address" value="1" v-model="shipToBillingAddress">
+                                        <label class="form-check-label" for="chk_ship_to_billing_address">Ship to the same address</label>
                                     </div>
                                 </div>
 
-                                <hr>
-
                                 @include('checkout._shipping_address', ['address' => $checkout->getShippingAddress()])
-
-                                <p>Total: {{ format_price($checkout->total()) }}</p>
 
                                 <hr>
 
                                 <div>
-                                    <button class="btn btn-primary">Submit Order</button>
+                                    <button class="btn btn-lg btn-success">Submit Order</button>
                                 </div>
 
 
                             </form>
                         @endif
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-white">
+                    <div class="card-header">Summary</div>
+                    <div class="card-body">
+                        @include('cart._summary')
                     </div>
                 </div>
             </div>

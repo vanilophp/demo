@@ -1,50 +1,66 @@
 @extends('layouts.app')
 
+@section('breadcrumbs')
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    @if ($product->taxons->count())
+        @include('shop._breadcrumbs', ['taxon' => $product->taxons->first()])
+    @endif
+    <li class="breadcrumb-item">{{ $product->name }}</li>
+@stop
+
 @section('content')
     <style>
-        .product-image {
-            max-width: 100%;
+        .thumbnail-container {
+            overflow-x: scroll;
+        }
+
+        .thumbnail {
+            width: 64px;
+            height: auto;
             display: block;
-            margin-bottom: 2em;
+            float: left;
         }
 
-        .product-price {
-            margin-bottom: .35em;
-        }
-
-        .price {
-            font-size: 1.35em;
+        .thumbnail img {
+            cursor: pointer;
         }
     </style>
     <div class="container">
+        <h1>{{ $product->name }}</h1>
+        <hr>
+
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">{{ $product->name }}</div>
-
-                    <div class="panel-body">
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        <img src="{{ $product->getThumbnailUrl() ?: '/images/product.jpg' }}" class="product-image" />
-
-                        <p>{{ $product->description }}</p>
-
-                        <form action="{{ route('cart.add', $product) }}" method="post">
-                            {{ csrf_field() }}
-
-                            <div class="product-price">
-                                <span class="price">{{ format_price($product->price) }}</span>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-lg">Add to cart</button>
-                        </form>
-
-
-                    </div>
+            <div class="col-md-6">
+                <div class="mb-2">
+                    <?php $img = $product->getMedia()->first() ? $product->getMedia()->first()->getUrl('medium') : '/images/product-medium.jpg' ?>
+                    <img src="{{ $img  }}" id="product-image" />
                 </div>
+
+                <div class="thumbnail-container">
+                    @foreach($product->getMedia() as $media)
+                        <div class="thumbnail mr-1">
+                            <img class="mw-100" src="{{ $media->getUrl('thumbnail') }}"
+                                 onclick="document.getElementById('product-image').setAttribute('src', '{{ $media->getUrl("medium") }}')"
+                            />
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <form action="{{ route('cart.add', $product) }}" method="post" class="mb-4">
+                    {{ csrf_field() }}
+
+                    <span class="mr-2 font-weight-bold text-primary btn-lg">{{ format_price($product->price) }}</span>
+                    <button type="submit" class="btn btn-success btn-lg" @if(!$product->price) disabled @endif>Add to cart</button>
+                </form>
+
+                <hr>
+
+                <p class="text-secondary">{{ $product->description }}</p>
+
+                <hr>
+
             </div>
         </div>
     </div>

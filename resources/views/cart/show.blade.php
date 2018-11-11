@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@section('breadcrumbs')
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item">Cart</li>
+@stop
+
 @section('content')
     <style>
         .product-image {
@@ -7,53 +12,56 @@
         }
     </style>
     <div class="container">
+        <h1>Shopping Cart</h1>
+        <hr>
+
+        @if(Cart::isEmpty())
+            <div class="alert alert-info">
+                Your cart is empty
+            </div>
+        @else
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Shopping Cart</div>
+            <div class="col-md-8">
+                <div class="card bg-light">
+                    <div class="card-header">Items</div>
 
-                    <div class="panel-body">
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        @if(Cart::isEmpty())
-                            <div class="alert alert-info">
-                                Your cart is empty
-                            </div>
-                        @else
-                            <table class="table">
+                    <div class="card-body">
+                        <div class="rounded bg-white">
+                            <table class="table table-borderless">
                                 <thead>
-                                    <tr>
-                                        <th colspan="2">name</th>
-                                        <th>price</th>
-                                        <th>qty</th>
-                                        <th>total</th>
-                                        <th></th>
-                                    </tr>
+                                <tr>
+                                    <th colspan="2">Name</th>
+                                    <th>Price</th>
+                                    <th>Qty</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach(Cart::getItems() as $item)
-                                        <tr>
-                                            <td width="55"><img src="{{ $item->product->getThumbnailUrl() ?: '/images/product.jpg' }}" class="product-image"/></td>
-                                            <td>
-                                                <a href="{{ route('shop.product', $item->product) }}">
-                                                    {{ $item->product->getName() }}
-                                                </a></td>
-                                            <td>{{ format_price($item->price) }}</td>
-                                            <td>{{ $item->quantity }}</td>
-                                            <td>{{ format_price($item->total) }}</td>
-                                            <td>
-                                                <form action="{{ route('cart.remove', $item) }}"
-                                                      style="display: inline-block" method="post">
-                                                    {{ csrf_field() }}
-                                                    <button dusk="cart-delete-{{ $item->getBuyable()->id }}" class="btn btn-link btn-sm"><span class="text-danger">&xotime;</span></button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    @endforeach
+                                @foreach(Cart::getItems() as $item)
+                                    <tr>
+                                        <td width="55"><img src="{{ $item->product->getThumbnailUrl() ?: '/images/product.jpg' }}" class="product-image"/></td>
+                                        <td>
+                                            <a href="{{ route('shop.product', $item->product) }}">
+                                                {{ $item->product->getName() }}
+                                            </a></td>
+                                        <td>{{ format_price($item->price) }}</td>
+                                        <td>
+                                            <form class="form-inline" action="{{ route('cart.update', $item) }}" method="POST">
+                                                @csrf
+                                                <input type="text" name="qty" value="{{ $item->quantity }}" class="w-25" />
+                                            </form>
+                                        </td>
+                                        <td>{{ format_price($item->total) }}</td>
+                                        <td>
+                                            <form action="{{ route('cart.remove', $item) }}"
+                                                  style="display: inline-block" method="post">
+                                                {{ csrf_field() }}
+                                                <button dusk="cart-delete-{{ $item->getBuyable()->id }}" class="btn btn-link btn-sm"><span class="text-danger">&xotime;</span></button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                                 <tfoot>
                                 <tr>
@@ -66,18 +74,26 @@
                                 </tfoot>
 
                             </table>
+                        </div>
 
-                            <p class="text-right">
-                                <a href="{{ route('shop.index') }}" class="btn btn-lg btn-link">Continue Shopping</a>
-                                <a href="{{ route('checkout.show') }}" class="btn btn-lg btn-primary">Proceed To Checkout</a>
-                            </p>
-
-                        @endif
-
+                        <p>
+                            <a href="{{ route('shop.index') }}" class="btn-lg pl-0">Continue Shopping</a>
+                        </p>
 
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="card bg-white">
+                    <div class="card-header">Summary</div>
+                    <div class="card-body">
+                        @include('cart._summary')
+                        <a href="{{ route('checkout.show') }}" class="btn btn-block btn-primary">Proceed To Checkout</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        @endif
     </div>
 @endsection
