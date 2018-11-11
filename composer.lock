@@ -3982,16 +3982,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "00a5b3bed71b595b270cf7ebe6ebf1b0ac8352c7"
+                "reference": "9c113ca7a95a7d7d825bf721825a9e416c59ffd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/00a5b3bed71b595b270cf7ebe6ebf1b0ac8352c7",
-                "reference": "00a5b3bed71b595b270cf7ebe6ebf1b0ac8352c7",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/9c113ca7a95a7d7d825bf721825a9e416c59ffd9",
+                "reference": "9c113ca7a95a7d7d825bf721825a9e416c59ffd9",
                 "shasum": ""
             },
             "require": {
-                "konekt/appshell": "~1.0",
+                "konekt/appshell": "~1.2",
                 "php": "^7.1.3",
                 "spatie/laravel-medialibrary": "^7.3",
                 "vanilo/cart": "0.4.*",
@@ -4033,7 +4033,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-11-03T13:04:45+00:00"
+            "time": "2018-11-11T15:06:20+00:00"
         },
         {
             "name": "vanilo/order",
