@@ -57,7 +57,7 @@
 
                 <hr>
 
-                <p class="text-secondary">{{ $product->description }}</p>
+                <p class="text-secondary">{!!  nl2br($product->description) !!}</p>
 
                 <hr>
 
