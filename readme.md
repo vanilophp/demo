@@ -55,28 +55,41 @@ Run the site with `php artisan serve` and access the site:
 
 http://127.0.0.1:8000
 
-#### Front Page
-
-![Front Page](docs/ss03_01.png)
-
 #### Product List
 
-![Product list](docs/ss03_02.png)
+![Product list](docs/ss04_01.png)
+
+#### Product Page
+
+![Product page](docs/ss04_02.png)
 
 #### Cart
 
-![Cart](docs/ss03_03.png)
+![Cart](docs/ss04_03.png)
 
 #### Checkout
 
-![Checkout](docs/ss03_04.png)
+![Checkout](docs/ss04_04.png)
 
-#### Orders Admin
+#### Order Thank You
 
-![Orders Admin](docs/ss03_05.png)
+![Order Thank You](docs/ss04_05.png)
+
+#### Order Admin
+
+![Order Admin](docs/ss04_06.png)
 
 #### Products Admin
 
-![Products Admin](docs/ss03_06.png)
+![Products Admin](docs/ss04_07.png)
+
+#### Manage Product
+
+![Manage Product](docs/ss04_08.png)
+
+#### Manage Categories
+
+![Manage Categories](docs/ss04_09.png)
+
 
 For further details refer to the [Vanilo Documentation](https://vanilo.io/docs/).
