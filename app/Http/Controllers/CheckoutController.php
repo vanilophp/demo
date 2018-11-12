@@ -37,10 +37,9 @@ class CheckoutController extends Controller
         $checkout->setCart(Cart::model());
 
         $order = $orderFactory->createFromCheckout($checkout);
-        flash("Order created: " . $order->getNumber());
         Cart::destroy();
 
-        return redirect()->route('shop.index');
+        return view('checkout.thankyou', ['order' => $order]);
     }
 
 }

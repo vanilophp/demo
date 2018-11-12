@@ -14,11 +14,12 @@ return [
                     'thumbnail' => [
                         'width'  => 250,
                         'height' => 188,
-                        'fit' => 'crop'
+                        'fit' => 'fill'
                     ],
                     'medium' => [
                         'width'  => 540,
                         'height' => 406,
+                        'fit' => 'fill'
                     ]
                 ]
             ],

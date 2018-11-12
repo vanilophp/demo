@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Shop Home</a></li>
     @if ($product->taxons->count())
         @include('shop._breadcrumbs', ['taxon' => $product->taxons->first()])
     @endif

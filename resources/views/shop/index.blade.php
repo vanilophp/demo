@@ -1,11 +1,9 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Shop Home</a></li>
     @if($taxon)
         @include('shop._breadcrumbs')
-    @else
-        <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">All Products</a></li>
     @endif
 @stop
 
