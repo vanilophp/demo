@@ -3979,16 +3979,16 @@
         },
         {
             "name": "vanilo/framework",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "296b3696c835026e54b32299fafd116a95ba29bf"
+                "reference": "678788d4625a7229407a2f24ffb5231009011e38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/296b3696c835026e54b32299fafd116a95ba29bf",
-                "reference": "296b3696c835026e54b32299fafd116a95ba29bf",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/678788d4625a7229407a2f24ffb5231009011e38",
+                "reference": "678788d4625a7229407a2f24ffb5231009011e38",
                 "shasum": ""
             },
             "require": {
@@ -4034,7 +4034,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-11-12T08:42:45+00:00"
+            "time": "2018-11-15T20:56:38+00:00"
         },
         {
             "name": "vanilo/order",
