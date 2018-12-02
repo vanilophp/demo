@@ -16,6 +16,11 @@ abstract class DuskTestCase extends BaseTestCase
     {
         parent::setUp();
 
+        if ('testing' !== app()->environment()) {
+            echo("The environment is not testing. I quit. This would likely destroy data.\n");
+            exit(1);
+        }
+
         foreach (static::$browsers as $browser) {
             $browser->driver->manage()->deleteAllCookies();
         }
