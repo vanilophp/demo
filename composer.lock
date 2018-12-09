@@ -3983,12 +3983,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "de906960dc21b5df383f0a33039f9ab576ef6f4d"
+                "reference": "ddc5d80cb58a53c90d084a6ba3703812c9007ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/de906960dc21b5df383f0a33039f9ab576ef6f4d",
-                "reference": "de906960dc21b5df383f0a33039f9ab576ef6f4d",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/ddc5d80cb58a53c90d084a6ba3703812c9007ba7",
+                "reference": "ddc5d80cb58a53c90d084a6ba3703812c9007ba7",
                 "shasum": ""
             },
             "require": {
@@ -4008,7 +4008,7 @@
                 "mockery/mockery": "^1.1",
                 "monolog/monolog": "^1.22",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.4"
+                "phpunit/phpunit": "6.2 - 7.5"
             },
             "type": "library",
             "extra": {
@@ -4035,7 +4035,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-12-09T17:20:00+00:00"
+            "time": "2018-12-09T20:06:03+00:00"
         },
         {
             "name": "vanilo/order",
@@ -4154,12 +4154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/properties.git",
-                "reference": "4342fc006e575483b51bf4f82326de315f1d42c5"
+                "reference": "9783a5f95afac8f07b2b2c388c24b579c6e64aa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/properties/zipball/4342fc006e575483b51bf4f82326de315f1d42c5",
-                "reference": "4342fc006e575483b51bf4f82326de315f1d42c5",
+                "url": "https://api.github.com/repos/vanilophp/properties/zipball/9783a5f95afac8f07b2b2c388c24b579c6e64aa7",
+                "reference": "9783a5f95afac8f07b2b2c388c24b579c6e64aa7",
                 "shasum": ""
             },
             "require": {
@@ -4169,7 +4169,7 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.4"
+                "phpunit/phpunit": "6.2 - 7.5"
             },
             "type": "library",
             "extra": {
@@ -4200,7 +4200,7 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2018-12-09T10:02:47+00:00"
+            "time": "2018-12-09T20:04:57+00:00"
         },
         {
             "name": "vanilo/support",
