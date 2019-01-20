@@ -888,16 +888,16 @@
         },
         {
             "name": "konekt/appshell",
-            "version": "1.2.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/appshell.git",
-                "reference": "36001f3cc4e23698ff900abc394d8b18524db16a"
+                "reference": "b2620a3c17b021a83045d73483afbf4dea39d9e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/36001f3cc4e23698ff900abc394d8b18524db16a",
-                "reference": "36001f3cc4e23698ff900abc394d8b18524db16a",
+                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/b2620a3c17b021a83045d73483afbf4dea39d9e5",
+                "reference": "b2620a3c17b021a83045d73483afbf4dea39d9e5",
                 "shasum": ""
             },
             "require": {
@@ -912,13 +912,13 @@
                 "konekt/user": ">=0.9.0",
                 "laracasts/flash": "~3.0",
                 "laravelcollective/html": "~5.4",
-                "php": ">=7.0.0"
+                "php": ">=7.1.3"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
                 "mockery/mockery": "^1.1",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.3"
+                "phpunit/phpunit": "6.2 - 7.4"
             },
             "type": "library",
             "autoload": {
@@ -945,7 +945,7 @@
                 "concord-box",
                 "laravel"
             ],
-            "time": "2018-11-11T13:25:09+00:00"
+            "time": "2019-01-20T07:19:18+00:00"
         },
         {
             "name": "konekt/concord",
