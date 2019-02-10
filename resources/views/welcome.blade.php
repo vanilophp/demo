@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <a href="{{ config('konekt.app_shell.ui.url') }}">Admin</a>
-                    <a href="{{ route('shop.index') }}">Shop Frontend</a>
+                    <a href="{{ route('product.index') }}">Shop Frontend</a>
                 </div>
             </div>
         </div>

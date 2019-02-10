@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Shop Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('product.index') }}">All Products</a></li>
     <li class="breadcrumb-item">Cart</li>
 @stop
 
@@ -42,7 +42,7 @@
                                     <tr>
                                         <td width="55"><img src="{{ $item->product->getThumbnailUrl() ?: '/images/product.jpg' }}" class="product-image"/></td>
                                         <td>
-                                            <a href="{{ route('shop.product', $item->product) }}">
+                                            <a href="{{ route('product.show', $item->product) }}">
                                                 {{ $item->product->getName() }}
                                             </a></td>
                                         <td>{{ format_price($item->price) }}</td>
@@ -77,7 +77,7 @@
                         </div>
 
                         <p>
-                            <a href="{{ route('shop.index') }}" class="btn-lg pl-0">Continue Shopping</a>
+                            <a href="{{ route('product.index') }}" class="btn-lg pl-0">Continue Shopping</a>
                         </p>
 
                     </div>

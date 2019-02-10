@@ -3826,22 +3826,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/category.git",
-                "reference": "c694572121573609cd41c72b41c051f607ff1375"
+                "reference": "aa3e0ecd0b8f25247510e8a92d8681c985d74832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/category/zipball/c694572121573609cd41c72b41c051f607ff1375",
-                "reference": "c694572121573609cd41c72b41c051f607ff1375",
+                "url": "https://api.github.com/repos/vanilophp/category/zipball/aa3e0ecd0b8f25247510e8a92d8681c985d74832",
+                "reference": "aa3e0ecd0b8f25247510e8a92d8681c985d74832",
                 "shasum": ""
             },
             "require": {
+                "cviebrock/eloquent-sluggable": "~4.2",
                 "konekt/concord": "~1.1",
                 "php": ">=7.0.0"
             },
             "require-dev": {
-                "cviebrock/eloquent-sluggable": "~4.2",
                 "orchestra/testbench": "^3.4.2",
-                "phpunit/phpunit": "6.2 - 7.3"
+                "phpunit/phpunit": "6.2 - 7.4"
             },
             "type": "library",
             "extra": {
@@ -3872,7 +3872,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-11-16T09:21:36+00:00"
+            "time": "2019-02-03T19:54:34+00:00"
         },
         {
             "name": "vanilo/checkout",
@@ -3983,12 +3983,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "67e3c77150d33be46ff7c4d16845affad957292c"
+                "reference": "50551649a7bb1c8fad7f46152b0004318652a00a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/67e3c77150d33be46ff7c4d16845affad957292c",
-                "reference": "67e3c77150d33be46ff7c4d16845affad957292c",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/50551649a7bb1c8fad7f46152b0004318652a00a",
+                "reference": "50551649a7bb1c8fad7f46152b0004318652a00a",
                 "shasum": ""
             },
             "require": {
@@ -4035,7 +4035,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2018-12-19T15:26:30+00:00"
+            "time": "2019-02-03T20:14:48+00:00"
         },
         {
             "name": "vanilo/order",
@@ -4154,12 +4154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/properties.git",
-                "reference": "947e61f6ce88328a3947f4acc836fcd2c208cc72"
+                "reference": "9632bb284497ed08f40038574c118fb41a63628a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/properties/zipball/947e61f6ce88328a3947f4acc836fcd2c208cc72",
-                "reference": "947e61f6ce88328a3947f4acc836fcd2c208cc72",
+                "url": "https://api.github.com/repos/vanilophp/properties/zipball/9632bb284497ed08f40038574c118fb41a63628a",
+                "reference": "9632bb284497ed08f40038574c118fb41a63628a",
                 "shasum": ""
             },
             "require": {
@@ -4200,7 +4200,7 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2018-12-19T15:26:57+00:00"
+            "time": "2019-02-03T20:12:58+00:00"
         },
         {
             "name": "vanilo/support",

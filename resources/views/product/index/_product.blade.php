@@ -1,5 +1,5 @@
 <article class="card shadow-sm">
-    <a href="{{ route('shop.product', $product) }}">
+    <a href="{{ route('product.show', $product) }}">
         <img class="card-img-top"
         @if($product->hasImage())
             src="{{ $product->getThumbnailUrl() }}"
@@ -10,7 +10,7 @@
     </a>
 
     <div class="card-body">
-        <h5><a href="{{ route('shop.product', $product) }}">{{ $product->name }}</a></h5>
+        <h5><a href="{{ route('product.show', $product) }}">{{ $product->name }}</a></h5>
         <p class="card-text">{{ format_price($product->price) }}</p>
     </div>
 </article>

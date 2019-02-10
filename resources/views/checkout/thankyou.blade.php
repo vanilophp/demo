@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Shop Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('product.index') }}">All Products</a></li>
     <li class="breadcrumb-item"><a href="{{ route('cart.show') }}">Cart</a></li>
     <li class="breadcrumb-item">Checkout</li>
     <li class="breadcrumb-item">Order Complete</li>
@@ -26,7 +26,7 @@
         </ol>
 
         <div>
-            <a href="{{ route('shop.index') }}" class="btn btn-info">All right!</a>
+            <a href="{{ route('product.index') }}" class="btn btn-info">All right!</a>
         </div>
 
     </div>

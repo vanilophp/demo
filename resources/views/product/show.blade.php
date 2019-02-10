@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Shop Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ route('product.index') }}">All Products</a></li>
     @if ($product->taxons->count())
-        @include('shop._breadcrumbs', ['taxon' => $product->taxons->first()])
+        @include('product._breadcrumbs', ['taxon' => $product->taxons->first()])
     @endif
     <li class="breadcrumb-item">{{ $product->name }}</li>
 @stop
@@ -55,11 +55,26 @@
                     <button type="submit" class="btn btn-success btn-lg" @if(!$product->price) disabled @endif>Add to cart</button>
                 </form>
 
-                <hr>
+                @unless(empty($product->propertyValues))
+                <table class="table table-sm">
+                    <tbody>
+                    @foreach($product->propertyValues as $propertyValue)
+                        <tr>
+                            <th>{{ $propertyValue->property->name }}</th>
+                            <td>{{ $propertyValue->title }}</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+                @else
+                    <hr>
+                @endunless
 
+                @unless(empty($product->description))
+                <hr>
                 <p class="text-secondary">{!!  nl2br($product->description) !!}</p>
-
                 <hr>
+                @endunless
 
             </div>
         </div>

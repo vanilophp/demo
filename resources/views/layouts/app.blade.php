@@ -37,7 +37,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('shop.index') }}">Shop</a>
+                            <a class="nav-link" href="{{ route('product.index') }}">Shop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('cart.show') }}">Cart
@@ -88,8 +88,9 @@
         <main class="py-4">
 
             <div class="container">
+                @yield('categories-menu')
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb bg-transparent">
                         @yield('breadcrumbs')
                     </ol>
                 </nav>

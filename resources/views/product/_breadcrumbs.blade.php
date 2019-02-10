@@ -1,14 +1,14 @@
 <?php
     $stack = [];
     $stack[] = [
-        'url'   => route('shop.category', [$taxon->taxonomy->slug, $taxon]),
+        'url'   => route('product.category', [$taxon->taxonomy->slug, $taxon]),
         'label' => $taxon->name
     ];
 
     $parent = $taxon;
     while ($parent = $parent->parent) {
         $stack[] = [
-            'url'   => route('shop.category', [$parent->taxonomy->slug, $parent]),
+            'url'   => route('product.category', [$parent->taxonomy->slug, $parent]),
             'label' => $parent->name
         ];
     }
