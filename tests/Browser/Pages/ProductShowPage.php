@@ -28,7 +28,7 @@ class ProductShowPage extends Page
      */
     public function url()
     {
-        return route('shop.product', $this->product);
+        return route('product.show', $this->product);
     }
 
     /**

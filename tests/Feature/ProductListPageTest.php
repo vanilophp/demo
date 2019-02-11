@@ -35,7 +35,7 @@ class ProductListPageTest extends TestCase
             'price' => 1500
         ]);
 
-        $response = $this->get(route('shop.index'));
+        $response = $this->get(route('product.index'));
 
         $response->assertStatus(200);
 
@@ -64,7 +64,7 @@ class ProductListPageTest extends TestCase
             'price' => 22000
         ]);
 
-        $response = $this->get(route('shop.index'));
+        $response = $this->get(route('product.index'));
 
         $response->assertStatus(200);
 

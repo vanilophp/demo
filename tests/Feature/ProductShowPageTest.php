@@ -21,7 +21,7 @@ class ProductShowPageTest extends TestCase
             'price' => 11500
         ]);
 
-        $response = $this->get(route('shop.product', $product));
+        $response = $this->get(route('product.show', $product));
 
         $response->assertStatus(200);
 

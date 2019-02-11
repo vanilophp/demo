@@ -15,6 +15,7 @@
         "vanilo/framework": "^0.5"
     },
     "require-dev": {
+        "doctrine/dbal": "~2.3",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "laravel/dusk": "^4.0",
