@@ -57,39 +57,46 @@ http://127.0.0.1:8000
 
 #### Product List
 
-![Product list](docs/ss04_01.png)
+![Product list](docs/ss05_01.png)
 
 #### Product Page
 
-![Product page](docs/ss04_02.png)
+![Product page](docs/ss05_02.png)
 
 #### Cart
 
-![Cart](docs/ss04_03.png)
+![Cart](docs/ss05_03.png)
 
 #### Checkout
 
-![Checkout](docs/ss04_04.png)
+![Checkout](docs/ss05_04.png)
 
 #### Order Thank You
 
-![Order Thank You](docs/ss04_05.png)
+![Order Thank You](docs/ss05_05.png)
 
 #### Order Admin
 
-![Order Admin](docs/ss04_06.png)
+![Order Admin](docs/ss05_06.png)
 
 #### Products Admin
 
-![Products Admin](docs/ss04_07.png)
+![Products Admin](docs/ss05_07.png)
 
 #### Manage Product
 
-![Manage Product](docs/ss04_08.png)
+![Manage Product](docs/ss05_08.png)
 
 #### Manage Categories
 
-![Manage Categories](docs/ss04_09.png)
+![Manage Categories](docs/ss05_09.png)
 
+#### Manage Properties
+
+![Manage Properties](docs/ss05_10.png)
+
+#### Assign Product Properties
+
+![Assign Product Properties](docs/ss05_11.png)
 
 For further details refer to the [Vanilo Documentation](https://vanilo.io/docs/).
