@@ -3761,16 +3761,16 @@
         },
         {
             "name": "vanilo/cart",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "1908d480ce38160425adbfcccf1e8f64ce4ce591"
+                "reference": "bbef4f3f4cb3f891581423f6bbb5b0be8e8c18e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/1908d480ce38160425adbfcccf1e8f64ce4ce591",
-                "reference": "1908d480ce38160425adbfcccf1e8f64ce4ce591",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/bbef4f3f4cb3f891581423f6bbb5b0be8e8c18e6",
+                "reference": "bbef4f3f4cb3f891581423f6bbb5b0be8e8c18e6",
                 "shasum": ""
             },
             "require": {
@@ -3818,20 +3818,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-11-16T09:24:00+00:00"
+            "time": "2019-02-11T21:38:35+00:00"
         },
         {
             "name": "vanilo/category",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/category.git",
-                "reference": "aa3e0ecd0b8f25247510e8a92d8681c985d74832"
+                "reference": "3786155f75d839252e0df0f426bebdc71347a2d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/category/zipball/aa3e0ecd0b8f25247510e8a92d8681c985d74832",
-                "reference": "aa3e0ecd0b8f25247510e8a92d8681c985d74832",
+                "url": "https://api.github.com/repos/vanilophp/category/zipball/3786155f75d839252e0df0f426bebdc71347a2d7",
+                "reference": "3786155f75d839252e0df0f426bebdc71347a2d7",
                 "shasum": ""
             },
             "require": {
@@ -3872,20 +3872,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2019-02-03T19:54:34+00:00"
+            "time": "2019-02-11T21:27:42+00:00"
         },
         {
             "name": "vanilo/checkout",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/checkout.git",
-                "reference": "7e44db2c63d1b92b62b59273ddc3d8ae1264e0a4"
+                "reference": "e456d5285fbc713923655aa360313683cc945a1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/7e44db2c63d1b92b62b59273ddc3d8ae1264e0a4",
-                "reference": "7e44db2c63d1b92b62b59273ddc3d8ae1264e0a4",
+                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/e456d5285fbc713923655aa360313683cc945a1d",
+                "reference": "e456d5285fbc713923655aa360313683cc945a1d",
                 "shasum": ""
             },
             "require": {
@@ -3927,20 +3927,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-11-16T09:26:35+00:00"
+            "time": "2019-02-11T21:40:54+00:00"
         },
         {
             "name": "vanilo/contracts",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "eacc2521c39d806454d102b957a227daaae56246"
+                "reference": "d568e8b87d23811260ab4c90ec149eeef95ebe88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/eacc2521c39d806454d102b957a227daaae56246",
-                "reference": "eacc2521c39d806454d102b957a227daaae56246",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/d568e8b87d23811260ab4c90ec149eeef95ebe88",
+                "reference": "d568e8b87d23811260ab4c90ec149eeef95ebe88",
                 "shasum": ""
             },
             "require": {
@@ -3975,20 +3975,20 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-11-16T09:12:00+00:00"
+            "time": "2019-02-11T21:16:23+00:00"
         },
         {
             "name": "vanilo/framework",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "3b0c17c55b3ae38768ef9f52d92fe294e4060313"
+                "reference": "e8a889877e3130b82be7b4db923359f3c6311c42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/3b0c17c55b3ae38768ef9f52d92fe294e4060313",
-                "reference": "3b0c17c55b3ae38768ef9f52d92fe294e4060313",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/e8a889877e3130b82be7b4db923359f3c6311c42",
+                "reference": "e8a889877e3130b82be7b4db923359f3c6311c42",
                 "shasum": ""
             },
             "require": {
@@ -4035,20 +4035,20 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2019-02-10T21:18:02+00:00"
+            "time": "2019-02-11T21:53:16+00:00"
         },
         {
             "name": "vanilo/order",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/order.git",
-                "reference": "d0910c623237431cd868879b6166e992d0474fc6"
+                "reference": "e70c283b3bb35ae99d5c83bd3c7a13554c01c70d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/order/zipball/d0910c623237431cd868879b6166e992d0474fc6",
-                "reference": "d0910c623237431cd868879b6166e992d0474fc6",
+                "url": "https://api.github.com/repos/vanilophp/order/zipball/e70c283b3bb35ae99d5c83bd3c7a13554c01c70d",
+                "reference": "e70c283b3bb35ae99d5c83bd3c7a13554c01c70d",
                 "shasum": ""
             },
             "require": {
@@ -4092,20 +4092,20 @@
                 "order",
                 "vanilo"
             ],
-            "time": "2018-11-16T09:28:56+00:00"
+            "time": "2019-02-11T21:43:03+00:00"
         },
         {
             "name": "vanilo/product",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/product.git",
-                "reference": "2c08dec38c1ef93e05fca109e7e53b55dcce7b63"
+                "reference": "a840736646cc0dfb73e317edb38b092821588945"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/product/zipball/2c08dec38c1ef93e05fca109e7e53b55dcce7b63",
-                "reference": "2c08dec38c1ef93e05fca109e7e53b55dcce7b63",
+                "url": "https://api.github.com/repos/vanilophp/product/zipball/a840736646cc0dfb73e317edb38b092821588945",
+                "reference": "a840736646cc0dfb73e317edb38b092821588945",
                 "shasum": ""
             },
             "require": {
@@ -4146,20 +4146,20 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2018-11-16T09:17:56+00:00"
+            "time": "2019-02-11T21:22:59+00:00"
         },
         {
             "name": "vanilo/properties",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/properties.git",
-                "reference": "9632bb284497ed08f40038574c118fb41a63628a"
+                "reference": "433186c17dd6398bcf0b3baf4ab1a98500f72515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/properties/zipball/9632bb284497ed08f40038574c118fb41a63628a",
-                "reference": "9632bb284497ed08f40038574c118fb41a63628a",
+                "url": "https://api.github.com/repos/vanilophp/properties/zipball/433186c17dd6398bcf0b3baf4ab1a98500f72515",
+                "reference": "433186c17dd6398bcf0b3baf4ab1a98500f72515",
                 "shasum": ""
             },
             "require": {
@@ -4200,20 +4200,20 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2019-02-03T20:12:58+00:00"
+            "time": "2019-02-11T21:31:43+00:00"
         },
         {
             "name": "vanilo/support",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "dc1f28b688c4ccfdcc2ed44810c7772a49105081"
+                "reference": "2cc23a2aacd5032afc86a1d4bde8fb3b06334209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/dc1f28b688c4ccfdcc2ed44810c7772a49105081",
-                "reference": "dc1f28b688c4ccfdcc2ed44810c7772a49105081",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/2cc23a2aacd5032afc86a1d4bde8fb3b06334209",
+                "reference": "2cc23a2aacd5032afc86a1d4bde8fb3b06334209",
                 "shasum": ""
             },
             "require": {
@@ -4252,7 +4252,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2018-11-16T09:15:09+00:00"
+            "time": "2019-02-11T21:19:04+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
