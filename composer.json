@@ -12,7 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "vanilo/framework": "^0.5"
+        "vanilo/framework": "0.5.*"
     },
     "require-dev": {
         "doctrine/dbal": "~2.3",
