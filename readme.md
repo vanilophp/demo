@@ -1,8 +1,8 @@
 # Vanilo Demo Application
 
-![v0.5](https://img.shields.io/badge/version-0.5-green.svg?style=flat-square)
+![v1.0-dev](https://img.shields.io/badge/version-1.0--dev-orange.svg?style=flat-square)
 
-This is a minimalistic Laravel 5.7 application that demonstrates how to build a simple storefront
+This is a minimalistic Laravel 5.8 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains Vanilo's admin panel.
 
 > The app uses the default Bootstrap theme that comes with Laravel.
