@@ -21,7 +21,7 @@ class CartTest extends DuskTestCase
 
     private $productB;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
