@@ -2,26 +2,37 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Http\Requests\CheckoutRequest;
 use Konekt\Address\Models\CountryProxy;
-use Vanilo\Cart\Facades\Cart;
-use Vanilo\Checkout\Facades\Checkout;
+use Vanilo\Cart\Contracts\Cart;
+use Vanilo\Checkout\Contracts\Checkout;
 use Vanilo\Order\Contracts\OrderFactory;
 
 class CheckoutController extends Controller
 {
+    /** @var Checkout */
+    private $checkout;
+
+    /** @var Cart */
+    private $cart;
+
+    public function __construct(Checkout $checkout, Cart $cart)
+    {
+        $this->checkout = $checkout;
+        $this->cart     = $cart;
+    }
+
     public function show()
     {
         $checkout = false;
 
-        if (Cart::isNotEmpty()) {
-            $checkout = Checkout::getFacadeRoot();
+        if ($this->cart->isNotEmpty()) {
+            $checkout = $this->checkout;
             if ($old = old()) {
                 $checkout->update($old);
             }
 
-            $checkout->setCart(Cart::model());
+            $checkout->setCart($this->cart);
         }
 
         return view('checkout.show', [
@@ -32,12 +43,11 @@ class CheckoutController extends Controller
 
     public function submit(CheckoutRequest $request, OrderFactory $orderFactory)
     {
-        $checkout = Checkout::getFacadeRoot();
-        $checkout->update($request->all());
-        $checkout->setCart(Cart::model());
+        $this->checkout->update($request->all());
+        $this->checkout->setCart(Cart::model());
 
-        $order = $orderFactory->createFromCheckout($checkout);
-        Cart::destroy();
+        $order = $orderFactory->createFromCheckout($this->checkout);
+        $this->cart->destroy();
 
         return view('checkout.thankyou', ['order' => $order]);
     }

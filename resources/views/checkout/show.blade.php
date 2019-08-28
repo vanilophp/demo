@@ -46,6 +46,21 @@
 
                                 <hr>
 
+                                <div class="form-group">
+
+                                    <label class="">{{ __('Order Notes') }}</label>
+                                    {{ Form::textarea('notes', null, [
+                                            'class' => 'form-control' . ($errors->has('notes') ? ' is-invalid' : ''),
+                                            'rows' => 3
+                                        ])
+                                    }}
+                                    @if ($errors->has('notes'))
+                                        <div class="invalid-feedback">{{ $errors->first('notes') }}</div>
+                                    @endif
+                                </div>
+
+                                <hr>
+
                                 <div>
                                     <button class="btn btn-lg btn-success">Submit Order</button>
                                 </div>
