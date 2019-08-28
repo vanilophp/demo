@@ -13,8 +13,6 @@ use Vanilo\Product\Models\ProductState;
 
 class CartTest extends DuskTestCase
 {
-    use DatabaseMigrations;
-
     private $user;
 
     private $productA;

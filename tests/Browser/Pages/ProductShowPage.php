@@ -40,6 +40,8 @@ class ProductShowPage extends Page
      */
     public function assert(Browser $browser)
     {
+//        dump($this->url());
+//        $browser->dump();
         $browser->assertSee($this->product->name);
     }
 

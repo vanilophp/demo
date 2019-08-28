@@ -15,8 +15,6 @@ use Vanilo\Product\Models\ProductState;
 
 class CheckoutTest extends DuskTestCase
 {
-    use DatabaseMigrations;
-
     private $user;
 
     private $product;
