@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CheckoutRequest;
 use Konekt\Address\Models\CountryProxy;
-use Vanilo\Cart\Contracts\Cart;
+use Vanilo\Cart\Contracts\CartManager;
 use Vanilo\Checkout\Contracts\Checkout;
 use Vanilo\Order\Contracts\OrderFactory;
 
@@ -16,7 +16,7 @@ class CheckoutController extends Controller
     /** @var Cart */
     private $cart;
 
-    public function __construct(Checkout $checkout, Cart $cart)
+    public function __construct(Checkout $checkout, CartManager $cart)
     {
         $this->checkout = $checkout;
         $this->cart     = $cart;
@@ -44,7 +44,8 @@ class CheckoutController extends Controller
     public function submit(CheckoutRequest $request, OrderFactory $orderFactory)
     {
         $this->checkout->update($request->all());
-        $this->checkout->setCart(Cart::model());
+        $this->checkout->setCustomAttribute('notes', $request->get('notes'));
+        $this->checkout->setCart($this->cart);
 
         $order = $orderFactory->createFromCheckout($this->checkout);
         $this->cart->destroy();
