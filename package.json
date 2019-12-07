@@ -11,13 +11,20 @@
     },
     "devDependencies": {
         "axios": "^0.18",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "bootstrap": "^4.3.1",
         "cross-env": "^5.1",
         "jquery": "^3.4",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
-        "vue": "^2.5.7",
-        "babel-plugin-transform-object-rest-spread": "^6.26.0"
+        "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "js-yaml": "3.13.1",
+        "mem": "^4.0.0",
+        "serialize-javascript": "2.1.1",
+        "set-value": "2.0.1",
+        "webpack-dev-server": "^3.1.11"
     }
 }
