@@ -4814,16 +4814,16 @@
         },
         {
             "name": "vanilo/cart",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "1717f04eaf113206ae7b0859a132819b2da3e3dc"
+                "reference": "d87775a1cd77cc19361ae4cfe9f3105aaf28356b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/1717f04eaf113206ae7b0859a132819b2da3e3dc",
-                "reference": "1717f04eaf113206ae7b0859a132819b2da3e3dc",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/d87775a1cd77cc19361ae4cfe9f3105aaf28356b",
+                "reference": "d87775a1cd77cc19361ae4cfe9f3105aaf28356b",
                 "shasum": ""
             },
             "require": {
@@ -4868,7 +4868,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2019-11-25T21:17:33+00:00"
+            "time": "2019-12-21T10:17:14+00:00"
         },
         {
             "name": "vanilo/category",
