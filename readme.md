@@ -55,6 +55,8 @@ Run the site with `php artisan serve` and access the site:
 
 http://127.0.0.1:8000
 
+Products are not seeded so open the admin panel first to add some products. 
+
 #### Product List
 
 ![Product list](docs/ss05_01.png)
