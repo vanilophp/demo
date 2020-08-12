@@ -23,7 +23,7 @@
     "dependencies": {
         "js-yaml": "^3.13.1",
         "mem": "^4.0.0",
-        "serialize-javascript": "^2.1.1",
+        "serialize-javascript": "^3.1.0",
         "set-value": "^2.0.1",
         "webpack-dev-server": "^3.1.11"
     }
