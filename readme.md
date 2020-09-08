@@ -1,6 +1,6 @@
 # Vanilo Demo Application
 
-![v1.1](https://img.shields.io/badge/version-1.1-green.svg?style=flat-square)
+![v1.1.1](https://img.shields.io/badge/version-1.1.1-green.svg?style=flat-square)
 
 This is a minimalistic Laravel 6 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains Vanilo's admin panel.
@@ -11,7 +11,7 @@ using the Vanilo framework. It also contains Vanilo's admin panel.
 
 **1. Get the app**:
 
-Either download and decompress [the zipball](https://github.com/vanilophp/demo/archive/master.zip)
+Either download and decompress [the zipball](https://github.com/vanilophp/demo/archive/1.x.zip)
 or use git:
 
 ```bash
