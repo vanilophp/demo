@@ -1,7 +1,10 @@
 # Vanilo Demo Application
 
 ![v2.0-dev](https://img.shields.io/badge/version-2.0--dev-green.svg?style=flat-square)
-![BROKEN](https://img.shields.io/badge/use%20branch%201.x-master%20is%20broken%2Funstable-red.svg?style=flat-square)
+![unstable](https://img.shields.io/badge/branch-unstable-red.svg?style=flat-square)
+
+> This is the dev version of Vanilo 2 Demo. This version hasn't been released yet.
+> For a stable version go to the `1.x` branch.
 
 This is a minimalistic Laravel 7 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains Vanilo's admin panel.

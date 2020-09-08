@@ -5996,12 +5996,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "5f5ec185c9afe4c1023c6213314cad31b616595f"
+                "reference": "c57e3841fbc455bfac76d991f39bfe40542a0d08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/5f5ec185c9afe4c1023c6213314cad31b616595f",
-                "reference": "5f5ec185c9afe4c1023c6213314cad31b616595f",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/c57e3841fbc455bfac76d991f39bfe40542a0d08",
+                "reference": "c57e3841fbc455bfac76d991f39bfe40542a0d08",
                 "shasum": ""
             },
             "require": {
@@ -6048,7 +6048,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2020-05-24T22:16:54+00:00"
+            "time": "2020-09-08T18:45:56+00:00"
         },
         {
             "name": "vanilo/order",
