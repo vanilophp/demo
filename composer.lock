@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "190eedbc56bccf5ed720723a9dfbba54",
+    "content-hash": "d1dabbb0471ed4aaccb43bcbbc4328f4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1122,16 +1122,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "shasum": ""
             },
             "require": {
@@ -1144,15 +1144,15 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
             },
             "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -1189,7 +1189,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "time": "2020-09-30T07:37:11+00:00"
         },
         {
             "name": "intervention/image",
@@ -1263,28 +1263,28 @@
         },
         {
             "name": "konekt/acl",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/acl.git",
-                "reference": "41e1659889125f12ba81a5c16cebb47c37ccdb71"
+                "reference": "b2e4e293d4f7915d694fcdb4e22347b00c10c7df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/acl/zipball/41e1659889125f12ba81a5c16cebb47c37ccdb71",
-                "reference": "41e1659889125f12ba81a5c16cebb47c37ccdb71",
+                "url": "https://api.github.com/repos/artkonekt/acl/zipball/b2e4e293d4f7915d694fcdb4e22347b00c10c7df",
+                "reference": "b2e4e293d4f7915d694fcdb4e22347b00c10c7df",
                 "shasum": ""
             },
             "require": {
-                "illuminate/auth": "~5.5|~6.0|~7.0",
-                "illuminate/container": "~5.5|~6.0|~7.0",
-                "illuminate/contracts": "~5.5|~6.0|~7.0",
-                "illuminate/database": "~5.5|~6.0|~7.0",
+                "illuminate/auth": "~5.5|~6.0|~7.0|~8.0",
+                "illuminate/container": "~5.5|~6.0|~7.0|~8.0",
+                "illuminate/contracts": "~5.5|~6.0|~7.0|~8.0",
+                "illuminate/database": "~5.5|~6.0|~7.0|~8.0",
                 "konekt/concord": "~1.5",
                 "php": "^7.2"
             },
             "require-dev": {
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
+                "orchestra/testbench": "~3.5|~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "6.2 - 7.5|~8.0|~9.0"
             },
             "type": "library",
@@ -1312,7 +1312,7 @@
                     "homepage": "https://github.com/fulopattila122"
                 }
             ],
-            "description": "Concord Module for Permission handling (Laravel 5.5+)",
+            "description": "Concord Module for Permission handling (Laravel 5.5 - 8)",
             "homepage": "https://github.com/artkonekt/acl",
             "keywords": [
                 "acl",
@@ -1323,34 +1323,34 @@
                 "security",
                 "spatie"
             ],
-            "time": "2020-03-14T21:46:28+00:00"
+            "time": "2020-09-13T09:00:52+00:00"
         },
         {
             "name": "konekt/address",
-            "version": "1.2.1",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/address.git",
-                "reference": "92b3ed5a00c7ab987772defb241106033d1029f3"
+                "reference": "6ade8502adeecffe80e8dca7d5d73980deb4aaff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/address/zipball/92b3ed5a00c7ab987772defb241106033d1029f3",
-                "reference": "92b3ed5a00c7ab987772defb241106033d1029f3",
+                "url": "https://api.github.com/repos/artkonekt/address/zipball/6ade8502adeecffe80e8dca7d5d73980deb4aaff",
+                "reference": "6ade8502adeecffe80e8dca7d5d73980deb4aaff",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "~2.3, !=2.10.3",
-                "konekt/concord": "~1.5",
-                "konekt/enum": "~2.1",
+                "konekt/concord": "~1.6",
+                "konekt/enum": "~3.0",
                 "konekt/enum-eloquent": "~1.5",
-                "php": "^7.2"
+                "php": "^7.3"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
                 "mockery/mockery": "^1.1",
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
-                "phpunit/phpunit": "6.2 - 7.5|~8.0|~9.0"
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
             "autoload": {
@@ -1370,7 +1370,7 @@
                 }
             ],
             "description": "Laravel module for handling countries, cities, addresses, people and organizations",
-            "time": "2020-09-09T08:49:09+00:00"
+            "time": "2020-10-02T20:11:24+00:00"
         },
         {
             "name": "konekt/appshell",
@@ -1378,34 +1378,34 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/appshell.git",
-                "reference": "d2911938ee7e6521506d232c1105b86c009e072c"
+                "reference": "b1d32d41c300994dd16db2c572c0ff34e6135449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/d2911938ee7e6521506d232c1105b86c009e072c",
-                "reference": "d2911938ee7e6521506d232c1105b86c009e072c",
+                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/b1d32d41c300994dd16db2c572c0ff34e6135449",
+                "reference": "b1d32d41c300994dd16db2c572c0ff34e6135449",
                 "shasum": ""
             },
             "require": {
-                "cviebrock/eloquent-sluggable": "~6.0 | ~7.0",
+                "cviebrock/eloquent-sluggable": "6 - 8",
                 "davejamesmiller/laravel-breadcrumbs": "^5.3",
                 "ext-json": "*",
                 "konekt/acl": "~1.3",
-                "konekt/address": "^1.2.1",
+                "konekt/address": "2.0.x-dev",
                 "konekt/concord": "~1.5",
-                "konekt/customer": "~1.2",
+                "konekt/customer": "2.0.x-dev",
                 "konekt/enum-eloquent": "~1.5",
-                "konekt/gears": "~1.3",
+                "konekt/gears": "1.6.x-dev",
                 "konekt/menu": "^1.6.2",
-                "konekt/user": "~1.4",
+                "konekt/user": "2.0.x-dev",
                 "laracasts/flash": "~3.0",
                 "laravelcollective/html": "~6.0",
-                "php": "^7.2"
+                "php": "^7.3"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
                 "mockery/mockery": "~1.2.3 || ^1.3.1",
-                "orchestra/testbench": "~4.0|~5.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "^8.3 || ^9.0"
             },
             "type": "library",
@@ -1438,31 +1438,31 @@
                 "concord-box",
                 "laravel"
             ],
-            "time": "2020-09-09T16:55:05+00:00"
+            "time": "2020-10-02T20:46:16+00:00"
         },
         {
             "name": "konekt/concord",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/concord.git",
-                "reference": "4374bdd0a8d7ef7f9b168970ee0c16877512b286"
+                "reference": "a4926493dbfd7b45daa05f34eff5d123cb8749ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/concord/zipball/4374bdd0a8d7ef7f9b168970ee0c16877512b286",
-                "reference": "4374bdd0a8d7ef7f9b168970ee0c16877512b286",
+                "url": "https://api.github.com/repos/artkonekt/concord/zipball/a4926493dbfd7b45daa05f34eff5d123cb8749ad",
+                "reference": "a4926493dbfd7b45daa05f34eff5d123cb8749ad",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "~5.5|~6.0|~7.0",
-                "illuminate/support": "~5.5|~6.0|~7.0",
+                "illuminate/console": "~5.5|~6.0|~7.0|~8.0",
+                "illuminate/support": "~5.5|~6.0|~7.0|~8.0",
                 "konekt/enum": "~2.1|~3.0",
                 "konekt/enum-eloquent": "^1.3.1",
                 "php": "^7.2"
             },
             "require-dev": {
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
+                "orchestra/testbench": "~3.5|~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "6.0 - 7.5|~8.0|~9.0"
             },
             "type": "library",
@@ -1496,33 +1496,34 @@
                 }
             ],
             "description": "Concord is a Laravel Extension for building modular Laravel Applications",
-            "time": "2020-08-31T10:30:21+00:00"
+            "time": "2020-09-12T08:16:30+00:00"
         },
         {
             "name": "konekt/customer",
-            "version": "1.2.0",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/customer.git",
-                "reference": "b87ac6dc57695f4fe120116deaa1dd937ba3ebea"
+                "reference": "b10ca8c3e95b22fa03e9f962344bcdaa2b18d264"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/customer/zipball/b87ac6dc57695f4fe120116deaa1dd937ba3ebea",
-                "reference": "b87ac6dc57695f4fe120116deaa1dd937ba3ebea",
+                "url": "https://api.github.com/repos/artkonekt/customer/zipball/b10ca8c3e95b22fa03e9f962344bcdaa2b18d264",
+                "reference": "b10ca8c3e95b22fa03e9f962344bcdaa2b18d264",
                 "shasum": ""
             },
             "require": {
-                "konekt/address": "~1.2",
-                "konekt/concord": "~1.5",
-                "konekt/user": "~1.4",
-                "php": "^7.2"
+                "konekt/address": "2.0.x-dev",
+                "konekt/concord": "~1.6",
+                "konekt/enum": "~3.0",
+                "konekt/user": "2.0.x-dev",
+                "php": "^7.3"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
                 "mockery/mockery": "^1.1",
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
-                "phpunit/phpunit": "6.2 - 7.5|~8.0|~9.0"
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
             "autoload": {
@@ -1546,27 +1547,27 @@
                 "customer",
                 "laravel"
             ],
-            "time": "2020-03-14T20:56:51+00:00"
+            "time": "2020-10-02T20:26:28+00:00"
         },
         {
             "name": "konekt/enum",
-            "version": "2.3.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/enum.git",
-                "reference": "e05d1bccfb77e54b74ad4e3d3bd9d662c62316d7"
+                "reference": "34e770b69bc8a1713c3845dbfa51e389118b9a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/enum/zipball/e05d1bccfb77e54b74ad4e3d3bd9d662c62316d7",
-                "reference": "e05d1bccfb77e54b74ad4e3d3bd9d662c62316d7",
+                "url": "https://api.github.com/repos/artkonekt/enum/zipball/34e770b69bc8a1713c3845dbfa51e389118b9a56",
+                "reference": "34e770b69bc8a1713c3845dbfa51e389118b9a56",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": "^7.1.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "6.2 - 8"
+                "phpunit/phpunit": "7 - 8"
             },
             "type": "library",
             "autoload": {
@@ -1590,29 +1591,29 @@
                 "enum",
                 "konekt"
             ],
-            "time": "2019-06-25T17:08:18+00:00"
+            "time": "2019-06-24T20:39:03+00:00"
         },
         {
             "name": "konekt/enum-eloquent",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/enum-eloquent.git",
-                "reference": "ece65ed54a5ba78265f5b91090e9c33621e6e43b"
+                "reference": "4f6134f83e41da5501c0790584f9bc385f5b64b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/enum-eloquent/zipball/ece65ed54a5ba78265f5b91090e9c33621e6e43b",
-                "reference": "ece65ed54a5ba78265f5b91090e9c33621e6e43b",
+                "url": "https://api.github.com/repos/artkonekt/enum-eloquent/zipball/4f6134f83e41da5501c0790584f9bc385f5b64b8",
+                "reference": "4f6134f83e41da5501c0790584f9bc385f5b64b8",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "5.*|6.*|7.*",
+                "illuminate/database": "5.*|6.*|7.*|8.*",
                 "konekt/enum": "^2.0.2 || ^3.0.0",
                 "php": "^7.1.3"
             },
             "require-dev": {
-                "illuminate/events": "5.*|6.*|7.*",
+                "illuminate/events": "5.*|6.*|7.*|8.*",
                 "ocramius/package-versions": "^1.2",
                 "phpunit/phpunit": "6.3 - 7.5|~8.0"
             },
@@ -1658,32 +1659,32 @@
                 "konekt",
                 "laravel"
             ],
-            "time": "2020-03-05T23:07:16+00:00"
+            "time": "2020-09-12T07:02:31+00:00"
         },
         {
             "name": "konekt/gears",
-            "version": "1.4.1",
+            "version": "1.6.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/gears.git",
-                "reference": "cd2839b80de478a743e9e142be742e9cd049fd9a"
+                "reference": "00aa67d0a9c11e4d5ba58bbb74076d1595bcc151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/gears/zipball/cd2839b80de478a743e9e142be742e9cd049fd9a",
-                "reference": "cd2839b80de478a743e9e142be742e9cd049fd9a",
+                "url": "https://api.github.com/repos/artkonekt/gears/zipball/00aa67d0a9c11e4d5ba58bbb74076d1595bcc151",
+                "reference": "00aa67d0a9c11e4d5ba58bbb74076d1595bcc151",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "~5.5|~6.0|~7.0",
-                "illuminate/support": "~5.5|~6.0|~7.0",
-                "konekt/enum": "~2.1",
+                "illuminate/database": "~6.0|~7.0|~8.0",
+                "illuminate/support": "~6.0|~7.0|~8.0",
+                "konekt/enum": "~2.1|~3.0",
                 "php": "^7.2"
             },
             "require-dev": {
-                "illuminate/events": "~5.5|~6.0|~7.0",
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
-                "phpunit/phpunit": "6.2 - 7.5|~8.0|~9.0"
+                "illuminate/events": "~6.0|~7.0|~8.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "8.0|~9.0"
             },
             "type": "library",
             "extra": {
@@ -1719,31 +1720,31 @@
                 "laravel",
                 "preferences"
             ],
-            "time": "2020-08-31T07:06:05+00:00"
+            "time": "2020-10-02T20:41:51+00:00"
         },
         {
             "name": "konekt/laravel-migration-compatibility",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/laravel-migration-compatibility.git",
-                "reference": "9d7885f6394a410de97e640bec09755b3d4addb2"
+                "reference": "4cf83d0162c5906bb795754cbfe553253cb5d9db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/laravel-migration-compatibility/zipball/9d7885f6394a410de97e640bec09755b3d4addb2",
-                "reference": "9d7885f6394a410de97e640bec09755b3d4addb2",
+                "url": "https://api.github.com/repos/artkonekt/laravel-migration-compatibility/zipball/4cf83d0162c5906bb795754cbfe553253cb5d9db",
+                "reference": "4cf83d0162c5906bb795754cbfe553253cb5d9db",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo": "*",
-                "illuminate/database": "~5.5|~6.0|~7.0",
+                "illuminate/database": "~5.5|~6.0|~7.0|~8.0",
                 "konekt/enum": "~2.1 | ~3.0",
                 "php": "^7.2"
             },
             "require-dev": {
-                "orchestra/database": "~3.5|~4.0|~5.0",
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
+                "orchestra/database": "~3.5|~4.0|~5.0|~6.0@dev",
+                "orchestra/testbench": "~3.5|~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "6.0 - 7.5|~8.0|~9.0"
             },
             "type": "library",
@@ -1777,30 +1778,30 @@
                 "laravel",
                 "migration"
             ],
-            "time": "2020-03-13T22:26:50+00:00"
+            "time": "2020-09-12T20:03:41+00:00"
         },
         {
             "name": "konekt/menu",
-            "version": "1.6.2",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/menu.git",
-                "reference": "5542bf28604dbb6b4fda1cbb3f7ade6b1e9ca39a"
+                "reference": "c4a33467661ca2c1c10a840ca3b7a38df7cb2625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/menu/zipball/5542bf28604dbb6b4fda1cbb3f7ade6b1e9ca39a",
-                "reference": "5542bf28604dbb6b4fda1cbb3f7ade6b1e9ca39a",
+                "url": "https://api.github.com/repos/artkonekt/menu/zipball/c4a33467661ca2c1c10a840ca3b7a38df7cb2625",
+                "reference": "c4a33467661ca2c1c10a840ca3b7a38df7cb2625",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.5|~6.0|~7.0",
-                "illuminate/view": "~5.5|~6.0|~7.0",
+                "illuminate/support": "~5.5|~6.0|~7.0|~8.0",
+                "illuminate/view": "~5.5|~6.0|~7.0|~8.0",
                 "php": "^7.1.3"
             },
             "require-dev": {
                 "mockery/mockery": "~1.0",
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
+                "orchestra/testbench": "~3.5|~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "6.2 - 7.5|~8.0|~9.0"
             },
             "type": "library",
@@ -1833,38 +1834,40 @@
                     "email": "mrl.8081@gmail.com"
                 }
             ],
-            "description": "Menus in Laravel 5 - 7",
+            "description": "Menus in Laravel 5 - 8",
             "keywords": [
                 "laravel"
             ],
-            "time": "2020-03-15T18:15:11+00:00"
+            "time": "2020-09-13T08:28:04+00:00"
         },
         {
             "name": "konekt/user",
-            "version": "1.4.0",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/user.git",
-                "reference": "a594a1fa9b9ec828419617e8ad27ce31ac3c4f5b"
+                "reference": "771b19797e6d06ed2afb0d1c0b4481189c1d43ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/user/zipball/a594a1fa9b9ec828419617e8ad27ce31ac3c4f5b",
-                "reference": "a594a1fa9b9ec828419617e8ad27ce31ac3c4f5b",
+                "url": "https://api.github.com/repos/artkonekt/user/zipball/771b19797e6d06ed2afb0d1c0b4481189c1d43ed",
+                "reference": "771b19797e6d06ed2afb0d1c0b4481189c1d43ed",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "^2.9",
+                "doctrine/dbal": "^2.9, !=2.10.3",
                 "ext-gd": "*",
-                "konekt/address": "~1.2",
-                "konekt/concord": "~1.5",
+                "konekt/address": "~2.0",
+                "konekt/concord": "~1.6",
+                "konekt/enum": "~3.0",
                 "konekt/laravel-migration-compatibility": "~1.2",
-                "php": "^7.2"
+                "php": "^7.3"
             },
             "require-dev": {
+                "laravel/legacy-factories": "^1.0.4",
                 "mockery/mockery": "^1.2",
-                "orchestra/testbench": "~3.5|~4.0|~5.0",
-                "phpunit/phpunit": "6.2 - 7.5|~8.0|~9.0"
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
             "autoload": {
@@ -1889,7 +1892,7 @@
                 "laravel",
                 "user"
             ],
-            "time": "2020-03-14T19:49:50+00:00"
+            "time": "2020-09-25T13:31:28+00:00"
         },
         {
             "name": "laracasts/flash",
@@ -2507,16 +2510,16 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/mime-type-detection.git",
-                "reference": "fda190b62b962d96a069fcc414d781db66d65b69"
+                "reference": "ea2fbfc988bade315acd5967e6d02274086d0f28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/fda190b62b962d96a069fcc414d781db66d65b69",
-                "reference": "fda190b62b962d96a069fcc414d781db66d65b69",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ea2fbfc988bade315acd5967e6d02274086d0f28",
+                "reference": "ea2fbfc988bade315acd5967e6d02274086d0f28",
                 "shasum": ""
             },
             "require": {
@@ -2544,27 +2547,27 @@
                 }
             ],
             "description": "Mime-type detection for Flysystem",
-            "time": "2020-08-09T10:34:01+00:00"
+            "time": "2020-09-21T18:10:53+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
-            "version": "1.2.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "6373eefe0b3274d7b702d81f2c99aa977ff97dc2"
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/6373eefe0b3274d7b702d81f2c99aa977ff97dc2",
-                "reference": "6373eefe0b3274d7b702d81f2c99aa977ff97dc2",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "myclabs/php-enum": "^1.5",
                 "php": ">= 7.1",
-                "psr/http-message": "^1.0"
+                "psr/http-message": "^1.0",
+                "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
                 "ext-zip": "*",
@@ -2588,12 +2591,12 @@
                     "email": "pabs@pablotron.org"
                 },
                 {
-                    "name": "Jesse Donat",
-                    "email": "donatj@gmail.com"
-                },
-                {
                     "name": "Jonatan Männchen",
                     "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
                 },
                 {
                     "name": "András Kolesár",
@@ -2605,7 +2608,7 @@
                 "stream",
                 "zip"
             ],
-            "time": "2019-07-17T11:01:58+00:00"
+            "time": "2020-05-30T13:11:16+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2925,44 +2928,6 @@
                 "serialize"
             ],
             "time": "2020-09-06T17:02:15+00:00"
-        },
-        {
-            "name": "org_heigl/ghostscript",
-            "version": "2.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/heiglandreas/Org_Heigl_Ghostscript.git",
-                "reference": "2bcd115f047589c28243a66e6bbea993fc91da21"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/heiglandreas/Org_Heigl_Ghostscript/zipball/2bcd115f047589c28243a66e6bbea993fc91da21",
-                "reference": "2bcd115f047589c28243a66e6bbea993fc91da21",
-                "shasum": ""
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpdocumentor/phpdocumentor": "^2.9",
-                "phpunit/phpunit": "^5.5||^6.0||^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Org_Heigl\\Ghostscript\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andreas Heigl",
-                    "email": "andreas@heigl.org"
-                }
-            ],
-            "description": "A PHP-Wrapper around the Ghostscript-CLI",
-            "time": "2018-02-22T08:37:21+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3666,31 +3631,30 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.19.3",
+            "version": "8.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "7d6b634e0967f7399e1c7cd7b02c8b7da6f80c2d"
+                "reference": "72b408972ba0b994eb52f39d38169621699e549b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/7d6b634e0967f7399e1c7cd7b02c8b7da6f80c2d",
-                "reference": "7d6b634e0967f7399e1c7cd7b02c8b7da6f80c2d",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/72b408972ba0b994eb52f39d38169621699e549b",
+                "reference": "72b408972ba0b994eb52f39d38169621699e549b",
                 "shasum": ""
             },
             "require": {
                 "ext-fileinfo": "*",
                 "ext-json": "*",
-                "illuminate/bus": "~5.8.35|^6.0|^7.0",
-                "illuminate/console": "~5.8.35|^6.0|^7.0",
-                "illuminate/database": "~5.8.35|^6.0|^7.0",
-                "illuminate/pipeline": "~5.8.35|^6.0|^7.0",
-                "illuminate/support": "~5.8.35|^6.0|^7.0",
-                "league/flysystem": "^1.0.8",
-                "maennchen/zipstream-php": "^1.0",
-                "php": "^7.2",
+                "illuminate/bus": "^6.18|^7.0|^8.0",
+                "illuminate/console": "^6.18|^7.0|^8.0",
+                "illuminate/database": "^6.18|^7.0|^8.0",
+                "illuminate/pipeline": "^6.18|^7.0|^8.0",
+                "illuminate/support": "^6.18|^7.0|^8.0",
+                "league/flysystem": "^1.0.64",
+                "maennchen/zipstream-php": "^1.0|^2.0",
+                "php": "^7.4",
                 "spatie/image": "^1.4.0",
-                "spatie/pdf-to-image": "^2.0",
                 "spatie/temporary-directory": "^1.1",
                 "symfony/console": "^4.4|^5.0"
             },
@@ -3698,18 +3662,23 @@
                 "php-ffmpeg/php-ffmpeg": "<0.6.1"
             },
             "require-dev": {
+                "aws/aws-sdk-php": "^3.133.11",
                 "doctrine/dbal": "^2.5.2",
                 "ext-pdo_sqlite": "*",
-                "guzzlehttp/guzzle": "^6.3",
-                "league/flysystem-aws-s3-v3": "^1.0.13",
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^3.8|^4.0|^5.0",
-                "phpunit/phpunit": "^8.0",
-                "spatie/phpunit-snapshot-assertions": "^2.0"
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "league/flysystem-aws-s3-v3": "^1.0.23",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "php-ffmpeg/php-ffmpeg": "^0.16.0",
+                "phpunit/phpunit": "^9.1",
+                "spatie/pdf-to-image": "^2.0",
+                "spatie/phpunit-snapshot-assertions": "^4.0"
             },
             "suggest": {
                 "league/flysystem-aws-s3-v3": "Required to use AWS S3 file storage",
-                "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails"
+                "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails",
+                "spatie/pdf-to-image": "Required for generating thumbsnails of PDFs and SVGs"
             },
             "type": "library",
             "extra": {
@@ -3732,7 +3701,7 @@
                 {
                     "name": "Freek Van der Herten",
                     "email": "freek@spatie.be",
-                    "homepage": "https://murze.be",
+                    "homepage": "https://spatie.be",
                     "role": "Developer"
                 }
             ],
@@ -3748,58 +3717,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2020-03-09T16:43:55+00:00"
-        },
-        {
-            "name": "spatie/pdf-to-image",
-            "version": "v2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/pdf-to-image.git",
-                "reference": "6718a89065c34dfadfbb2ca61eb1c3e6a956e503"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/pdf-to-image/zipball/6718a89065c34dfadfbb2ca61eb1c3e6a956e503",
-                "reference": "6718a89065c34dfadfbb2ca61eb1c3e6a956e503",
-                "shasum": ""
-            },
-            "require": {
-                "org_heigl/ghostscript": "^2.2",
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.2",
-                "spatie/temporary-directory": "^1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\PdfToImage\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Convert a pdf to an image",
-            "homepage": "https://github.com/spatie/pdf-to-image",
-            "keywords": [
-                "convert",
-                "image",
-                "pdf",
-                "pdf-to-image",
-                "spatie"
-            ],
-            "time": "2017-06-20T05:58:45+00:00"
+            "time": "2020-10-05T21:54:57+00:00"
         },
         {
             "name": "spatie/temporary-directory",
@@ -3911,16 +3829,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.1.5",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "186f395b256065ba9b890c0a4e48a91d598fa2cf"
+                "reference": "04c3a31fe8ea94b42c9e2d1acc93d19782133b00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/186f395b256065ba9b890c0a4e48a91d598fa2cf",
-                "reference": "186f395b256065ba9b890c0a4e48a91d598fa2cf",
+                "url": "https://api.github.com/repos/symfony/console/zipball/04c3a31fe8ea94b42c9e2d1acc93d19782133b00",
+                "reference": "04c3a31fe8ea94b42c9e2d1acc93d19782133b00",
                 "shasum": ""
             },
             "require": {
@@ -3986,7 +3904,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2020-09-02T07:07:40+00:00"
+            "time": "2020-09-18T14:27:32+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5196,16 +5114,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.1.5",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "1864216226af21eb76d9477f691e7cbf198e0402"
+                "reference": "d3a2e64866169586502f0cd9cab69135ad12cee9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/1864216226af21eb76d9477f691e7cbf198e0402",
-                "reference": "1864216226af21eb76d9477f691e7cbf198e0402",
+                "url": "https://api.github.com/repos/symfony/process/zipball/d3a2e64866169586502f0cd9cab69135ad12cee9",
+                "reference": "d3a2e64866169586502f0cd9cab69135ad12cee9",
                 "shasum": ""
             },
             "require": {
@@ -5242,7 +5160,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2020-07-23T08:36:24+00:00"
+            "time": "2020-09-02T16:23:27+00:00"
         },
         {
             "name": "symfony/routing",
@@ -5386,16 +5304,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.1.5",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "0de4cc1e18bb596226c06a82e2e7e9bc6001a63a"
+                "reference": "4a9afe9d07bac506f75bcee8ed3ce76da5a9343e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/0de4cc1e18bb596226c06a82e2e7e9bc6001a63a",
-                "reference": "0de4cc1e18bb596226c06a82e2e7e9bc6001a63a",
+                "url": "https://api.github.com/repos/symfony/string/zipball/4a9afe9d07bac506f75bcee8ed3ce76da5a9343e",
+                "reference": "4a9afe9d07bac506f75bcee8ed3ce76da5a9343e",
                 "shasum": ""
             },
             "require": {
@@ -5453,7 +5371,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2020-08-17T07:48:54+00:00"
+            "time": "2020-09-15T12:23:47+00:00"
         },
         {
             "name": "symfony/translation",
@@ -5725,24 +5643,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "49893cf5523c73a6642a1c3ec4bf66c43555b85c"
+                "reference": "f042c62cc12df0a3eacb894d53a4c81a2a42bd71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/49893cf5523c73a6642a1c3ec4bf66c43555b85c",
-                "reference": "49893cf5523c73a6642a1c3ec4bf66c43555b85c",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/f042c62cc12df0a3eacb894d53a4c81a2a42bd71",
+                "reference": "f042c62cc12df0a3eacb894d53a4c81a2a42bd71",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": "~1.5",
-                "php": "^7.2",
+                "konekt/concord": "~1.6",
+                "php": "^7.3",
                 "vanilo/contracts": "~2.0@dev",
                 "vanilo/support": "~2.0@dev"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
-                "konekt/enum": "~2.1",
-                "orchestra/testbench": "~4.0|~5.0",
+                "konekt/enum": "~3.0",
+                "laravel/legacy-factories": "^1.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
@@ -5779,7 +5698,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2020-05-15T03:49:53+00:00"
+            "time": "2020-09-24T14:27:25+00:00"
         },
         {
             "name": "vanilo/category",
@@ -5787,21 +5706,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/category.git",
-                "reference": "bd2c77773779565026becf9a99fd351dab124042"
+                "reference": "f972039b3712f50e2ea393e796c9de65413a9f5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/category/zipball/bd2c77773779565026becf9a99fd351dab124042",
-                "reference": "bd2c77773779565026becf9a99fd351dab124042",
+                "url": "https://api.github.com/repos/vanilophp/category/zipball/f972039b3712f50e2ea393e796c9de65413a9f5b",
+                "reference": "f972039b3712f50e2ea393e796c9de65413a9f5b",
                 "shasum": ""
             },
             "require": {
-                "cviebrock/eloquent-sluggable": "4.3 - 7",
-                "konekt/concord": "~1.5",
-                "php": "^7.2"
+                "cviebrock/eloquent-sluggable": "6 - 8",
+                "konekt/concord": "~1.6",
+                "php": "^7.3"
             },
             "require-dev": {
-                "orchestra/testbench": "~4.0|~5.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
@@ -5833,7 +5752,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2020-05-15T04:33:08+00:00"
+            "time": "2020-09-24T14:41:52+00:00"
         },
         {
             "name": "vanilo/channel",
@@ -5841,20 +5760,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/channel.git",
-                "reference": "d9b848dfe126053b9390a3f22dd6c7849d0a1dcb"
+                "reference": "c56d7d17ac3dadf7daf0ef9673bc0a7cf8467c88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/channel/zipball/d9b848dfe126053b9390a3f22dd6c7849d0a1dcb",
-                "reference": "d9b848dfe126053b9390a3f22dd6c7849d0a1dcb",
+                "url": "https://api.github.com/repos/vanilophp/channel/zipball/c56d7d17ac3dadf7daf0ef9673bc0a7cf8467c88",
+                "reference": "c56d7d17ac3dadf7daf0ef9673bc0a7cf8467c88",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": "~1.5",
-                "php": "^7.2"
+                "konekt/concord": "~1.6",
+                "php": "^7.3"
             },
             "require-dev": {
-                "orchestra/testbench": "~4.0|~5.0",
+                "laravel/legacy-factories": "^1.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
@@ -5886,7 +5806,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2020-05-15T04:32:40+00:00"
+            "time": "2020-09-24T14:49:57+00:00"
         },
         {
             "name": "vanilo/checkout",
@@ -5894,22 +5814,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/checkout.git",
-                "reference": "c4ff6c6330f5f27aa6c82ee1ed15f0f1e1a75edb"
+                "reference": "4888f11bedc454bf8a5305cd30cc7205e861c0f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/c4ff6c6330f5f27aa6c82ee1ed15f0f1e1a75edb",
-                "reference": "c4ff6c6330f5f27aa6c82ee1ed15f0f1e1a75edb",
+                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/4888f11bedc454bf8a5305cd30cc7205e861c0f4",
+                "reference": "4888f11bedc454bf8a5305cd30cc7205e861c0f4",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": "~1.5",
-                "php": "^7.2",
+                "konekt/concord": "~1.6",
+                "php": "^7.3",
                 "vanilo/contracts": "~2.0@dev"
             },
             "require-dev": {
-                "konekt/enum": "~2.1",
-                "orchestra/testbench": "~4.0|~5.0",
+                "konekt/enum": "~3.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0",
                 "vanilo/support": "~2.0@dev"
             },
@@ -5942,7 +5862,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2020-05-15T05:11:02+00:00"
+            "time": "2020-09-24T14:57:52+00:00"
         },
         {
             "name": "vanilo/contracts",
@@ -5950,17 +5870,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "d4e64703e80e00055b2659392db859238578aadb"
+                "reference": "76ae938d380e03c31bd1af65bb4694ccab188bb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/d4e64703e80e00055b2659392db859238578aadb",
-                "reference": "d4e64703e80e00055b2659392db859238578aadb",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/76ae938d380e03c31bd1af65bb4694ccab188bb1",
+                "reference": "76ae938d380e03c31bd1af65bb4694ccab188bb1",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.5|~6.0|~7.0",
-                "php": "^7.2"
+                "illuminate/support": "~6.0|~7.0|~8.0",
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
             "extra": {
@@ -5990,7 +5913,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2020-05-15T04:05:37+00:00"
+            "time": "2020-09-24T11:40:16+00:00"
         },
         {
             "name": "vanilo/framework",
@@ -5998,19 +5921,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "c57e3841fbc455bfac76d991f39bfe40542a0d08"
+                "reference": "921b3bc59209f3b4e19ee1fb03ed60fc14c8e617"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/c57e3841fbc455bfac76d991f39bfe40542a0d08",
-                "reference": "c57e3841fbc455bfac76d991f39bfe40542a0d08",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/921b3bc59209f3b4e19ee1fb03ed60fc14c8e617",
+                "reference": "921b3bc59209f3b4e19ee1fb03ed60fc14c8e617",
                 "shasum": ""
             },
             "require": {
                 "konekt/appshell": "2.0.x-dev",
-                "laravel/framework": "~6.0|~7.0",
-                "php": "^7.2",
-                "spatie/laravel-medialibrary": "^7.3",
+                "laravel/framework": "^6.18|^7.0|^8.0",
+                "php": "^7.4",
+                "spatie/laravel-medialibrary": "^8.0",
                 "vanilo/cart": "2.0.x-dev",
                 "vanilo/category": "2.0.x-dev",
                 "vanilo/channel": "2.0.x-dev",
@@ -6022,7 +5945,8 @@
                 "vanilo/support": "2.0.x-dev"
             },
             "require-dev": {
-                "orchestra/testbench": "~4.0|~5.0",
+                "laravel/legacy-factories": "^1.0.4",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
@@ -6050,7 +5974,7 @@
                 }
             ],
             "description": "E-commerce Framework for Laravel",
-            "time": "2020-09-08T18:45:56+00:00"
+            "time": "2020-10-06T18:47:46+00:00"
         },
         {
             "name": "vanilo/order",
@@ -6058,26 +5982,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/order.git",
-                "reference": "84c3b70c2459010f194d867ffede037064ce4ee3"
+                "reference": "cfac7b67af85682e22050aac9e7150a1dcc08401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/order/zipball/84c3b70c2459010f194d867ffede037064ce4ee3",
-                "reference": "84c3b70c2459010f194d867ffede037064ce4ee3",
+                "url": "https://api.github.com/repos/vanilophp/order/zipball/cfac7b67af85682e22050aac9e7150a1dcc08401",
+                "reference": "cfac7b67af85682e22050aac9e7150a1dcc08401",
                 "shasum": ""
             },
             "require": {
-                "konekt/address": "~1.1",
-                "konekt/concord": "~1.5",
+                "konekt/address": "~2.0@dev",
+                "konekt/concord": "~1.6",
+                "konekt/enum": "~3.0",
                 "konekt/laravel-migration-compatibility": "~1.1",
-                "konekt/user": "~1.3",
-                "php": "^7.2",
+                "konekt/user": "~2.0@dev",
+                "php": "^7.3",
                 "vanilo/contracts": "~2.0@dev",
                 "vanilo/support": "~2.0@dev"
             },
             "require-dev": {
-                "orchestra/database": "~4.0|~5.0",
-                "orchestra/testbench": "~4.0|~5.0",
+                "laravel/legacy-factories": "^1.0",
+                "orchestra/database": "~4.0|~5.0|~6.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
@@ -6109,7 +6035,7 @@
                 "order",
                 "vanilo"
             ],
-            "time": "2020-05-15T05:13:20+00:00"
+            "time": "2020-10-06T19:24:02+00:00"
         },
         {
             "name": "vanilo/product",
@@ -6117,22 +6043,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/product.git",
-                "reference": "6800ac5c09c13c43f04bdc0714864ca0c9de6dcc"
+                "reference": "6e6e355b27fa2672a16135e53a0bfc8adbe14a69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/product/zipball/6800ac5c09c13c43f04bdc0714864ca0c9de6dcc",
-                "reference": "6800ac5c09c13c43f04bdc0714864ca0c9de6dcc",
+                "url": "https://api.github.com/repos/vanilophp/product/zipball/6e6e355b27fa2672a16135e53a0bfc8adbe14a69",
+                "reference": "6e6e355b27fa2672a16135e53a0bfc8adbe14a69",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": "~1.5",
-                "konekt/enum": "~2.1",
-                "php": "^7.2"
+                "konekt/concord": "~1.6",
+                "konekt/enum": "~3.0",
+                "php": "^7.3"
             },
             "require-dev": {
-                "cviebrock/eloquent-sluggable": "4.3 - 7",
-                "orchestra/testbench": "~4.0|~5.0",
+                "cviebrock/eloquent-sluggable": "4.3 - 8",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
@@ -6164,7 +6090,7 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2020-05-15T04:57:18+00:00"
+            "time": "2020-10-02T20:05:37+00:00"
         },
         {
             "name": "vanilo/properties",
@@ -6172,21 +6098,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/properties.git",
-                "reference": "53b4a858c7c472a27c0f4da87390a3a93f82b7a9"
+                "reference": "369c1a513fa5d9206f6dd467e3984f34bb2e9f75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/properties/zipball/53b4a858c7c472a27c0f4da87390a3a93f82b7a9",
-                "reference": "53b4a858c7c472a27c0f4da87390a3a93f82b7a9",
+                "url": "https://api.github.com/repos/vanilophp/properties/zipball/369c1a513fa5d9206f6dd467e3984f34bb2e9f75",
+                "reference": "369c1a513fa5d9206f6dd467e3984f34bb2e9f75",
                 "shasum": ""
             },
             "require": {
-                "cviebrock/eloquent-sluggable": "4.3 - 7",
-                "konekt/concord": "~1.5",
-                "php": "^7.2"
+                "cviebrock/eloquent-sluggable": "4.3 - 8",
+                "konekt/concord": "~1.6",
+                "php": "^7.3"
             },
             "require-dev": {
-                "orchestra/testbench": "~4.0|~5.0",
+                "laravel/legacy-factories": "^1.0.4",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "type": "library",
@@ -6218,7 +6145,7 @@
                 "product",
                 "vanilo"
             ],
-            "time": "2020-05-15T05:01:11+00:00"
+            "time": "2020-10-02T20:02:28+00:00"
         },
         {
             "name": "vanilo/support",
@@ -6226,17 +6153,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "3e655e946b1e13d3cf3d891d152deb97c4ae7e04"
+                "reference": "5553dd65c74a3ae03e010077fa39f79fab8dcac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/3e655e946b1e13d3cf3d891d152deb97c4ae7e04",
-                "reference": "3e655e946b1e13d3cf3d891d152deb97c4ae7e04",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/5553dd65c74a3ae03e010077fa39f79fab8dcac6",
+                "reference": "5553dd65c74a3ae03e010077fa39f79fab8dcac6",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~6.0|~7.0",
-                "php": "^7.2",
+                "illuminate/support": "~6.0|~7.0|~8.0",
+                "php": "^7.3",
                 "vanilo/contracts": "^2.0@dev"
             },
             "require-dev": {
@@ -6273,7 +6200,7 @@
                 "laravel",
                 "vanilo"
             ],
-            "time": "2020-05-15T05:04:16+00:00"
+            "time": "2020-09-24T11:53:46+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -8212,7 +8139,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2",
+        "php": "^7.4",
         "ext-gd": "*"
     },
     "platform-dev": []
