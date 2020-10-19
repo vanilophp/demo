@@ -49,7 +49,7 @@ php artisan migrate --seed
 Run this command:
 
 ```bash
-php artisan appshell:super
+php artisan make:superuser
 ```
 Enter your email, name, password, **accept _admin_ as role**.
 

@@ -294,7 +294,7 @@
             "keywords": [
                 "laravel"
             ],
-            "abandoned": true,
+            "abandoned": "diglactic/laravel-breadcrumbs",
             "time": "2019-12-30T22:50:51+00:00"
         },
         {
@@ -1378,12 +1378,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/appshell.git",
-                "reference": "b1d32d41c300994dd16db2c572c0ff34e6135449"
+                "reference": "a6feaea38183d646ca6a2fc12d5d701e8e6167cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/b1d32d41c300994dd16db2c572c0ff34e6135449",
-                "reference": "b1d32d41c300994dd16db2c572c0ff34e6135449",
+                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/a6feaea38183d646ca6a2fc12d5d701e8e6167cb",
+                "reference": "a6feaea38183d646ca6a2fc12d5d701e8e6167cb",
                 "shasum": ""
             },
             "require": {
@@ -1391,16 +1391,16 @@
                 "davejamesmiller/laravel-breadcrumbs": "^5.3",
                 "ext-json": "*",
                 "konekt/acl": "~1.3",
-                "konekt/address": "2.0.x-dev",
-                "konekt/concord": "~1.5",
-                "konekt/customer": "2.0.x-dev",
+                "konekt/address": "^2.0",
+                "konekt/concord": "^1.5.1",
+                "konekt/customer": "^2.0.1",
                 "konekt/enum-eloquent": "~1.5",
-                "konekt/gears": "1.6.x-dev",
+                "konekt/gears": "^1.6",
                 "konekt/menu": "^1.6.2",
-                "konekt/user": "2.0.x-dev",
+                "konekt/user": "^2.0",
                 "laracasts/flash": "~3.0",
                 "laravelcollective/html": "~6.0",
-                "php": "^7.3"
+                "php": "^7.4"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
@@ -1419,7 +1419,9 @@
                     "Konekt\\AppShell\\": "src"
                 },
                 "files": [
-                    "src/Support/helpers.php"
+                    "src/Support/helpers.php",
+                    "src/Support/theme.php",
+                    "src/Support/icon.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1438,7 +1440,7 @@
                 "concord-box",
                 "laravel"
             ],
-            "time": "2020-10-02T20:46:16+00:00"
+            "time": "2020-10-18T21:12:32+00:00"
         },
         {
             "name": "konekt/concord",
