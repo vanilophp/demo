@@ -1,10 +1,6 @@
 # Vanilo Demo Application
 
-![v2.0-dev](https://img.shields.io/badge/version-2.0--dev-green.svg?style=flat-square)
-![unstable](https://img.shields.io/badge/branch-unstable-red.svg?style=flat-square)
-
-> This is the dev version of Vanilo 2 Demo. This version hasn't been released yet.
-> For a stable version go to the `1.x` branch.
+![v2.0.0](https://img.shields.io/badge/version-2.0.0-green.svg?style=flat-square)
 
 This is a minimalistic Laravel 8 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains the Vanilo admin panel.
@@ -15,7 +11,7 @@ using the Vanilo framework. It also contains the Vanilo admin panel.
 
 **1. Get the app**:
 
-Either download and decompress [the zipball](https://github.com/vanilophp/demo/archive/master.zip)
+Either download and decompress [the zipball](https://github.com/vanilophp/demo/archive/2.x.zip)
 or use git:
 
 ```bash
