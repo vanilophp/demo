@@ -6,8 +6,8 @@
 > This is the dev version of Vanilo 2 Demo. This version hasn't been released yet.
 > For a stable version go to the `1.x` branch.
 
-This is a minimalistic Laravel 7 application that demonstrates how to build a simple storefront
-using the Vanilo framework. It also contains Vanilo's admin panel.
+This is a minimalistic Laravel 8 application that demonstrates how to build a simple storefront
+using the Vanilo framework. It also contains the Vanilo admin panel.
 
 > The app uses the default Bootstrap theme that comes with Laravel.
 
@@ -31,7 +31,7 @@ composer install
 
 **3. Configure the environment**:
 
-> The `.env` file is in the app's [root directory](https://laravel.com/docs/5.7/configuration#environment-configuration).
+> The `.env` file is in the app's [root directory](https://laravel.com/docs/8.x/configuration#environment-configuration).
 
 - Create a database for your application.
 - Initialize .env (quickly: `cp .env.example .env && php artisan key:generate`.
@@ -59,7 +59,7 @@ Run the site with `php artisan serve` and access the site:
 
 http://127.0.0.1:8000
 
-Products are not seeded so open the admin panel first to add some products. 
+Products are not seeded so open the admin panel first to add some products.
 
 #### Product List
 
