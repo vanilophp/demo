@@ -27,11 +27,24 @@ class CartController extends Controller
 
     public function update(CartItem $cart_item, Request $request)
     {
+        $isItemInCurrentCart = false;
+        foreach (Cart::getItems() as $item) {
+            if ($item->id == $cart_item->id) {
+                $isItemInCurrentCart = true;
+                break;
+            }
+        }
+
+        if (!$isItemInCurrentCart) {
+            flash()->warning('Meeh!');
+            return redirect()->route('cart.show');
+        }
+
         $qty = (int) $request->get('qty', $cart_item->getQuantity());
         $cart_item->quantity = $qty;
         $cart_item->save();
 
-        flash()->info($cart_item->getBuyable()->getName() . ' has been updated');
+        flash()->info(__(':cart_item has been updated', ['cart_item' => $cart_item->getBuyable()->getName()]));
 
         return redirect()->route('cart.show');
     }

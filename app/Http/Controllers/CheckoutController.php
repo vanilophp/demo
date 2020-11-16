@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CheckoutRequest;
+use Illuminate\Support\Facades\Auth;
 use Konekt\Address\Models\CountryProxy;
 use Vanilo\Cart\Contracts\CartManager;
 use Vanilo\Checkout\Contracts\Checkout;
 use Vanilo\Order\Contracts\OrderFactory;
+use Vanilo\Order\Models\Order;
 
 class CheckoutController extends Controller
 {
@@ -47,7 +49,12 @@ class CheckoutController extends Controller
         $this->checkout->setCustomAttribute('notes', $request->get('notes'));
         $this->checkout->setCart($this->cart);
 
+        /** @var Order $order */
         $order = $orderFactory->createFromCheckout($this->checkout);
+        $order->getBillpayer()->email = Auth::user()->email;
+        $order->getBillpayer()->save();
+        $order->notes = $request->get('notes');
+        $order->save();
         $this->cart->destroy();
 
         return view('checkout.thankyou', ['order' => $order]);
