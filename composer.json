@@ -15,7 +15,7 @@
         "laravel/framework": "^7.0|^8.0",
         "laravel/tinker": "^2.4",
         "laravel/ui": "^2.2",
-        "vanilo/framework": "^2.0"
+        "vanilo/framework": "2.1.x-dev"
     },
     "require-dev": {
         "doctrine/dbal": "~2.3",
@@ -23,7 +23,7 @@
         "fzaninotto/faker": "^1.4",
         "laravel/dusk": "^6.0",
         "mockery/mockery": "^1.0",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "8 - 9"
     },
     "autoload": {
         "classmap": [
