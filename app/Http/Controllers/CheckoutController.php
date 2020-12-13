@@ -51,8 +51,6 @@ class CheckoutController extends Controller
 
         /** @var Order $order */
         $order = $orderFactory->createFromCheckout($this->checkout);
-        $order->getBillpayer()->email = Auth::user()->email;
-        $order->getBillpayer()->save();
         $order->notes = $request->get('notes');
         $order->save();
         $this->cart->destroy();

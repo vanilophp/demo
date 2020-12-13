@@ -2,6 +2,35 @@
 <hr>
 
 <div class="row">
+
+    <div class="col-md-6">
+        <div class="form-group">
+            {{ Form::text('billpayer[email]', Auth::user() ? Auth::user()->email : null, [
+                    'class' => 'form-control' . ($errors->has('billpayer.email') ? ' is-invalid' : ''),
+                    'placeholder' => 'E-mail'
+                ])
+            }}
+
+            @if ($errors->has('billpayer.email'))
+                <div class="invalid-feedback">{{ $errors->first('billpayer.email') }}</div>
+            @endif
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-group">
+            {{ Form::text('billpayer[phone]', null, [
+                    'class' => 'form-control' . ($errors->has('billpayer.phone') ? ' is-invalid' : ''),
+                    'placeholder' => 'Telefon'
+                ])
+            }}
+
+            @if ($errors->has('billpayer.phone'))
+                <div class="invalid-feedback">{{ $errors->first('billpayer.phone') }}</div>
+            @endif
+        </div>
+    </div>
+
     <div class="col-md-6">
         <div class="form-group">
             {{ Form::text('billpayer[firstname]', null, [
