@@ -2187,12 +2187,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/vanilo-euplatesc.git",
-                "reference": "a3a78c6d69bce950571bad5a750f907aed610b69"
+                "reference": "e0e0fb904fa636ea9b8b2693bc006e1ae5c5f94d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/vanilo-euplatesc/zipball/a3a78c6d69bce950571bad5a750f907aed610b69",
-                "reference": "a3a78c6d69bce950571bad5a750f907aed610b69",
+                "url": "https://api.github.com/repos/artkonekt/vanilo-euplatesc/zipball/e0e0fb904fa636ea9b8b2693bc006e1ae5c5f94d",
+                "reference": "e0e0fb904fa636ea9b8b2693bc006e1ae5c5f94d",
                 "shasum": ""
             },
             "require": {
@@ -2232,7 +2232,7 @@
                 "issues": "https://github.com/artkonekt/vanilo-euplatesc",
                 "source": "https://github.com/artkonekt/vanilo-euplatesc/tree/master"
             },
-            "time": "2020-12-13T09:16:36+00:00"
+            "time": "2020-12-13T21:45:17+00:00"
         },
         {
             "name": "laracasts/flash",
@@ -6851,12 +6851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "4ca7944dfd013b2f6fac0184c3b65a50fa31c82c"
+                "reference": "4973aded0a4ae632441d8cef1c224c2952b221bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/4ca7944dfd013b2f6fac0184c3b65a50fa31c82c",
-                "reference": "4ca7944dfd013b2f6fac0184c3b65a50fa31c82c",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/4973aded0a4ae632441d8cef1c224c2952b221bd",
+                "reference": "4973aded0a4ae632441d8cef1c224c2952b221bd",
                 "shasum": ""
             },
             "require": {
@@ -6899,7 +6899,7 @@
                 "issues": "https://github.com/vanilophp/contracts/issues",
                 "source": "https://github.com/vanilophp/contracts"
             },
-            "time": "2020-11-29T19:23:33+00:00"
+            "time": "2020-12-13T10:42:12+00:00"
         },
         {
             "name": "vanilo/framework",
@@ -6907,12 +6907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "adacdf8e8698cfb58e28493b9b848a25b577af0a"
+                "reference": "e293489af020bd4b1ddd8a0c3964738cf00a9b52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/adacdf8e8698cfb58e28493b9b848a25b577af0a",
-                "reference": "adacdf8e8698cfb58e28493b9b848a25b577af0a",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/e293489af020bd4b1ddd8a0c3964738cf00a9b52",
+                "reference": "e293489af020bd4b1ddd8a0c3964738cf00a9b52",
                 "shasum": ""
             },
             "require": {
@@ -6974,7 +6974,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-08T22:39:41+00:00"
+            "time": "2020-12-13T21:46:25+00:00"
         },
         {
             "name": "vanilo/order",
@@ -7047,12 +7047,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/payment.git",
-                "reference": "d1952b7af6388cb00c801fdf49859c8148fdf874"
+                "reference": "dd07b5d5a419334a04b2b135333efe89e49c647a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/payment/zipball/d1952b7af6388cb00c801fdf49859c8148fdf874",
-                "reference": "d1952b7af6388cb00c801fdf49859c8148fdf874",
+                "url": "https://api.github.com/repos/vanilophp/payment/zipball/dd07b5d5a419334a04b2b135333efe89e49c647a",
+                "reference": "dd07b5d5a419334a04b2b135333efe89e49c647a",
                 "shasum": ""
             },
             "require": {
@@ -7099,7 +7099,7 @@
                 "issues": "https://github.com/vanilophp/payment/issues",
                 "source": "https://github.com/vanilophp/payment"
             },
-            "time": "2020-12-08T22:24:45+00:00"
+            "time": "2020-12-13T21:42:47+00:00"
         },
         {
             "name": "vanilo/product",
