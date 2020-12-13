@@ -12,6 +12,7 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
+        "konekt/vanilo-euplatesc": "dev-master",
         "laravel/framework": "^7.0|^8.0",
         "laravel/tinker": "^2.4",
         "laravel/ui": "^2.2",

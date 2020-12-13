@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CheckoutRequest;
-use Illuminate\Support\Facades\Auth;
 use Konekt\Address\Models\CountryProxy;
 use Vanilo\Cart\Contracts\CartManager;
 use Vanilo\Checkout\Contracts\Checkout;
+use Vanilo\Framework\Models\PaymentMethod;
 use Vanilo\Order\Contracts\OrderFactory;
 use Vanilo\Order\Models\Order;
 
@@ -39,7 +39,8 @@ class CheckoutController extends Controller
 
         return view('checkout.show', [
             'checkout'  => $checkout,
-            'countries' => CountryProxy::all()
+            'countries' => CountryProxy::all(),
+            'paymentMethods' => PaymentMethod::actives()->get(),
         ]);
     }
 
@@ -55,7 +56,13 @@ class CheckoutController extends Controller
         $order->save();
         $this->cart->destroy();
 
-        return view('checkout.thankyou', ['order' => $order]);
+        $paymentMethod = $request->paymentMethod();
+        $paymentRequest = $paymentMethod->getGateway()->createPaymentRequest($order, $order->getShippingAddress());
+
+        return view('checkout.thankyou', [
+            'order' => $order,
+            'paymentRequest' => $paymentRequest
+        ]);
     }
 
 }

@@ -37,3 +37,7 @@ Route::group(['prefix' => 'checkout', 'as' => 'checkout.'], function() {
     Route::post('submit', 'CheckoutController@submit')->name('submit');
 });
 
+Route::group(['prefix' => 'payment/eup', 'as' => 'payment.euplatesc'], function() {
+    Route::post('return', 'EuplatescController@paymentReturn')->name('show');
+    Route::post('silent', 'EuplatescController@silentReturn')->name('submit');
+});

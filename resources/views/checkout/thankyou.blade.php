@@ -17,17 +17,13 @@
             <strong>{{ $order->getNumber() }}</strong>.
         </div>
 
-        <h3>Next Steps</h3>
+        <h3>Payment</h3>
 
-        <ol>
-            <li>Your order will be prepared in the next 24 hours.</li>
-            <li>Your package will be handed over to the courier.</li>
-            <li>You'll receive an E-mail with the Shipment Information.</li>
-        </ol>
+        {!! $paymentRequest->getHtmlSnippet(); !!}
 
-        <div>
-            <a href="{{ route('product.index') }}" class="btn btn-info">All right!</a>
-        </div>
+        @unless($paymentRequest->willRedirect())
+            @include('checkout._final_success_text')
+        @endunless
 
     </div>
 @endsection

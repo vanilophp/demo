@@ -44,11 +44,12 @@
 
                                 @include('checkout._shipping_address', ['address' => $checkout->getShippingAddress()])
 
-                                <hr>
+                                @include('checkout._payment')
+
 
                                 <div class="form-group">
 
-                                    <label class="">{{ __('Order Notes') }}</label>
+                                    <label>{{ __('Order Notes') }}</label>
                                     {{ Form::textarea('notes', null, [
                                             'class' => 'form-control' . ($errors->has('notes') ? ' is-invalid' : ''),
                                             'rows' => 3

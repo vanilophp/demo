@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0030485838475bb9936629419057f432",
+    "content-hash": "705a99086fefb678631f4727c6859430",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2180,6 +2180,59 @@
                 "source": "https://github.com/artkonekt/user/tree/2.1.0"
             },
             "time": "2020-12-07T14:05:05+00:00"
+        },
+        {
+            "name": "konekt/vanilo-euplatesc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/vanilo-euplatesc.git",
+                "reference": "a3a78c6d69bce950571bad5a750f907aed610b69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/vanilo-euplatesc/zipball/a3a78c6d69bce950571bad5a750f907aed610b69",
+                "reference": "a3a78c6d69bce950571bad5a750f907aed610b69",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "^1.5",
+                "php": "^7.3|^8.0",
+                "vanilo/payment": "2.1.x-dev"
+            },
+            "require-dev": {
+                "ext-sqlite3": "*",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "8 - 9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\Euplatesc\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Euplatesc Payment Gateway Support for Vanilo (Laravel)",
+            "support": {
+                "issues": "https://github.com/artkonekt/vanilo-euplatesc",
+                "source": "https://github.com/artkonekt/vanilo-euplatesc/tree/master"
+            },
+            "time": "2020-12-13T09:16:36+00:00"
         },
         {
             "name": "laracasts/flash",
@@ -9725,6 +9778,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "konekt/vanilo-euplatesc": 20,
         "vanilo/framework": 20
     },
     "prefer-stable": true,

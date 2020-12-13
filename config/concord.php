@@ -23,6 +23,7 @@ return [
                     ]
                 ]
             ],
-        ]
+        ],
+        Konekt\Euplatesc\Providers\ModuleServiceProvider::class,
     ]
 ];
