@@ -6907,12 +6907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "e293489af020bd4b1ddd8a0c3964738cf00a9b52"
+                "reference": "d497f6b4da93fa3a2e4ead614e5e506b3ccc688d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/e293489af020bd4b1ddd8a0c3964738cf00a9b52",
-                "reference": "e293489af020bd4b1ddd8a0c3964738cf00a9b52",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/d497f6b4da93fa3a2e4ead614e5e506b3ccc688d",
+                "reference": "d497f6b4da93fa3a2e4ead614e5e506b3ccc688d",
                 "shasum": ""
             },
             "require": {
@@ -6974,7 +6974,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-13T21:46:25+00:00"
+            "time": "2020-12-14T12:36:14+00:00"
         },
         {
             "name": "vanilo/order",
