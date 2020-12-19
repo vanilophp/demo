@@ -2588,16 +2588,16 @@
         },
         {
             "name": "laravelcollective/html",
-            "version": "v6.2.0",
+            "version": "v6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "3bb99be7502feb2129b375cd026ccb0fa4b66628"
+                "reference": "ae15b9c4bf918ec3a78f092b8555551dd693fde3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/3bb99be7502feb2129b375cd026ccb0fa4b66628",
-                "reference": "3bb99be7502feb2129b375cd026ccb0fa4b66628",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/ae15b9c4bf918ec3a78f092b8555551dd693fde3",
+                "reference": "ae15b9c4bf918ec3a78f092b8555551dd693fde3",
                 "shasum": ""
             },
             "require": {
@@ -2611,12 +2611,12 @@
             "require-dev": {
                 "illuminate/database": "^6.0|^7.0|^8.0",
                 "mockery/mockery": "~1.0",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~8.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.0-dev"
+                    "dev-master": "6.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -2656,7 +2656,7 @@
                 "issues": "https://github.com/LaravelCollective/html/issues",
                 "source": "https://github.com/LaravelCollective/html"
             },
-            "time": "2020-09-07T19:59:40+00:00"
+            "time": "2020-12-15T20:20:05+00:00"
         },
         {
             "name": "league/commonmark",
@@ -6851,12 +6851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "4973aded0a4ae632441d8cef1c224c2952b221bd"
+                "reference": "bd526aa24506d04be1a2d3c95537e7c3a46ee2e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/4973aded0a4ae632441d8cef1c224c2952b221bd",
-                "reference": "4973aded0a4ae632441d8cef1c224c2952b221bd",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/bd526aa24506d04be1a2d3c95537e7c3a46ee2e5",
+                "reference": "bd526aa24506d04be1a2d3c95537e7c3a46ee2e5",
                 "shasum": ""
             },
             "require": {
@@ -6899,7 +6899,7 @@
                 "issues": "https://github.com/vanilophp/contracts/issues",
                 "source": "https://github.com/vanilophp/contracts"
             },
-            "time": "2020-12-13T10:42:12+00:00"
+            "time": "2020-12-19T17:40:21+00:00"
         },
         {
             "name": "vanilo/framework",
@@ -6907,12 +6907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "d497f6b4da93fa3a2e4ead614e5e506b3ccc688d"
+                "reference": "fe343ca14044d91f603c77ff56851bbf44f3d3ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/d497f6b4da93fa3a2e4ead614e5e506b3ccc688d",
-                "reference": "d497f6b4da93fa3a2e4ead614e5e506b3ccc688d",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/fe343ca14044d91f603c77ff56851bbf44f3d3ed",
+                "reference": "fe343ca14044d91f603c77ff56851bbf44f3d3ed",
                 "shasum": ""
             },
             "require": {
@@ -6974,7 +6974,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-14T12:36:14+00:00"
+            "time": "2020-12-19T21:51:17+00:00"
         },
         {
             "name": "vanilo/order",
@@ -7227,12 +7227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "8148b5f226b2696511077db34820283458ec5c86"
+                "reference": "f3b2956face8e4cbc0c7101c23584276074693f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/8148b5f226b2696511077db34820283458ec5c86",
-                "reference": "8148b5f226b2696511077db34820283458ec5c86",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/f3b2956face8e4cbc0c7101c23584276074693f8",
+                "reference": "f3b2956face8e4cbc0c7101c23584276074693f8",
                 "shasum": ""
             },
             "require": {
@@ -7244,7 +7244,8 @@
                 "phpunit/phpunit": "~8.0|~9.0"
             },
             "suggest": {
-                "spatie/laravel-medialibrary": "Allows associating images (or other files) with Eloquent models"
+                "konekt/concord": "Library to write Modular Applications (^1.5)",
+                "spatie/laravel-medialibrary": "Allows associating images (or other files) with Eloquent models (^7.0|^8.0|^9.0)"
             },
             "default-branch": true,
             "type": "library",
@@ -7279,7 +7280,7 @@
                 "issues": "https://github.com/vanilophp/support/issues",
                 "source": "https://github.com/vanilophp/support"
             },
-            "time": "2020-11-29T19:37:26+00:00"
+            "time": "2020-12-19T18:06:51+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

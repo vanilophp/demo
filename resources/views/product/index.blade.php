@@ -32,6 +32,12 @@
 
 @section('content')
     <div class="container">
+        @if($taxon && $taxon->hasImage())
+            <div style="background-image: url('{{ $taxon->getImageUrl('header') }}'); height: 150px;"
+                 class="mb-2">
+                <h1 class="p-3 text-light" style="text-shadow: #333 0 0 11px">{{ $taxon->name }}</h1>
+            </div>
+        @endif
         <div class="row">
 
             <div class="col-md-3">
