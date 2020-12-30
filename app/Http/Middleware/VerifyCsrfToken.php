@@ -12,7 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        '/payment/eup/return',
-        '/payment/eup/silent'
+        '/payment/eup/*'
     ];
 }

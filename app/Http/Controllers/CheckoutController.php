@@ -8,7 +8,8 @@ use Vanilo\Cart\Contracts\CartManager;
 use Vanilo\Checkout\Contracts\Checkout;
 use Vanilo\Framework\Models\PaymentMethod;
 use Vanilo\Order\Contracts\OrderFactory;
-use Vanilo\Order\Models\Order;
+use Vanilo\Framework\Models\Order;
+use Vanilo\Payment\Factories\PaymentFactory;
 
 class CheckoutController extends Controller
 {
@@ -57,7 +58,10 @@ class CheckoutController extends Controller
         $this->cart->destroy();
 
         $paymentMethod = $request->paymentMethod();
-        $paymentRequest = $paymentMethod->getGateway()->createPaymentRequest($order, $order->getShippingAddress());
+        $payment = PaymentFactory::createFromPayable($order, $paymentMethod);
+        $paymentRequest = $paymentMethod
+            ->getGateway()
+            ->createPaymentRequest($payment, $order->getShippingAddress());
 
         return view('checkout.thankyou', [
             'order' => $order,

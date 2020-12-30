@@ -15,6 +15,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        \URL::forceScheme('https');
 
         $this->app->concord->registerModel(\Konekt\User\Contracts\User::class, \App\User::class);
     }

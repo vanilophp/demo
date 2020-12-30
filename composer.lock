@@ -2187,17 +2187,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/vanilo-euplatesc.git",
-                "reference": "e0e0fb904fa636ea9b8b2693bc006e1ae5c5f94d"
+                "reference": "8f39d197535f5648e77c542e62ce212b1541be89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/vanilo-euplatesc/zipball/e0e0fb904fa636ea9b8b2693bc006e1ae5c5f94d",
-                "reference": "e0e0fb904fa636ea9b8b2693bc006e1ae5c5f94d",
+                "url": "https://api.github.com/repos/artkonekt/vanilo-euplatesc/zipball/8f39d197535f5648e77c542e62ce212b1541be89",
+                "reference": "8f39d197535f5648e77c542e62ce212b1541be89",
                 "shasum": ""
             },
             "require": {
                 "konekt/concord": "^1.5",
                 "php": "^7.3|^8.0",
+                "vanilo/contracts": "2.1.x-dev",
                 "vanilo/payment": "2.1.x-dev"
             },
             "require-dev": {
@@ -2232,7 +2233,7 @@
                 "issues": "https://github.com/artkonekt/vanilo-euplatesc",
                 "source": "https://github.com/artkonekt/vanilo-euplatesc/tree/master"
             },
-            "time": "2020-12-13T21:45:17+00:00"
+            "time": "2020-12-30T18:35:48+00:00"
         },
         {
             "name": "laracasts/flash",
@@ -6851,12 +6852,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "bd526aa24506d04be1a2d3c95537e7c3a46ee2e5"
+                "reference": "61193d144b6b72c30538d8c11ddd710a3f6f852f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/bd526aa24506d04be1a2d3c95537e7c3a46ee2e5",
-                "reference": "bd526aa24506d04be1a2d3c95537e7c3a46ee2e5",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/61193d144b6b72c30538d8c11ddd710a3f6f852f",
+                "reference": "61193d144b6b72c30538d8c11ddd710a3f6f852f",
                 "shasum": ""
             },
             "require": {
@@ -6899,7 +6900,7 @@
                 "issues": "https://github.com/vanilophp/contracts/issues",
                 "source": "https://github.com/vanilophp/contracts"
             },
-            "time": "2020-12-19T17:40:21+00:00"
+            "time": "2020-12-30T18:22:42+00:00"
         },
         {
             "name": "vanilo/framework",
@@ -6907,16 +6908,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "fe343ca14044d91f603c77ff56851bbf44f3d3ed"
+                "reference": "086363ba9c21cd1675a73134ed9898a890089e7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/fe343ca14044d91f603c77ff56851bbf44f3d3ed",
-                "reference": "fe343ca14044d91f603c77ff56851bbf44f3d3ed",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/086363ba9c21cd1675a73134ed9898a890089e7a",
+                "reference": "086363ba9c21cd1675a73134ed9898a890089e7a",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
+                "ext-pdo": "*",
                 "konekt/appshell": "^2.0",
                 "konekt/concord": "^1.10",
                 "laravel/framework": "^6.18|^7.0|^8.0",
@@ -6927,7 +6929,7 @@
                 "vanilo/channel": "^2.1.x-dev",
                 "vanilo/checkout": "^2.1.x-dev",
                 "vanilo/contracts": "^2.1.x-dev",
-                "vanilo/order": "^2.1.1",
+                "vanilo/order": "^2.2.x-dev",
                 "vanilo/payment": "^2.1.x-dev",
                 "vanilo/product": "^2.1.x-dev",
                 "vanilo/properties": "^2.1.x-dev",
@@ -6974,20 +6976,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-19T21:51:17+00:00"
+            "time": "2020-12-30T18:50:37+00:00"
         },
         {
             "name": "vanilo/order",
-            "version": "2.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/order.git",
-                "reference": "48d095682cc0b32e58bcd919e90016913a712bf3"
+                "reference": "dc9288b817183b25a415a34da3f4860a1b800745"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/order/zipball/48d095682cc0b32e58bcd919e90016913a712bf3",
-                "reference": "48d095682cc0b32e58bcd919e90016913a712bf3",
+                "url": "https://api.github.com/repos/vanilophp/order/zipball/dc9288b817183b25a415a34da3f4860a1b800745",
+                "reference": "dc9288b817183b25a415a34da3f4860a1b800745",
                 "shasum": ""
             },
             "require": {
@@ -6996,9 +6998,9 @@
                 "konekt/enum": "^3.0",
                 "konekt/laravel-migration-compatibility": "~1.1",
                 "konekt/user": "^2.0",
-                "php": "^7.3",
-                "vanilo/contracts": "^2.0",
-                "vanilo/support": "^2.0"
+                "php": "^7.3|^8.0",
+                "vanilo/contracts": "^2.1.x-dev",
+                "vanilo/support": "^2.1.x-dev"
             },
             "require-dev": {
                 "laravel/legacy-factories": "^1.0",
@@ -7006,10 +7008,11 @@
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -7039,7 +7042,7 @@
                 "issues": "https://github.com/vanilophp/order/issues",
                 "source": "https://github.com/artkonekt/order"
             },
-            "time": "2020-10-28T21:18:49+00:00"
+            "time": "2020-12-30T10:53:31+00:00"
         },
         {
             "name": "vanilo/payment",
@@ -7047,18 +7050,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/payment.git",
-                "reference": "dd07b5d5a419334a04b2b135333efe89e49c647a"
+                "reference": "bf40e93a66b261a1d308a490a228fff3f9a59521"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/payment/zipball/dd07b5d5a419334a04b2b135333efe89e49c647a",
-                "reference": "dd07b5d5a419334a04b2b135333efe89e49c647a",
+                "url": "https://api.github.com/repos/vanilophp/payment/zipball/bf40e93a66b261a1d308a490a228fff3f9a59521",
+                "reference": "bf40e93a66b261a1d308a490a228fff3f9a59521",
                 "shasum": ""
             },
             "require": {
                 "konekt/concord": "~1.5",
+                "konekt/enum": "^3.0",
                 "php": "^7.3|^8.0",
-                "vanilo/contracts": "^2.0"
+                "vanilo/contracts": "2.1.x-dev",
+                "vanilo/support": "2.1.x-dev"
             },
             "require-dev": {
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
@@ -7099,7 +7104,13 @@
                 "issues": "https://github.com/vanilophp/payment/issues",
                 "source": "https://github.com/vanilophp/payment"
             },
-            "time": "2020-12-13T21:42:47+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/fulopattila122",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-12-30T18:31:40+00:00"
         },
         {
             "name": "vanilo/product",
@@ -7227,12 +7238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "f3b2956face8e4cbc0c7101c23584276074693f8"
+                "reference": "53f3bd92e52d1d0a50147b198f483c39ffcf6c92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/f3b2956face8e4cbc0c7101c23584276074693f8",
-                "reference": "f3b2956face8e4cbc0c7101c23584276074693f8",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/53f3bd92e52d1d0a50147b198f483c39ffcf6c92",
+                "reference": "53f3bd92e52d1d0a50147b198f483c39ffcf6c92",
                 "shasum": ""
             },
             "require": {
@@ -7280,7 +7291,7 @@
                 "issues": "https://github.com/vanilophp/support/issues",
                 "source": "https://github.com/vanilophp/support"
             },
-            "time": "2020-12-19T18:06:51+00:00"
+            "time": "2020-12-30T10:17:45+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
