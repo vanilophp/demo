@@ -7,7 +7,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.4",
+        "php": "^7.4|^8.0",
         "ext-gd": "*",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -16,7 +16,7 @@
         "laravel/framework": "^7.0|^8.0",
         "laravel/tinker": "^2.4",
         "laravel/ui": "^2.2",
-        "vanilo/framework": "2.1.x-dev"
+        "vanilo/framework": "^2.1"
     },
     "require-dev": {
         "doctrine/dbal": "~2.3",
