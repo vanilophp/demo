@@ -16,7 +16,8 @@
         "laravel/framework": "^7.0|^8.0",
         "laravel/tinker": "^2.4",
         "laravel/ui": "^2.2",
-        "vanilo/framework": "^2.1"
+        "vanilo/framework": "^2.1",
+        "vanilo/netopia": "dev-master"
     },
     "require-dev": {
         "doctrine/dbal": "~2.3",

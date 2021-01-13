@@ -44,5 +44,6 @@ return [
             ],
         ],
         Konekt\Euplatesc\Providers\ModuleServiceProvider::class,
+        Vanilo\Netopia\Providers\ModuleServiceProvider::class,
     ]
 ];

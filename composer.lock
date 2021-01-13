@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fac3d01476111c6f959bc669c6a95d2",
+    "content-hash": "a578f5e7d73276ff02bfb203d8d202fc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6969,6 +6969,64 @@
             "time": "2020-12-31T15:48:35+00:00"
         },
         {
+            "name": "vanilo/netopia",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vanilophp/netopia.git",
+                "reference": "b111093a82bf52924015b2f6b5942c20a6b2909b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilophp/netopia/zipball/b111093a82bf52924015b2f6b5942c20a6b2909b",
+                "reference": "b111093a82bf52924015b2f6b5942c20a6b2909b",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "^1.5",
+                "php": "^7.4|^8.0",
+                "vanilo/contracts": "^2.1",
+                "vanilo/payment": "^2.1"
+            },
+            "require-dev": {
+                "ext-sqlite3": "*",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "8 - 9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vanilo\\Netopia\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                },
+                {
+                    "name": "Hunor Kedves",
+                    "homepage": "https://github.com/kedves"
+                }
+            ],
+            "description": "Netopia Payment Gateway Support for Vanilo (Laravel)",
+            "support": {
+                "issues": "https://github.com/vanilophp/netopia",
+                "source": "https://github.com/vanilophp/netopia/tree/master"
+            },
+            "time": "2021-01-13T10:16:05+00:00"
+        },
+        {
             "name": "vanilo/order",
             "version": "2.2.0",
             "source": {
@@ -9776,7 +9834,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "konekt/vanilo-euplatesc": 20
+        "konekt/vanilo-euplatesc": 20,
+        "vanilo/netopia": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
