@@ -41,3 +41,8 @@ Route::group(['prefix' => 'payment/eup', 'as' => 'payment.euplatesc.return.'], f
     Route::post('frontend', 'EuplatescReturnController@frontend')->name('frontend');
     Route::post('silent', 'EuplatescReturnController@silent')->name('silent');
 });
+
+Route::group(['prefix' => 'payment/netopia', 'as' => 'payment.netopia.'], function() {
+    Route::post('confirm', 'NetopiaReturnController@confirm')->name('confirm');
+    Route::get('return', 'NetopiaReturnController@return')->name('return');
+});
