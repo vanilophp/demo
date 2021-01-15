@@ -6974,15 +6974,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/netopia.git",
-                "reference": "b111093a82bf52924015b2f6b5942c20a6b2909b"
+                "reference": "256c8b2d538ac9be3b8541de7da2c8f7e01085ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/netopia/zipball/b111093a82bf52924015b2f6b5942c20a6b2909b",
-                "reference": "b111093a82bf52924015b2f6b5942c20a6b2909b",
+                "url": "https://api.github.com/repos/vanilophp/netopia/zipball/256c8b2d538ac9be3b8541de7da2c8f7e01085ad",
+                "reference": "256c8b2d538ac9be3b8541de7da2c8f7e01085ad",
                 "shasum": ""
             },
             "require": {
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-simplexml": "*",
                 "konekt/concord": "^1.5",
                 "php": "^7.4|^8.0",
                 "vanilo/contracts": "^2.1",
@@ -7024,7 +7027,7 @@
                 "issues": "https://github.com/vanilophp/netopia",
                 "source": "https://github.com/vanilophp/netopia/tree/master"
             },
-            "time": "2021-01-13T10:16:05+00:00"
+            "time": "2021-01-15T11:44:51+00:00"
         },
         {
             "name": "vanilo/order",
