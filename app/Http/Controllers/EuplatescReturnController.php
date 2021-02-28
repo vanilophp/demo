@@ -38,15 +38,18 @@ class EuplatescReturnController extends Controller
             $payment->amount_paid = $response->getAmountPaid();
             if ($response->getAmountPaid() < $payment->getAmount()) {
                 $payment->status = PaymentStatus::PARTIALLY_PAID();
+                $payment->status_message = $response->getMessage();
                 $payment->save();
                 event(new PaymentPartiallyReceived($payment, $response->getAmountPaid()));
             } else {
                 $payment->status = PaymentStatus::PAID();
+                $payment->status_message = $response->getMessage();
                 $payment->save();
                 event(new PaymentCompleted($payment));
             }
         } else {
             $payment->status = PaymentStatus::DECLINED();
+            $payment->status_message = $response->getMessage();
             $payment->save();
             event(new PaymentDeclined($payment));
         }

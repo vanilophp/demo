@@ -61,14 +61,7 @@ class CheckoutController extends Controller
         $payment = PaymentFactory::createFromPayable($order, $paymentMethod);
         $paymentRequest = $paymentMethod
             ->getGateway()
-            ->createPaymentRequest(
-                $payment,
-                $order->getShippingAddress(),
-                [
-                    'confirm' => route('payment.netopia.confirm'),
-                    'return'  => route('payment.netopia.return')
-                ]
-            );
+            ->createPaymentRequest($payment, $order->getShippingAddress());
 
         return view('checkout.thankyou', [
             'order' => $order,

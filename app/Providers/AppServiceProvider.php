@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 use Schema;
 
 class AppServiceProvider extends ServiceProvider
@@ -15,7 +17,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        \URL::forceScheme('https');
+        if (Str::startsWith(URL::to('/'), 'https://')) {
+            URL::forceScheme('https');
+        }
 
         $this->app->concord->registerModel(\Konekt\User\Contracts\User::class, \App\User::class);
     }

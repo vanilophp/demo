@@ -12,11 +12,11 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
-        "konekt/vanilo-euplatesc": "dev-master",
+        "konekt/vanilo-euplatesc": "^1.0",
         "laravel/framework": "^7.0|^8.0",
         "laravel/tinker": "^2.4",
         "laravel/ui": "^2.2",
-        "vanilo/framework": "^2.1",
+        "vanilo/framework": "^2.2.x-dev",
         "vanilo/netopia": "dev-master"
     },
     "require-dev": {
