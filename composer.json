@@ -17,7 +17,9 @@
         "laravel/tinker": "^2.4",
         "laravel/ui": "^2.2",
         "vanilo/framework": "^2.2.x-dev",
-        "vanilo/netopia": "dev-master"
+        "vanilo/netopia": "dev-master",
+        "vanilo/paypal": "1.0.x-dev",
+        "vanilo/simplepay": "1.0.x-dev"
     },
     "require-dev": {
         "doctrine/dbal": "~2.3",

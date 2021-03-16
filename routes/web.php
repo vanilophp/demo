@@ -46,3 +46,12 @@ Route::group(['prefix' => 'payment/netopia', 'as' => 'payment.netopia.'], functi
     Route::post('confirm', 'NetopiaReturnController@confirm')->name('confirm');
     Route::get('return', 'NetopiaReturnController@return')->name('return');
 });
+
+Route::group(['prefix' => 'payment/paypal', 'as' => 'payment.paypal.'], function() {
+    Route::get('return', 'PaypalReturnController@return')->name('return');
+    Route::get('cancel', 'PaypalReturnController@cancel')->name('cancel');
+});
+
+Route::group(['prefix' => 'payment/simplepay', 'as' => 'payment.simplepay.'], function() {
+    Route::get('return', 'SimplepayReturnController@return')->name('return');
+});

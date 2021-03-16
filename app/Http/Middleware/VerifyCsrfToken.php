@@ -13,6 +13,7 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         '/payment/eup/*',
-        '/payment/netopia/*'
+        '/payment/netopia/*',
+        '/payment/paypal/*',
     ];
 }
