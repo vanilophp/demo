@@ -7,15 +7,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.4",
+        "php": "^7.4|^8.0",
         "ext-gd": "*",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
-        "laravel/framework": "^7.0|^8.0",
-        "laravel/tinker": "^2.4",
-        "laravel/ui": "^2.2",
-        "vanilo/framework": "^2.0"
+        "laravel/framework": "^8.0",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.2",
+        "vanilo/framework": "^2.2"
     },
     "require-dev": {
         "doctrine/dbal": "~2.3",
