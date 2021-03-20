@@ -15,13 +15,13 @@ Either download and decompress [the zipball](https://github.com/vanilophp/demo/a
 or use git:
 
 ```bash
-git clone https://github.com/vanilophp/demo.git
+git clone https://github.com/vanilophp/demo.git vanilo-demo
 ```
 
 **2. Install Dependencies**:
 
 ```bash
-cd demo/
+cd vanilo-demo/
 composer install
 ```
 
