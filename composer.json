@@ -17,7 +17,7 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.2",
         "vanilo/framework": "^2.2",
-        "vanilo/netopia": "dev-master",
+        "vanilo/netopia": "^1.1",
         "vanilo/paypal": "1.0.x-dev",
         "vanilo/simplepay": "1.0.x-dev"
     },
