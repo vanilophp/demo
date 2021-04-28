@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f979baf58795d0eb07e59bf4e0228ca8",
+    "content-hash": "dab5cd221344d611b4ca0622c413a890",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7516,6 +7516,64 @@
             "time": "2021-03-16T08:38:33+00:00"
         },
         {
+            "name": "vanilo/stripe",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vanilophp/stripe.git",
+                "reference": "c03c46fe9431164902835868746389e8cc85eebb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilophp/stripe/zipball/c03c46fe9431164902835868746389e8cc85eebb",
+                "reference": "c03c46fe9431164902835868746389e8cc85eebb",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/concord": "^1.5",
+                "php": "^7.4|^8.0",
+                "vanilo/contracts": "^2.1",
+                "vanilo/payment": "^2.1"
+            },
+            "require-dev": {
+                "ext-sqlite3": "*",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "8 - 9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vanilo\\Stripe\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                },
+                {
+                    "name": "Hunor Kedves",
+                    "homepage": "https://github.com/kedves"
+                }
+            ],
+            "description": "Stripe Payment Gateway Support for Vanilo (Laravel)",
+            "support": {
+                "issues": "https://github.com/vanilophp/paypal",
+                "source": "https://github.com/vanilophp/stripe/tree/master"
+            },
+            "time": "2021-03-17T09:01:06+00:00"
+        },
+        {
             "name": "vanilo/support",
             "version": "2.1.1",
             "source": {
@@ -10087,7 +10145,8 @@
         "vanilo/framework": 20,
         "vanilo/netopia": 20,
         "vanilo/paypal": 20,
-        "vanilo/simplepay": 20
+        "vanilo/simplepay": 20,
+        "vanilo/stripe": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

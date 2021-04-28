@@ -47,5 +47,6 @@ return [
         Vanilo\Netopia\Providers\ModuleServiceProvider::class,
         Vanilo\Paypal\Providers\ModuleServiceProvider::class,
         Vanilo\Simplepay\Providers\ModuleServiceProvider::class,
+        Vanilo\Stripe\Providers\ModuleServiceProvider::class,
     ]
 ];
