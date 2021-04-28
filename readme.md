@@ -1,6 +1,6 @@
 # Vanilo Demo Application
 
-![v2.1-dev](https://img.shields.io/badge/version-2.1--dev-green.svg?style=flat-square)
+![v2.2-dev](https://img.shields.io/badge/version-2.2--dev-green.svg?style=flat-square)
 
 This is a minimalistic Laravel 8 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains the Vanilo admin panel.
@@ -35,12 +35,20 @@ composer install
 
 **4. Install Database**:
 
-Run these commands in your terminal:
+Run this command:
 
 ```bash
 php artisan migrate --seed
 ```
-**5. Create the first admin user**:
+
+**5. Link Storage**:
+
+Run this command:
+
+```bash
+php artisan storage:link
+```
+**6. Create the first admin user**:
 
 Run this command:
 
@@ -49,7 +57,7 @@ php artisan make:superuser
 ```
 Enter your email, name, password, **accept _admin_ as role**.
 
-**6. Open the application**:
+**7. Open the application**:
 
 Run the site with `php artisan serve` and access the site:
 

@@ -1626,23 +1626,22 @@
         },
         {
             "name": "konekt/appshell",
-            "version": "2.x-dev",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/appshell.git",
-                "reference": "f1d316a48c7f84476866e62d6459dcda64f19a1a"
+                "reference": "0cafd3d9f88bc9024ce8db44722e9d1c4dc17208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/f1d316a48c7f84476866e62d6459dcda64f19a1a",
-                "reference": "f1d316a48c7f84476866e62d6459dcda64f19a1a",
+                "url": "https://api.github.com/repos/artkonekt/appshell/zipball/0cafd3d9f88bc9024ce8db44722e9d1c4dc17208",
+                "reference": "0cafd3d9f88bc9024ce8db44722e9d1c4dc17208",
                 "shasum": ""
             },
             "require": {
                 "cviebrock/eloquent-sluggable": "6 - 8",
                 "diglactic/laravel-breadcrumbs": "^6.0",
                 "ext-json": "*",
-                "illuminate/view": "^6.0|^7.0|^8.0",
                 "konekt/acl": "~1.3",
                 "konekt/address": "^2.0",
                 "konekt/concord": "^1.5.1",
@@ -1661,11 +1660,10 @@
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "^8.3 || ^9.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.3.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -1696,9 +1694,9 @@
             ],
             "support": {
                 "issues": "https://github.com/artkonekt/appshell",
-                "source": "https://github.com/artkonekt/appshell/tree/2.x"
+                "source": "https://github.com/artkonekt/appshell/tree/2.2.0"
             },
-            "time": "2021-03-14T19:31:42+00:00"
+            "time": "2021-03-14T06:36:39+00:00"
         },
         {
             "name": "konekt/concord",
@@ -2296,16 +2294,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.32.1",
+            "version": "v8.33.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7c37b64f8153c16b6406f5c28cf37828ebbe8846"
+                "reference": "354c57b8cb457549114074c500944455a288d6cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7c37b64f8153c16b6406f5c28cf37828ebbe8846",
-                "reference": "7c37b64f8153c16b6406f5c28cf37828ebbe8846",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/354c57b8cb457549114074c500944455a288d6cc",
+                "reference": "354c57b8cb457549114074c500944455a288d6cc",
                 "shasum": ""
             },
             "require": {
@@ -2460,7 +2458,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-09T15:37:45+00:00"
+            "time": "2021-03-16T19:42:32+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -2532,30 +2530,29 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v2.3.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "2ccaa3b821ea8ac7e05393b946d0578bdb46099b"
+                "reference": "a1f82c6283c8373ea1958b8a27c3d5c98cade351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/2ccaa3b821ea8ac7e05393b946d0578bdb46099b",
-                "reference": "2ccaa3b821ea8ac7e05393b946d0578bdb46099b",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/a1f82c6283c8373ea1958b8a27c3d5c98cade351",
+                "reference": "a1f82c6283c8373ea1958b8a27c3d5c98cade351",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^7.0|^8.0",
-                "illuminate/filesystem": "^7.0|^8.0",
-                "illuminate/support": "^7.0|^8.0",
-                "php": "^7.2.5"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^8.0|^9.0"
+                "illuminate/console": "^8.0",
+                "illuminate/filesystem": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3|^8.0"
             },
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
                 "laravel": {
                     "providers": [
                         "Laravel\\Ui\\UiServiceProvider"
@@ -2585,9 +2582,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/ui/issues",
-                "source": "https://github.com/laravel/ui/tree/v2.3.0"
+                "source": "https://github.com/laravel/ui/tree/v3.2.0"
             },
-            "time": "2020-09-09T12:07:59+00:00"
+            "time": "2021-01-06T19:20:22+00:00"
         },
         {
             "name": "laravelcollective/html",
@@ -6705,31 +6702,32 @@
         },
         {
             "name": "vanilo/cart",
-            "version": "2.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "0aa590e90ffd00ca6e1a416812bf61177f812e4e"
+                "reference": "b0c78678475fc0b914d2b6b6cac5393d4f32d3ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/0aa590e90ffd00ca6e1a416812bf61177f812e4e",
-                "reference": "0aa590e90ffd00ca6e1a416812bf61177f812e4e",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/b0c78678475fc0b914d2b6b6cac5393d4f32d3ce",
+                "reference": "b0c78678475fc0b914d2b6b6cac5393d4f32d3ce",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": "~1.6",
-                "php": "^7.3|^8.0",
-                "vanilo/contracts": "^2.1",
-                "vanilo/support": "^2.1"
+                "konekt/concord": "^1.6",
+                "php": "^7.4|^8.0",
+                "vanilo/contracts": "^2.2",
+                "vanilo/support": "^2.2"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
-                "konekt/enum": "~3.0",
+                "konekt/enum": "^3.0",
                 "laravel/legacy-factories": "^1.0",
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -6738,7 +6736,7 @@
                     }
                 },
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -6768,35 +6766,36 @@
                 "issues": "https://github.com/vanilophp/cart/issues",
                 "source": "https://github.com/vanilophp/cart"
             },
-            "time": "2020-12-31T14:42:18+00:00"
+            "time": "2021-03-20T11:10:43+00:00"
         },
         {
             "name": "vanilo/category",
-            "version": "2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/category.git",
-                "reference": "adb511626e1c94aa684afa76544b2cb246a5e3d3"
+                "reference": "71651ee010fa30ca079413440eaf5a89ab7e370c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/category/zipball/adb511626e1c94aa684afa76544b2cb246a5e3d3",
-                "reference": "adb511626e1c94aa684afa76544b2cb246a5e3d3",
+                "url": "https://api.github.com/repos/vanilophp/category/zipball/71651ee010fa30ca079413440eaf5a89ab7e370c",
+                "reference": "71651ee010fa30ca079413440eaf5a89ab7e370c",
                 "shasum": ""
             },
             "require": {
                 "cviebrock/eloquent-sluggable": "6 - 8",
-                "konekt/concord": "~1.6",
-                "php": "^7.3|^8.0"
+                "konekt/concord": "^1.6",
+                "php": "^7.4|^8.0"
             },
             "require-dev": {
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -6826,35 +6825,36 @@
                 "issues": "https://github.com/vanilophp/category/issues",
                 "source": "https://github.com/vanilophp/category"
             },
-            "time": "2020-12-31T15:39:34+00:00"
+            "time": "2021-03-20T10:44:24+00:00"
         },
         {
             "name": "vanilo/channel",
-            "version": "2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/channel.git",
-                "reference": "06295d169f12253f6979770e8049c5282f8b2904"
+                "reference": "766bb4cdd72ad58659b294c71ef1baa6529ee201"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/channel/zipball/06295d169f12253f6979770e8049c5282f8b2904",
-                "reference": "06295d169f12253f6979770e8049c5282f8b2904",
+                "url": "https://api.github.com/repos/vanilophp/channel/zipball/766bb4cdd72ad58659b294c71ef1baa6529ee201",
+                "reference": "766bb4cdd72ad58659b294c71ef1baa6529ee201",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": "~1.6",
-                "php": "^7.3|^8.0"
+                "konekt/concord": "^1.6",
+                "php": "^7.4|^8.0"
             },
             "require-dev": {
                 "laravel/legacy-factories": "^1.0",
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -6884,37 +6884,38 @@
                 "issues": "https://github.com/vanilophp/channel/issues",
                 "source": "https://github.com/vanilophp/channel"
             },
-            "time": "2020-12-31T15:08:07+00:00"
+            "time": "2021-03-20T12:12:26+00:00"
         },
         {
             "name": "vanilo/checkout",
-            "version": "2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/checkout.git",
-                "reference": "8a60e5828dd2bdc9c25deb1db7118ae675cf2498"
+                "reference": "3e207d6d13adb2f2762f4a9e608d5a4d6b56a1bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/8a60e5828dd2bdc9c25deb1db7118ae675cf2498",
-                "reference": "8a60e5828dd2bdc9c25deb1db7118ae675cf2498",
+                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/3e207d6d13adb2f2762f4a9e608d5a4d6b56a1bc",
+                "reference": "3e207d6d13adb2f2762f4a9e608d5a4d6b56a1bc",
                 "shasum": ""
             },
             "require": {
                 "konekt/concord": "^1.6",
-                "php": "^7.3|^8.0",
-                "vanilo/contracts": "^2.1"
+                "php": "^7.4|^8.0",
+                "vanilo/contracts": "^2.2"
             },
             "require-dev": {
                 "konekt/enum": "^3.0",
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0",
-                "vanilo/support": "^2.1"
+                "vanilo/support": "^2.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -6944,33 +6945,34 @@
                 "issues": "https://github.com/vanilophp/checkout/issues",
                 "source": "https://github.com/vanilophp/checkout"
             },
-            "time": "2020-12-31T14:51:43+00:00"
+            "time": "2021-03-20T11:22:54+00:00"
         },
         {
             "name": "vanilo/contracts",
-            "version": "2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "11f8cc004c62f115158071b7810026b7768e4e80"
+                "reference": "ce48aabebf24c28fe3a1322e8b5e6be8252c0048"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/11f8cc004c62f115158071b7810026b7768e4e80",
-                "reference": "11f8cc004c62f115158071b7810026b7768e4e80",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/ce48aabebf24c28fe3a1322e8b5e6be8252c0048",
+                "reference": "ce48aabebf24c28fe3a1322e8b5e6be8252c0048",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~6.0|~7.0|~8.0",
-                "php": "^7.3|^8.0"
+                "php": "^7.4|^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~8.0|~9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -6999,7 +7001,7 @@
                 "issues": "https://github.com/vanilophp/contracts/issues",
                 "source": "https://github.com/vanilophp/contracts"
             },
-            "time": "2020-12-31T14:11:14+00:00"
+            "time": "2021-03-20T10:07:37+00:00"
         },
         {
             "name": "vanilo/framework",
@@ -7007,32 +7009,33 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "36d80862f68c03df084bd1593b11c9b8ec9ad0b1"
+                "reference": "cba2d75023ce545aae4f994ab337aa95ee2568b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/36d80862f68c03df084bd1593b11c9b8ec9ad0b1",
-                "reference": "36d80862f68c03df084bd1593b11c9b8ec9ad0b1",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/cba2d75023ce545aae4f994ab337aa95ee2568b0",
+                "reference": "cba2d75023ce545aae4f994ab337aa95ee2568b0",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-pdo": "*",
-                "konekt/appshell": "^2.2.x-dev",
+                "konekt/appshell": "^2.2",
                 "konekt/concord": "^1.10",
                 "laravel/framework": "^6.18|^7.0|^8.0",
                 "php": "^7.4|^8.0",
                 "spatie/laravel-medialibrary": "^8.0|^9.0",
-                "vanilo/cart": "^2.1",
-                "vanilo/category": "^2.1",
-                "vanilo/channel": "^2.1",
-                "vanilo/checkout": "^2.1",
-                "vanilo/contracts": "^2.1",
+                "vanilo/cart": "^2.2",
+                "vanilo/category": "^2.2",
+                "vanilo/channel": "^2.2",
+                "vanilo/checkout": "^2.2",
+                "vanilo/contracts": "^2.2",
                 "vanilo/order": "^2.2",
-                "vanilo/payment": "^2.2.x-dev",
-                "vanilo/product": "^2.1",
-                "vanilo/properties": "^2.1.1",
-                "vanilo/support": "^2.1"
+                "vanilo/payment": "^2.2",
+                "vanilo/product": "^2.2",
+                "vanilo/properties": "^2.2",
+                "vanilo/shipping": "^2.2",
+                "vanilo/support": "^2.2"
             },
             "require-dev": {
                 "laravel/legacy-factories": "^1.0.4",
@@ -7075,7 +7078,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-12T15:47:56+00:00"
+            "time": "2021-03-23T11:23:46+00:00"
         },
         {
             "name": "vanilo/netopia",
@@ -7083,22 +7086,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/netopia.git",
-                "reference": "9efcd9323b616818146c9b877480f25dbe96303f"
+                "reference": "4e54db84f706566e16be896ffcd813c0676e7ed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/netopia/zipball/9efcd9323b616818146c9b877480f25dbe96303f",
-                "reference": "9efcd9323b616818146c9b877480f25dbe96303f",
+                "url": "https://api.github.com/repos/vanilophp/netopia/zipball/4e54db84f706566e16be896ffcd813c0676e7ed6",
+                "reference": "4e54db84f706566e16be896ffcd813c0676e7ed6",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-openssl": "*",
                 "ext-simplexml": "*",
-                "konekt/concord": "^1.5",
+                "konekt/concord": "^1.6",
                 "php": "^7.4|^8.0",
-                "vanilo/contracts": "^2.1",
-                "vanilo/payment": "^2.1"
+                "vanilo/contracts": "^2.2",
+                "vanilo/payment": "^2.2"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
@@ -7109,7 +7112,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -7134,9 +7137,9 @@
             "description": "Netopia Payment Gateway Support for Vanilo (Laravel)",
             "support": {
                 "issues": "https://github.com/vanilophp/netopia",
-                "source": "https://github.com/vanilophp/netopia/tree/1.0.0"
+                "source": "https://github.com/vanilophp/netopia/tree/master"
             },
-            "time": "2021-03-02T07:30:37+00:00"
+            "time": "2021-03-21T09:07:56+00:00"
         },
         {
             "name": "vanilo/order",
@@ -7209,20 +7212,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/payment.git",
-                "reference": "6fbc2becf6b95027ca6ff4d5795a61f63a357e2b"
+                "reference": "ba087242d394ff09a361a4ab102a76f80d736449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/payment/zipball/6fbc2becf6b95027ca6ff4d5795a61f63a357e2b",
-                "reference": "6fbc2becf6b95027ca6ff4d5795a61f63a357e2b",
+                "url": "https://api.github.com/repos/vanilophp/payment/zipball/ba087242d394ff09a361a4ab102a76f80d736449",
+                "reference": "ba087242d394ff09a361a4ab102a76f80d736449",
                 "shasum": ""
             },
             "require": {
-                "konekt/concord": "~1.5",
+                "konekt/concord": "^1.6",
                 "konekt/enum": "^3.0",
                 "php": "^7.4|^8.0",
-                "vanilo/contracts": "^2.1",
-                "vanilo/support": "^2.1"
+                "vanilo/contracts": "^2.2",
+                "vanilo/support": "^2.2"
             },
             "require-dev": {
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
@@ -7269,7 +7272,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-03T14:47:58+00:00"
+            "time": "2021-03-22T16:02:22+00:00"
         },
         {
             "name": "vanilo/paypal",
@@ -7277,12 +7280,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/paypal.git",
-                "reference": "ad127d31283a8a22f356b4defddc2e5b0bdf8ece"
+                "reference": "1c9adba3896eb346ec05484d9d025418c4a710bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/paypal/zipball/ad127d31283a8a22f356b4defddc2e5b0bdf8ece",
-                "reference": "ad127d31283a8a22f356b4defddc2e5b0bdf8ece",
+                "url": "https://api.github.com/repos/vanilophp/paypal/zipball/1c9adba3896eb346ec05484d9d025418c4a710bd",
+                "reference": "1c9adba3896eb346ec05484d9d025418c4a710bd",
                 "shasum": ""
             },
             "require": {
@@ -7293,7 +7296,7 @@
                 "paypal/paypal-checkout-sdk": "^1.0",
                 "php": "^7.4|^8.0",
                 "vanilo/contracts": "^2.1",
-                "vanilo/payment": "^2.1"
+                "vanilo/payment": "^2.2"
             },
             "require-dev": {
                 "ext-sqlite3": "*",
@@ -7331,36 +7334,37 @@
                 "issues": "https://github.com/vanilophp/paypal",
                 "source": "https://github.com/vanilophp/paypal/tree/master"
             },
-            "time": "2021-03-13T20:10:04+00:00"
+            "time": "2021-03-19T16:38:58+00:00"
         },
         {
             "name": "vanilo/product",
-            "version": "2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/product.git",
-                "reference": "2afe387fc7b54d7aeb036e113526bbaffe2a99b7"
+                "reference": "b8d837d19738db4f50b05c957ed5bd3580f8d9d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/product/zipball/2afe387fc7b54d7aeb036e113526bbaffe2a99b7",
-                "reference": "2afe387fc7b54d7aeb036e113526bbaffe2a99b7",
+                "url": "https://api.github.com/repos/vanilophp/product/zipball/b8d837d19738db4f50b05c957ed5bd3580f8d9d1",
+                "reference": "b8d837d19738db4f50b05c957ed5bd3580f8d9d1",
                 "shasum": ""
             },
             "require": {
                 "cviebrock/eloquent-sluggable": "4.3 - 8",
-                "konekt/concord": "~1.6",
-                "konekt/enum": "~3.0",
-                "php": "^7.3|^8.0"
+                "konekt/concord": "^1.6",
+                "konekt/enum": "^3.0",
+                "php": "^7.4|^8.0"
             },
             "require-dev": {
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -7390,36 +7394,37 @@
                 "issues": "https://github.com/vanilophp/product/issues",
                 "source": "https://github.com/vanilophp/product"
             },
-            "time": "2020-12-31T14:29:03+00:00"
+            "time": "2021-03-20T10:52:40+00:00"
         },
         {
             "name": "vanilo/properties",
-            "version": "2.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/properties.git",
-                "reference": "593dd72fcdab2f3c1a31569652026f79b41122fa"
+                "reference": "454aec44c46e9f9f3a8ac3d71998fb3bc3ed8a5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/properties/zipball/593dd72fcdab2f3c1a31569652026f79b41122fa",
-                "reference": "593dd72fcdab2f3c1a31569652026f79b41122fa",
+                "url": "https://api.github.com/repos/vanilophp/properties/zipball/454aec44c46e9f9f3a8ac3d71998fb3bc3ed8a5d",
+                "reference": "454aec44c46e9f9f3a8ac3d71998fb3bc3ed8a5d",
                 "shasum": ""
             },
             "require": {
                 "cviebrock/eloquent-sluggable": "4.3 - 8",
-                "konekt/concord": "~1.6",
-                "php": "^7.3|^8.0"
+                "konekt/concord": "^1.6",
+                "php": "^7.4|^8.0"
             },
             "require-dev": {
                 "laravel/legacy-factories": "^1.0.4",
                 "orchestra/testbench": "~4.0|~5.0|~6.0",
                 "phpunit/phpunit": "~8.0|~9.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -7449,7 +7454,72 @@
                 "issues": "https://github.com/vanilophp/properties/issues",
                 "source": "https://github.com/vanilophp/properties"
             },
-            "time": "2021-01-05T10:08:33+00:00"
+            "time": "2021-03-20T12:05:55+00:00"
+        },
+        {
+            "name": "vanilo/shipping",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vanilophp/shipping.git",
+                "reference": "fb8cc06084bf56ee65ad1551d9f4579b8918a1d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilophp/shipping/zipball/fb8cc06084bf56ee65ad1551d9f4579b8918a1d5",
+                "reference": "fb8cc06084bf56ee65ad1551d9f4579b8918a1d5",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/address": "^2.1",
+                "konekt/concord": "^1.6",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "~8.0|~9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vanilo\\Shipping\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Vanilo Shipping Module",
+            "keywords": [
+                "artkonekt",
+                "ecommerce",
+                "laravel",
+                "shipping",
+                "vanilo"
+            ],
+            "support": {
+                "issues": "https://github.com/vanilophp/shipping/issues",
+                "source": "https://github.com/vanilophp/shipping"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fulopattila122",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-03-20T12:32:04+00:00"
         },
         {
             "name": "vanilo/simplepay",
@@ -7457,12 +7527,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/simplepay.git",
-                "reference": "3461e41f5dcdfc2299446118caf0815f0771aabc"
+                "reference": "709f9353ee3ea0df1ea5009f9736b9109a41c1e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/simplepay/zipball/3461e41f5dcdfc2299446118caf0815f0771aabc",
-                "reference": "3461e41f5dcdfc2299446118caf0815f0771aabc",
+                "url": "https://api.github.com/repos/vanilophp/simplepay/zipball/709f9353ee3ea0df1ea5009f9736b9109a41c1e5",
+                "reference": "709f9353ee3ea0df1ea5009f9736b9109a41c1e5",
                 "shasum": ""
             },
             "require": {
@@ -7513,7 +7583,7 @@
                 "issues": "https://github.com/vanilophp/simplepay",
                 "source": "https://github.com/vanilophp/simplepay/tree/master"
             },
-            "time": "2021-03-16T08:38:33+00:00"
+            "time": "2021-03-16T11:26:28+00:00"
         },
         {
             "name": "vanilo/stripe",
@@ -7575,21 +7645,21 @@
         },
         {
             "name": "vanilo/support",
-            "version": "2.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "28787878d072eb843d14676cc8a8184890ba88d5"
+                "reference": "7658025215f46458e5d7bd99fb742be270d7bce3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/28787878d072eb843d14676cc8a8184890ba88d5",
-                "reference": "28787878d072eb843d14676cc8a8184890ba88d5",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/7658025215f46458e5d7bd99fb742be270d7bce3",
+                "reference": "7658025215f46458e5d7bd99fb742be270d7bce3",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~6.0|~7.0|~8.0",
-                "php": "^7.3|^8.0",
+                "php": "^7.4|^8.0",
                 "vanilo/contracts": "^2.1"
             },
             "require-dev": {
@@ -7599,10 +7669,11 @@
                 "konekt/concord": "Library to write Modular Applications (^1.5)",
                 "spatie/laravel-medialibrary": "Allows associating images (or other files) with Eloquent models (^7.0|^8.0|^9.0)"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -7631,7 +7702,7 @@
                 "issues": "https://github.com/vanilophp/support/issues",
                 "source": "https://github.com/vanilophp/support"
             },
-            "time": "2021-01-06T10:37:37+00:00"
+            "time": "2021-03-20T11:07:36+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -7848,6 +7919,87 @@
     ],
     "packages-dev": [
         {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "cae0a8d1cb89b0f0522f65e60465e16d738e069b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/cae0a8d1cb89b0f0522f65e60465e16d738e069b",
+                "reference": "cae0a8d1cb89b0f0522f65e60465e16d738e069b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "^6|^7|^8",
+                "illuminate/session": "^6|^7|^8",
+                "illuminate/support": "^6|^7|^8",
+                "maximebf/debugbar": "^1.16.3",
+                "php": ">=7.2",
+                "symfony/debug": "^4.3|^5",
+                "symfony/finder": "^4.3|^5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.3",
+                "orchestra/testbench-dusk": "^4|^5|^6",
+                "phpunit/phpunit": "^8.5|^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.5-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "support": {
+                "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-06T14:21:44+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.4.0",
             "source": {
@@ -7918,16 +8070,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.9.2",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "df7933820090489623ce0be5e85c7e693638e536"
+                "reference": "f6e14679f948d8a5cfb866fa7065a30c66bd64d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/df7933820090489623ce0be5e85c7e693638e536",
-                "reference": "df7933820090489623ce0be5e85c7e693638e536",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f6e14679f948d8a5cfb866fa7065a30c66bd64d3",
+                "reference": "f6e14679f948d8a5cfb866fa7065a30c66bd64d3",
                 "shasum": ""
             },
             "require": {
@@ -7977,7 +8129,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.9.2"
+                "source": "https://github.com/filp/whoops/tree/2.11.0"
             },
             "funding": [
                 {
@@ -7985,34 +8137,36 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-24T12:00:00+00:00"
+            "time": "2021-03-19T12:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.9.2",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e"
+                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
-                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d0190b156bcca848d401fb80f31f504f37141c8d",
+                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": ">=5.3.3"
             },
             "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^2.9.2"
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "suggest": {
+                "ext-intl": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -8037,10 +8191,10 @@
             ],
             "support": {
                 "issues": "https://github.com/fzaninotto/Faker/issues",
-                "source": "https://github.com/fzaninotto/Faker/tree/v1.9.2"
+                "source": "https://github.com/fzaninotto/Faker/tree/master"
             },
             "abandoned": true,
-            "time": "2020-12-11T09:56:16+00:00"
+            "time": "2015-05-29T06:29:14+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -8165,6 +8319,71 @@
                 "source": "https://github.com/laravel/dusk/tree/v6.13.0"
             },
             "time": "2021-02-23T20:28:11+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.16.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "6d51ee9e94cff14412783785e79a4e7ef97b9d62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/6d51ee9e94cff14412783785e79a4e7ef97b9d62",
+                "reference": "6d51ee9e94cff14412783785e79a4e7ef97b9d62",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8",
+                "psr/log": "^1.0",
+                "symfony/var-dumper": "^2.6|^3|^4|^5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5.20 || ^9.4.2"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.16-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "support": {
+                "issues": "https://github.com/maximebf/php-debugbar/issues",
+                "source": "https://github.com/maximebf/php-debugbar/tree/v1.16.5"
+            },
+            "time": "2020-12-07T11:07:24+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -8638,16 +8857,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.12.2",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "245710e971a030f42e08f4912863805570f23d39"
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/245710e971a030f42e08f4912863805570f23d39",
-                "reference": "245710e971a030f42e08f4912863805570f23d39",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/be1996ed8adc35c3fd795488a653f4b518be70ea",
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea",
                 "shasum": ""
             },
             "require": {
@@ -8699,9 +8918,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpspec/prophecy/issues",
-                "source": "https://github.com/phpspec/prophecy/tree/1.12.2"
+                "source": "https://github.com/phpspec/prophecy/tree/1.13.0"
             },
-            "time": "2020-12-19T10:15:11+00:00"
+            "time": "2021-03-17T13:42:18+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -9023,16 +9242,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.2",
+            "version": "9.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f661659747f2f87f9e72095bb207bceb0f151cb4"
+                "reference": "27241ac75fc37ecf862b6e002bf713b6566cbe41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f661659747f2f87f9e72095bb207bceb0f151cb4",
-                "reference": "f661659747f2f87f9e72095bb207bceb0f151cb4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/27241ac75fc37ecf862b6e002bf713b6566cbe41",
+                "reference": "27241ac75fc37ecf862b6e002bf713b6566cbe41",
                 "shasum": ""
             },
             "require": {
@@ -9110,7 +9329,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.2"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.3"
             },
             "funding": [
                 {
@@ -9122,7 +9341,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-02T14:45:58+00:00"
+            "time": "2021-03-17T07:30:34+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -10089,6 +10308,75 @@
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
+            "name": "symfony/debug",
+            "version": "v4.4.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "157bbec4fd773bae53c5483c50951a5530a2cc16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/157bbec4fd773bae53c5483c50951a5530a2cc16",
+                "reference": "157bbec4fd773bae53c5483c50951a5530a2cc16",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "psr/log": "~1.0",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "symfony/http-kernel": "<3.4"
+            },
+            "require-dev": {
+                "symfony/http-kernel": "^3.4|^4.0|^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools to ease debugging PHP code",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/debug/tree/v4.4.20"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-28T16:54:48+00:00"
+        },
+        {
             "name": "theseer/tokenizer",
             "version": "1.2.0",
             "source": {
@@ -10142,8 +10430,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "vanilo/framework": 20,
-        "vanilo/netopia": 20,
         "vanilo/paypal": 20,
         "vanilo/simplepay": 20,
         "vanilo/stripe": 20

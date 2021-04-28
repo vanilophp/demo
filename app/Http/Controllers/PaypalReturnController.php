@@ -14,12 +14,12 @@ use Vanilo\Payment\PaymentGateways;
 
 class PaypalReturnController extends Controller
 {
-    public function return(Request $request)
+    public function return(Request $request, string $paymentId)
     {
         Log::debug('PayPal confirmation', $request->toArray());
 
         $response = PaymentGateways::make('paypal')->processPaymentResponse($request);
-        $payment  = Payment::findByPaymentId($response->getPaymentId());
+        $payment  = Payment::findByPaymentId($paymentId);
 
         if (!$payment) {
             return new ModelNotFoundException('Could not locate payment with id ' . $response->getPaymentId());
@@ -50,6 +50,16 @@ class PaypalReturnController extends Controller
             'response' => $response,
             'payment'  => $payment,
             'order'    => $payment->getPayable()
+        ]);
+    }
+
+    public function cancel(Request $request, string $paymentId)
+    {
+        $payment = Payment::findByPaymentId($paymentId);
+
+        return view('payment.cancel', [ // The view is from your application
+            'payment' => $payment,
+            'order'   => $payment->getPayable(),
         ]);
     }
 }

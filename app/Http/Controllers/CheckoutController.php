@@ -10,6 +10,7 @@ use Vanilo\Framework\Models\PaymentMethod;
 use Vanilo\Order\Contracts\OrderFactory;
 use Vanilo\Framework\Models\Order;
 use Vanilo\Payment\Factories\PaymentFactory;
+use Vanilo\Payment\Models\PaymentHistory;
 
 class CheckoutController extends Controller
 {
@@ -59,6 +60,7 @@ class CheckoutController extends Controller
 
         $paymentMethod = $request->paymentMethod();
         $payment = PaymentFactory::createFromPayable($order, $paymentMethod);
+        PaymentHistory::begin($payment);
         $paymentRequest = $paymentMethod
             ->getGateway()
             ->createPaymentRequest($payment, $order->getShippingAddress());
