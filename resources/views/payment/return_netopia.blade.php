@@ -9,12 +9,51 @@
 
 @section('content')
     <div class="container">
-        <h1>Payment Return</h1>
+        <h1>Payment of Order {{ $order->getNumber() }}</h1>
 
-        <hr>
+        @if($payment->getStatus()->isPaid() || $payment->getStatus()->isAuthorized())
+            <div class="alert alert-success">
+                Your payment for order <strong>{{ $order->getNumber() }}</strong> was successful:
+                <em>{{ $payment->status_message }}</em>
+            </div>
+        @elseif($payment->getStatus()->isPending())
+            <div class="alert alert-info">
+                Payment for order <strong>{{ $order->getNumber() }}</strong> is being processed
+                @if(null !== $payment->status_message)
+                    <div>Last known status is: <em>{{ $payment->status_message }}</em></div>
+                @endif
+            </div>
+        @elseif($payment->getStatus()->isOnHold())
+            <div class="alert alert-warning">
+                Payment for order <strong>{{ $order->getNumber() }}</strong> has been accepted
+                but the transaction requires additional security checks to complete.
+                @if(null !== $payment->status_message)
+                    <div><em>{{ $payment->status_message }}</em></div>
+                @endif
+            </div>
+        @elseif($payment->getStatus()->isDeclined())
+            <div class="alert alert-danger">
+                Payment for order <strong>{{ $order->getNumber() }}</strong> has been declined:
+                <em>{{ $payment->status_message }}</em>
+            </div>
+        @elseif($payment->getStatus()->isTimeout())
+            <div class="alert alert-danger">
+                Payment for order <strong>{{ $order->getNumber() }}</strong> has timed out.
+                <em>{{ $payment->status_message }}</em>
+            </div>
+        @else
+            <div class="alert alert-warning">
+                Payment status for order <strong>{{ $order->getNumber() }}</strong> is:
+                <strong>{{ $payment->getStatus()->label() }}</strong>
+                @if(null !== $payment->status_message)
+                    <div>The last known status message is: <em>{{ $payment->status_message }}</em></div>
+                @endif
+            </div>
+        @endif
 
-        <?php dump($payment) ?>
-
-        <?php dump($order) ?>
+        @if($payment->getStatus()->isPaid())
+            <h2>Next Steps</h2>
+            <p>Your order has been registered and the products will be handed over to shipping within 24 hours.</p>
+        @endif
     </div>
 @endsection

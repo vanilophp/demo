@@ -7086,12 +7086,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/netopia.git",
-                "reference": "4e54db84f706566e16be896ffcd813c0676e7ed6"
+                "reference": "f5e0fcdbdbf25604c75bd8c20474fdd59fd573db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/netopia/zipball/4e54db84f706566e16be896ffcd813c0676e7ed6",
-                "reference": "4e54db84f706566e16be896ffcd813c0676e7ed6",
+                "url": "https://api.github.com/repos/vanilophp/netopia/zipball/f5e0fcdbdbf25604c75bd8c20474fdd59fd573db",
+                "reference": "f5e0fcdbdbf25604c75bd8c20474fdd59fd573db",
                 "shasum": ""
             },
             "require": {
@@ -7139,7 +7139,7 @@
                 "issues": "https://github.com/vanilophp/netopia",
                 "source": "https://github.com/vanilophp/netopia/tree/master"
             },
-            "time": "2021-03-21T09:07:56+00:00"
+            "time": "2021-05-12T20:57:40+00:00"
         },
         {
             "name": "vanilo/order",
@@ -7212,12 +7212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/payment.git",
-                "reference": "ba087242d394ff09a361a4ab102a76f80d736449"
+                "reference": "c441db7b202e8db6345c1a1d15adbd8c05432a2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/payment/zipball/ba087242d394ff09a361a4ab102a76f80d736449",
-                "reference": "ba087242d394ff09a361a4ab102a76f80d736449",
+                "url": "https://api.github.com/repos/vanilophp/payment/zipball/c441db7b202e8db6345c1a1d15adbd8c05432a2a",
+                "reference": "c441db7b202e8db6345c1a1d15adbd8c05432a2a",
                 "shasum": ""
             },
             "require": {
@@ -7272,7 +7272,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-22T16:02:22+00:00"
+            "time": "2021-05-12T19:49:39+00:00"
         },
         {
             "name": "vanilo/paypal",
