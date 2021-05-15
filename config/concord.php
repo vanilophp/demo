@@ -43,7 +43,7 @@ return [
                 ]
             ],
         ],
-        Konekt\Euplatesc\Providers\ModuleServiceProvider::class,
+        Vanilo\Euplatesc\Providers\ModuleServiceProvider::class,
         Vanilo\Netopia\Providers\ModuleServiceProvider::class,
         Vanilo\Paypal\Providers\ModuleServiceProvider::class,
         Vanilo\Simplepay\Providers\ModuleServiceProvider::class,

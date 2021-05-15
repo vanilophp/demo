@@ -46,8 +46,7 @@ class SimplepayReturnController extends Controller
             event(new PaymentDeclined($payment));
         }
 
-        return view('payment.return_simplepay', [
-            'response' => $response,
+        return view('payment.return', [
             'payment'  => $payment,
             'order'    => $payment->getPayable()
         ]);

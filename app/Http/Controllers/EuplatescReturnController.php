@@ -14,14 +14,12 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Vanilo\Payment\Events\PaymentCompleted;
-use Vanilo\Payment\Events\PaymentDeclined;
-use Vanilo\Payment\Events\PaymentPartiallyReceived;
 use Vanilo\Payment\Models\Payment;
-use Vanilo\Payment\Models\PaymentStatus;
 use Vanilo\Payment\PaymentGateways;
+use Vanilo\Payment\Processing\PaymentResponseHandler;
 
 class EuplatescReturnController extends Controller
 {
@@ -34,28 +32,7 @@ class EuplatescReturnController extends Controller
             abort(404);
         }
 
-        if ($response->wasSuccessful()) {
-            $payment->amount_paid = $response->getAmountPaid();
-            if ($response->getAmountPaid() < $payment->getAmount()) {
-                $payment->status = PaymentStatus::PARTIALLY_PAID();
-                $payment->status_message = $response->getMessage();
-                $payment->save();
-                event(new PaymentPartiallyReceived($payment, $response->getAmountPaid()));
-            } else {
-                $payment->status = PaymentStatus::PAID();
-                $payment->status_message = $response->getMessage();
-                $payment->save();
-                event(new PaymentCompleted($payment));
-            }
-        } else {
-            $payment->status = PaymentStatus::DECLINED();
-            $payment->status_message = $response->getMessage();
-            $payment->save();
-            event(new PaymentDeclined($payment));
-        }
-
-        return view('payment.return_euplatesc', [
-            'response' => $response,
+        return view('payment.return', [
             'payment' => $payment,
             'order' => $payment->getPayable()
         ]);
@@ -64,5 +41,29 @@ class EuplatescReturnController extends Controller
     public function silent(Request $request)
     {
         Log::debug('Euplatesc silent return', $request->toArray());
+
+        $response = PaymentGateways::make('euplatesc')->processPaymentResponse($request);
+        $payment = Payment::findByPaymentId($response->getPaymentId());
+
+        if (!$payment) {
+            // Euplatesc doesn't specify requirements for
+            // merchant HTTP responses. Therefore, any
+            // other format is allowed XML/TXT, etc
+            return new JsonResponse([
+                'message' => 'Could not locate payment',
+                'payment_id' => $response->getPaymentId()
+            ], 404);
+        }
+
+        $handler = new PaymentResponseHandler($payment, $response);
+        $handler->writeResponseToHistory();
+        $handler->updatePayment();
+        $handler->fireEvents();
+
+        // Response format is arbitrary but it must have HTTP 200 status code on success
+        return new JsonResponse([
+            'message' => 'Response processed successfully',
+            'payment_id' => $response->getPaymentId()
+        ]);
     }
 }

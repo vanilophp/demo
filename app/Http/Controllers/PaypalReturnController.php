@@ -46,8 +46,7 @@ class PaypalReturnController extends Controller
             event(new PaymentDeclined($payment));
         }
 
-        return view('payment.return_paypal', [
-            'response' => $response,
+        return view('payment.return', [
             'payment'  => $payment,
             'order'    => $payment->getPayable()
         ]);

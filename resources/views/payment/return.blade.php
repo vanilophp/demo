@@ -4,6 +4,7 @@
     <li class="breadcrumb-item"><a href="{{ route('product.index') }}">All Products</a></li>
     <li class="breadcrumb-item"><a href="{{ route('cart.show') }}">Cart</a></li>
     <li class="breadcrumb-item">Checkout</li>
+    <li class="breadcrumb-item">Payment</li>
 
 @stop
 
@@ -51,7 +52,7 @@
             </div>
         @endif
 
-        @if($payment->getStatus()->isPaid())
+        @if($payment->getStatus()->isPaid()|| $payment->getStatus()->isAuthorized())
             <h2>Next Steps</h2>
             <p>Your order has been registered and the products will be handed over to shipping within 24 hours.</p>
         @endif

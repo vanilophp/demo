@@ -16,10 +16,9 @@ class NetopiaReturnController extends Controller
     {
         $payment = Payment::findByPaymentId($request->get('orderId'));
 
-        return view('payment.return_netopia', [
+        return view('payment.return', [
             'payment' => $payment,
             'order'   => $payment->getPayable(),
-            'request' => $request,
         ]);
     }
 
