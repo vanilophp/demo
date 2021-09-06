@@ -55,3 +55,7 @@ Route::group(['prefix' => 'payment/paypal', 'as' => 'payment.paypal.'], function
 Route::group(['prefix' => 'payment/simplepay', 'as' => 'payment.simplepay.'], function() {
     Route::get('return', 'SimplepayReturnController@return')->name('return');
 });
+
+Route::group(['prefix' => 'payment/stripe', 'as' => 'payment.stripe.'], function() {
+    Route::post('webhook', 'StripeReturnController@webhook');
+});
