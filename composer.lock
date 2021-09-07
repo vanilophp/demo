@@ -4,8 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3305f8b91454a606a6f4d590fe215d46",
+    "content-hash": "552ed164e4717489e36b356ba9189dea",
     "packages": [
+        {
+            "name": "adyen/php-api-library",
+            "version": "10.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Adyen/adyen-php-api-library.git",
+                "reference": "91917518e17595a91a3cc5887dd95e7d76767276"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Adyen/adyen-php-api-library/zipball/91917518e17595a91a3cc5887dd95e7d76767276",
+                "reference": "91917518e17595a91a3cc5887dd95e7d76767276",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "monolog/monolog": ">=1.16",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dms/phpunit-arraysubset-asserts": "0.2.1",
+                "friendsofphp/php-cs-fixer": "*",
+                "php-coveralls/php-coveralls": "2.4.3",
+                "phpunit/phpunit": "9.5.4",
+                "squizlabs/php_codesniffer": "3.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Adyen\\": "src/Adyen/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "A PHP client library for accessing Adyen APIs",
+            "homepage": "https://github.com/Adyen/adyen-php-api-library",
+            "keywords": [
+                "adyen"
+            ],
+            "support": {
+                "issues": "https://github.com/Adyen/adyen-php-api-library/issues",
+                "source": "https://github.com/Adyen/adyen-php-api-library/tree/10.1.0"
+            },
+            "time": "2021-04-30T14:03:59+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -6648,6 +6699,61 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
+            "name": "vanilo/adyen",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vanilophp/adyen.git",
+                "reference": "5840d26fbe132b710fa36d949c4d59769c419781"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilophp/adyen/zipball/5840d26fbe132b710fa36d949c4d59769c419781",
+                "reference": "5840d26fbe132b710fa36d949c4d59769c419781",
+                "shasum": ""
+            },
+            "require": {
+                "adyen/php-api-library": "^10.1",
+                "ext-json": "*",
+                "konekt/concord": "^1.5",
+                "php": "^7.4|^8.0",
+                "vanilo/contracts": "^2.2",
+                "vanilo/payment": "^2.2"
+            },
+            "require-dev": {
+                "ext-sqlite3": "*",
+                "orchestra/testbench": "~6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vanilo\\Adyen\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop"
+                }
+            ],
+            "description": "Adyen Payment Gateway Support for Vanilo (Laravel)",
+            "support": {
+                "issues": "https://github.com/vanilophp/adyen/issues",
+                "source": "https://github.com/vanilophp/adyen/tree/master"
+            },
+            "time": "2021-08-03T08:01:21+00:00"
+        },
+        {
             "name": "vanilo/cart",
             "version": "dev-master",
             "source": {
@@ -10432,6 +10538,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "vanilo/adyen": 20,
         "vanilo/euplatesc": 20,
         "vanilo/paypal": 20,
         "vanilo/simplepay": 20,
