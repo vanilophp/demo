@@ -4,59 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "552ed164e4717489e36b356ba9189dea",
+    "content-hash": "3305f8b91454a606a6f4d590fe215d46",
     "packages": [
-        {
-            "name": "adyen/php-api-library",
-            "version": "10.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Adyen/adyen-php-api-library.git",
-                "reference": "91917518e17595a91a3cc5887dd95e7d76767276"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Adyen/adyen-php-api-library/zipball/91917518e17595a91a3cc5887dd95e7d76767276",
-                "reference": "91917518e17595a91a3cc5887dd95e7d76767276",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "ext-openssl": "*",
-                "monolog/monolog": ">=1.16",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "dms/phpunit-arraysubset-asserts": "0.2.1",
-                "friendsofphp/php-cs-fixer": "*",
-                "php-coveralls/php-coveralls": "2.4.3",
-                "phpunit/phpunit": "9.5.4",
-                "squizlabs/php_codesniffer": "3.6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Adyen\\": "src/Adyen/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "A PHP client library for accessing Adyen APIs",
-            "homepage": "https://github.com/Adyen/adyen-php-api-library",
-            "keywords": [
-                "adyen"
-            ],
-            "support": {
-                "issues": "https://github.com/Adyen/adyen-php-api-library/issues",
-                "source": "https://github.com/Adyen/adyen-php-api-library/tree/10.1.0"
-            },
-            "time": "2021-04-30T14:03:59+00:00"
-        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -4399,6 +4348,67 @@
             "time": "2020-11-09T15:54:21+00:00"
         },
         {
+            "name": "stripe/stripe-php",
+            "version": "v7.94.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "03cd6b5c1c4fc9087ddd1dd046457bff274294d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/03cd6b5c1c4fc9087ddd1dd046457bff274294d6",
+                "reference": "03cd6b5c1c4fc9087ddd1dd046457bff274294d6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "2.17.1",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.3",
+                "symfony/process": "~3.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v7.94.0"
+            },
+            "time": "2021-08-19T14:15:27+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v6.2.7",
             "source": {
@@ -6699,72 +6709,17 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
-            "name": "vanilo/adyen",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vanilophp/adyen.git",
-                "reference": "5840d26fbe132b710fa36d949c4d59769c419781"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/adyen/zipball/5840d26fbe132b710fa36d949c4d59769c419781",
-                "reference": "5840d26fbe132b710fa36d949c4d59769c419781",
-                "shasum": ""
-            },
-            "require": {
-                "adyen/php-api-library": "^10.1",
-                "ext-json": "*",
-                "konekt/concord": "^1.5",
-                "php": "^7.4|^8.0",
-                "vanilo/contracts": "^2.2",
-                "vanilo/payment": "^2.2"
-            },
-            "require-dev": {
-                "ext-sqlite3": "*",
-                "orchestra/testbench": "~6.0",
-                "phpunit/phpunit": "^9.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Vanilo\\Adyen\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Attila Fulop"
-                }
-            ],
-            "description": "Adyen Payment Gateway Support for Vanilo (Laravel)",
-            "support": {
-                "issues": "https://github.com/vanilophp/adyen/issues",
-                "source": "https://github.com/vanilophp/adyen/tree/master"
-            },
-            "time": "2021-08-03T08:01:21+00:00"
-        },
-        {
             "name": "vanilo/cart",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/cart.git",
-                "reference": "b0c78678475fc0b914d2b6b6cac5393d4f32d3ce"
+                "reference": "e43b7540f1f042b61a3deb47c484e370c9aa7687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/cart/zipball/b0c78678475fc0b914d2b6b6cac5393d4f32d3ce",
-                "reference": "b0c78678475fc0b914d2b6b6cac5393d4f32d3ce",
+                "url": "https://api.github.com/repos/vanilophp/cart/zipball/e43b7540f1f042b61a3deb47c484e370c9aa7687",
+                "reference": "e43b7540f1f042b61a3deb47c484e370c9aa7687",
                 "shasum": ""
             },
             "require": {
@@ -6819,7 +6774,7 @@
                 "issues": "https://github.com/vanilophp/cart/issues",
                 "source": "https://github.com/vanilophp/cart"
             },
-            "time": "2021-03-20T11:10:43+00:00"
+            "time": "2021-07-26T14:27:20+00:00"
         },
         {
             "name": "vanilo/category",
@@ -6827,12 +6782,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/category.git",
-                "reference": "71651ee010fa30ca079413440eaf5a89ab7e370c"
+                "reference": "5caa8a3ee4a3a5c73e73b65a05b8189918900e49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/category/zipball/71651ee010fa30ca079413440eaf5a89ab7e370c",
-                "reference": "71651ee010fa30ca079413440eaf5a89ab7e370c",
+                "url": "https://api.github.com/repos/vanilophp/category/zipball/5caa8a3ee4a3a5c73e73b65a05b8189918900e49",
+                "reference": "5caa8a3ee4a3a5c73e73b65a05b8189918900e49",
                 "shasum": ""
             },
             "require": {
@@ -6878,7 +6833,7 @@
                 "issues": "https://github.com/vanilophp/category/issues",
                 "source": "https://github.com/vanilophp/category"
             },
-            "time": "2021-03-20T10:44:24+00:00"
+            "time": "2021-03-24T18:03:04+00:00"
         },
         {
             "name": "vanilo/channel",
@@ -6886,12 +6841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/channel.git",
-                "reference": "766bb4cdd72ad58659b294c71ef1baa6529ee201"
+                "reference": "a732cda4b3c167fdde2e32e548222114879cd233"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/channel/zipball/766bb4cdd72ad58659b294c71ef1baa6529ee201",
-                "reference": "766bb4cdd72ad58659b294c71ef1baa6529ee201",
+                "url": "https://api.github.com/repos/vanilophp/channel/zipball/a732cda4b3c167fdde2e32e548222114879cd233",
+                "reference": "a732cda4b3c167fdde2e32e548222114879cd233",
                 "shasum": ""
             },
             "require": {
@@ -6937,7 +6892,7 @@
                 "issues": "https://github.com/vanilophp/channel/issues",
                 "source": "https://github.com/vanilophp/channel"
             },
-            "time": "2021-03-20T12:12:26+00:00"
+            "time": "2021-03-24T18:06:32+00:00"
         },
         {
             "name": "vanilo/checkout",
@@ -6945,12 +6900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/checkout.git",
-                "reference": "3e207d6d13adb2f2762f4a9e608d5a4d6b56a1bc"
+                "reference": "f1e5f30bcc2e1784f89f42bc39d31983afdd4dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/3e207d6d13adb2f2762f4a9e608d5a4d6b56a1bc",
-                "reference": "3e207d6d13adb2f2762f4a9e608d5a4d6b56a1bc",
+                "url": "https://api.github.com/repos/vanilophp/checkout/zipball/f1e5f30bcc2e1784f89f42bc39d31983afdd4dc3",
+                "reference": "f1e5f30bcc2e1784f89f42bc39d31983afdd4dc3",
                 "shasum": ""
             },
             "require": {
@@ -6998,7 +6953,7 @@
                 "issues": "https://github.com/vanilophp/checkout/issues",
                 "source": "https://github.com/vanilophp/checkout"
             },
-            "time": "2021-03-20T11:22:54+00:00"
+            "time": "2021-03-24T18:04:47+00:00"
         },
         {
             "name": "vanilo/contracts",
@@ -7006,12 +6961,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/contracts.git",
-                "reference": "ce48aabebf24c28fe3a1322e8b5e6be8252c0048"
+                "reference": "0e15d5cda3e0abc07970b334274e6539118ff938"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/ce48aabebf24c28fe3a1322e8b5e6be8252c0048",
-                "reference": "ce48aabebf24c28fe3a1322e8b5e6be8252c0048",
+                "url": "https://api.github.com/repos/vanilophp/contracts/zipball/0e15d5cda3e0abc07970b334274e6539118ff938",
+                "reference": "0e15d5cda3e0abc07970b334274e6539118ff938",
                 "shasum": ""
             },
             "require": {
@@ -7054,7 +7009,7 @@
                 "issues": "https://github.com/vanilophp/contracts/issues",
                 "source": "https://github.com/vanilophp/contracts"
             },
-            "time": "2021-03-20T10:07:37+00:00"
+            "time": "2021-05-15T17:53:54+00:00"
         },
         {
             "name": "vanilo/euplatesc",
@@ -7116,12 +7071,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "cba2d75023ce545aae4f994ab337aa95ee2568b0"
+                "reference": "351bec63872d1b2b98872be5c6a23d597d830b13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/cba2d75023ce545aae4f994ab337aa95ee2568b0",
-                "reference": "cba2d75023ce545aae4f994ab337aa95ee2568b0",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/351bec63872d1b2b98872be5c6a23d597d830b13",
+                "reference": "351bec63872d1b2b98872be5c6a23d597d830b13",
                 "shasum": ""
             },
             "require": {
@@ -7185,7 +7140,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-23T11:23:46+00:00"
+            "time": "2021-08-27T11:21:42+00:00"
         },
         {
             "name": "vanilo/netopia",
@@ -7319,12 +7274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/payment.git",
-                "reference": "7d56e64f06601dfd0110edd7c73d2277714c04fb"
+                "reference": "dda78f2f53aa9a64f125b869b21263651ea91747"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/payment/zipball/7d56e64f06601dfd0110edd7c73d2277714c04fb",
-                "reference": "7d56e64f06601dfd0110edd7c73d2277714c04fb",
+                "url": "https://api.github.com/repos/vanilophp/payment/zipball/dda78f2f53aa9a64f125b869b21263651ea91747",
+                "reference": "dda78f2f53aa9a64f125b869b21263651ea91747",
                 "shasum": ""
             },
             "require": {
@@ -7379,7 +7334,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-23T12:40:16+00:00"
+            "time": "2021-08-10T11:05:49+00:00"
         },
         {
             "name": "vanilo/paypal",
@@ -7387,12 +7342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/paypal.git",
-                "reference": "9c030f10a53eaf0fa94618527710cdb60c009662"
+                "reference": "ba9e2a2318c339a298cf96492c7bb8ac7cca0e07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/paypal/zipball/9c030f10a53eaf0fa94618527710cdb60c009662",
-                "reference": "9c030f10a53eaf0fa94618527710cdb60c009662",
+                "url": "https://api.github.com/repos/vanilophp/paypal/zipball/ba9e2a2318c339a298cf96492c7bb8ac7cca0e07",
+                "reference": "ba9e2a2318c339a298cf96492c7bb8ac7cca0e07",
                 "shasum": ""
             },
             "require": {
@@ -7442,7 +7397,7 @@
                 "issues": "https://github.com/vanilophp/paypal",
                 "source": "https://github.com/vanilophp/paypal/tree/master"
             },
-            "time": "2021-05-24T05:56:47+00:00"
+            "time": "2021-08-15T08:45:42+00:00"
         },
         {
             "name": "vanilo/product",
@@ -7450,12 +7405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/product.git",
-                "reference": "b8d837d19738db4f50b05c957ed5bd3580f8d9d1"
+                "reference": "cf6cabb0c30309081f01610a3c45aa1fa34766cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/product/zipball/b8d837d19738db4f50b05c957ed5bd3580f8d9d1",
-                "reference": "b8d837d19738db4f50b05c957ed5bd3580f8d9d1",
+                "url": "https://api.github.com/repos/vanilophp/product/zipball/cf6cabb0c30309081f01610a3c45aa1fa34766cf",
+                "reference": "cf6cabb0c30309081f01610a3c45aa1fa34766cf",
                 "shasum": ""
             },
             "require": {
@@ -7502,7 +7457,7 @@
                 "issues": "https://github.com/vanilophp/product/issues",
                 "source": "https://github.com/vanilophp/product"
             },
-            "time": "2021-03-20T10:52:40+00:00"
+            "time": "2021-03-24T18:03:41+00:00"
         },
         {
             "name": "vanilo/properties",
@@ -7510,12 +7465,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/properties.git",
-                "reference": "454aec44c46e9f9f3a8ac3d71998fb3bc3ed8a5d"
+                "reference": "a6791027102c67d501e353bbb04f3a57deb7f87c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/properties/zipball/454aec44c46e9f9f3a8ac3d71998fb3bc3ed8a5d",
-                "reference": "454aec44c46e9f9f3a8ac3d71998fb3bc3ed8a5d",
+                "url": "https://api.github.com/repos/vanilophp/properties/zipball/a6791027102c67d501e353bbb04f3a57deb7f87c",
+                "reference": "a6791027102c67d501e353bbb04f3a57deb7f87c",
                 "shasum": ""
             },
             "require": {
@@ -7562,7 +7517,7 @@
                 "issues": "https://github.com/vanilophp/properties/issues",
                 "source": "https://github.com/vanilophp/properties"
             },
-            "time": "2021-03-20T12:05:55+00:00"
+            "time": "2021-03-24T18:06:01+00:00"
         },
         {
             "name": "vanilo/shipping",
@@ -7570,12 +7525,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/shipping.git",
-                "reference": "fb8cc06084bf56ee65ad1551d9f4579b8918a1d5"
+                "reference": "d9f4e44a1b87f43146b08a7a5a091f37faf907d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/shipping/zipball/fb8cc06084bf56ee65ad1551d9f4579b8918a1d5",
-                "reference": "fb8cc06084bf56ee65ad1551d9f4579b8918a1d5",
+                "url": "https://api.github.com/repos/vanilophp/shipping/zipball/d9f4e44a1b87f43146b08a7a5a091f37faf907d1",
+                "reference": "d9f4e44a1b87f43146b08a7a5a091f37faf907d1",
                 "shasum": ""
             },
             "require": {
@@ -7627,7 +7582,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-20T12:32:04+00:00"
+            "time": "2021-05-27T09:19:29+00:00"
         },
         {
             "name": "vanilo/simplepay",
@@ -7699,17 +7654,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/stripe.git",
-                "reference": "c03c46fe9431164902835868746389e8cc85eebb"
+                "reference": "39d6f1f0062881adb283022fedbf8bf639ed54f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/stripe/zipball/c03c46fe9431164902835868746389e8cc85eebb",
-                "reference": "c03c46fe9431164902835868746389e8cc85eebb",
+                "url": "https://api.github.com/repos/vanilophp/stripe/zipball/39d6f1f0062881adb283022fedbf8bf639ed54f4",
+                "reference": "39d6f1f0062881adb283022fedbf8bf639ed54f4",
                 "shasum": ""
             },
             "require": {
                 "konekt/concord": "^1.5",
                 "php": "^7.4|^8.0",
+                "stripe/stripe-php": "^7.75",
                 "vanilo/contracts": "^2.1",
                 "vanilo/payment": "^2.1"
             },
@@ -7746,10 +7702,10 @@
             ],
             "description": "Stripe Payment Gateway Support for Vanilo (Laravel)",
             "support": {
-                "issues": "https://github.com/vanilophp/paypal",
+                "issues": "https://github.com/vanilophp/stripe",
                 "source": "https://github.com/vanilophp/stripe/tree/master"
             },
-            "time": "2021-03-17T09:01:06+00:00"
+            "time": "2021-08-30T07:43:35+00:00"
         },
         {
             "name": "vanilo/support",
@@ -7757,12 +7713,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/support.git",
-                "reference": "7658025215f46458e5d7bd99fb742be270d7bce3"
+                "reference": "275f7aee51d33d4b0bff6d1bbeac65f91d2f012e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/support/zipball/7658025215f46458e5d7bd99fb742be270d7bce3",
-                "reference": "7658025215f46458e5d7bd99fb742be270d7bce3",
+                "url": "https://api.github.com/repos/vanilophp/support/zipball/275f7aee51d33d4b0bff6d1bbeac65f91d2f012e",
+                "reference": "275f7aee51d33d4b0bff6d1bbeac65f91d2f012e",
                 "shasum": ""
             },
             "require": {
@@ -7810,7 +7766,7 @@
                 "issues": "https://github.com/vanilophp/support/issues",
                 "source": "https://github.com/vanilophp/support"
             },
-            "time": "2021-03-20T11:07:36+00:00"
+            "time": "2021-03-24T18:02:44+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -10538,7 +10494,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "vanilo/adyen": 20,
         "vanilo/euplatesc": 20,
         "vanilo/paypal": 20,
         "vanilo/simplepay": 20,
@@ -10551,5 +10506,5 @@
         "ext-gd": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

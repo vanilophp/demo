@@ -61,3 +61,7 @@ Route::group(['prefix' => 'payment/adyen', 'as' => 'payment.adyen.'], function()
     Route::post('{paymentId}/submit', 'AdyenController@submit')->name('submit');
     Route::post('webhook', 'AdyenController@webhook')->name('webhook');
 });
+
+Route::group(['prefix' => 'payment/stripe', 'as' => 'payment.stripe.'], function() {
+    Route::post('webhook', 'StripeReturnController@webhook');
+});
