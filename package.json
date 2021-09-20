@@ -25,7 +25,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "prismjs": "^1.24.0",
+        "prismjs": "^1.25.0",
         "js-yaml": "^3.13.1",
         "mem": "^4.0.0",
         "serialize-javascript": "^3.1.0",
