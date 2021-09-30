@@ -48,5 +48,6 @@ return [
         Vanilo\Paypal\Providers\ModuleServiceProvider::class,
         Vanilo\Simplepay\Providers\ModuleServiceProvider::class,
         Vanilo\Stripe\Providers\ModuleServiceProvider::class,
+        Vanilo\Adyen\Providers\ModuleServiceProvider::class,
     ]
 ];

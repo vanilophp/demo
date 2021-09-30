@@ -48,12 +48,18 @@ Route::group(['prefix' => 'payment/netopia', 'as' => 'payment.netopia.'], functi
 });
 
 Route::group(['prefix' => 'payment/paypal', 'as' => 'payment.paypal.'], function() {
-    Route::get('return/{paymentId}', 'PaypalReturnController@return')->name('return');
-    Route::get('cancel/{paymentId}', 'PaypalReturnController@cancel')->name('cancel');
+    Route::get('return', 'PaypalReturnController@return')->name('return');
+    Route::get('cancel', 'PaypalReturnController@cancel')->name('cancel');
+    Route::any('webhook', 'PaypalReturnController@webhook')->name('webhook');
 });
 
 Route::group(['prefix' => 'payment/simplepay', 'as' => 'payment.simplepay.'], function() {
     Route::get('return', 'SimplepayReturnController@return')->name('return');
+});
+
+Route::group(['prefix' => 'payment/adyen', 'as' => 'payment.adyen.'], function() {
+    Route::post('{paymentId}/submit', 'AdyenController@submit')->name('submit');
+    Route::post('webhook', 'AdyenController@webhook')->name('webhook');
 });
 
 Route::group(['prefix' => 'payment/stripe', 'as' => 'payment.stripe.'], function() {

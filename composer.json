@@ -15,6 +15,7 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.2",
+        "vanilo/adyen": "1.0.x-dev",
         "vanilo/euplatesc": "^2.0.x-dev",
         "vanilo/framework": "^2.2",
         "vanilo/netopia": "^1.1",

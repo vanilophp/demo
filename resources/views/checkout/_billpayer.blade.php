@@ -33,7 +33,7 @@
 
     <div class="col-md-6">
         <div class="form-group">
-            {{ Form::text('billpayer[firstname]', null, [
+            {{ Form::text('billpayer[firstname]', Auth::user() ? (explode(' ', Auth::user()->name)[0] ?? ''): null, [
                     'class' => 'form-control' . ($errors->has('billpayer.firstname') ? ' is-invalid' : ''),
                     'placeholder' => __('First name')
                 ])
@@ -47,7 +47,7 @@
 
     <div class="col-md-6">
         <div class="form-group">
-            {{ Form::text('billpayer[lastname]', null, [
+            {{ Form::text('billpayer[lastname]', Auth::user() ? (explode(' ', Auth::user()->name)[1] ?? ''): null, [
                     'class' => 'form-control' . ($errors->has('billpayer.lastname') ? ' is-invalid' : ''),
                     'placeholder' => __('Last name')
                 ])
