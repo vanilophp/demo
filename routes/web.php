@@ -55,6 +55,7 @@ Route::group(['prefix' => 'payment/paypal', 'as' => 'payment.paypal.'], function
 
 Route::group(['prefix' => 'payment/simplepay', 'as' => 'payment.simplepay.'], function() {
     Route::get('return', 'SimplepayReturnController@return')->name('return');
+    Route::post('silent', 'SimplepayReturnController@silent')->name('silent');
 });
 
 Route::group(['prefix' => 'payment/adyen', 'as' => 'payment.adyen.'], function() {

@@ -17,5 +17,6 @@ class VerifyCsrfToken extends Middleware
         '/payment/paypal/*',
         '/payment/adyen/*',
         '/payment/stripe/*',
+        '/payment/simplepay/*',
     ];
 }

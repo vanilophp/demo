@@ -13,6 +13,22 @@ class SimplepayReturnController extends Controller
 {
     public function return(Request $request)
     {
+        $response = PaymentGateways::make('simplepay')->processFrontendPaymentResponse($request);
+        $payment = Payment::findByPaymentId($response->getPaymentId());
+
+        if (!$payment) {
+            return new ModelNotFoundException('Could not locate payment with id ' . $response->getPaymentId());
+        }
+
+        return view('payment.return', [
+            'response' => $response,
+            'payment' => $payment,
+            'order' => $payment->getPayable(),
+        ]);
+    }
+
+    public function silent(Request $request)
+    {
         Log::debug('SimplePay confirmation', $request->toArray());
 
         $response = PaymentGateways::make('simplepay')->processPaymentResponse($request);
@@ -27,9 +43,6 @@ class SimplepayReturnController extends Controller
         $handler->updatePayment();
         $handler->fireEvents();
 
-        return view('payment.return', [
-            'payment' => $payment,
-            'order' => $payment->getPayable(),
-        ]);
+        return $response->displayIpnConfirmation();
     }
 }
