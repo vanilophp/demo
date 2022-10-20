@@ -65,12 +65,12 @@
 <div class="form-group">
     <div class="form-check">
         <input class="form-check-input" id="chk_is_organization" type="checkbox"
-               name="billpayer[is_organization]" value="1" v-model="isOrganization">
+               name="billpayer[is_organization]" value="1" x-model="isOrganization">
         <label class="form-check-label" for="chk_is_organization">{{ __('Bill to Company') }}</label>
     </div>
 </div>
 
-<div id="billpayer-organization" v-show="isOrganization">
+<div id="billpayer-organization" x-show="isOrganization">
     <div class="form-group">
         {{ Form::text('billpayer[company_name]', null, [
                 'class' => 'form-control form-control-lg' . ($errors->has('billpayer.company_name') ? ' is-invalid' : ''),

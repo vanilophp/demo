@@ -29,7 +29,7 @@
                         @endunless
 
                         @if ($checkout)
-                            <form id="checkout" action="{{ route('checkout.submit') }}" method="post">
+                            <form x-data="checkout" action="{{ route('checkout.submit') }}" method="post">
                                 {{ csrf_field() }}
 
                                 @include('checkout._billpayer', ['billpayer' => $checkout->getBillPayer()])
@@ -37,7 +37,7 @@
                                 <div class="mb-4">
                                     <input type="hidden" name="ship_to_billing_address" value="0" />
                                     <div class="form-check">
-                                        <input class="form-check-input" id="chk_ship_to_billing_address" type="checkbox" name="ship_to_billing_address" value="1" v-model="shipToBillingAddress">
+                                        <input class="form-check-input" id="chk_ship_to_billing_address" type="checkbox" name="ship_to_billing_address" value="1" x-model="shipToBillingAddress">
                                         <label class="form-check-label" for="chk_ship_to_billing_address">Ship to the same address</label>
                                     </div>
                                 </div>
@@ -84,19 +84,16 @@
     </div>
 @endsection
 
-@section('scripts')
+@push('alpine')
     @if ($checkout)
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-            new Vue({
-                el: '#checkout',
-                data: {
-                    isOrganization: {{ old('billpayer.is_organization') ?: 0 }},
-                    shipToBillingAddress: {{ old('ship_to_billing_address') ?? 1 }}
-                }
-            });
+        document.addEventListener("alpine:init", () => {
+            Alpine.data('checkout', () => ({
+              isOrganization: {{ (old('billpayer.is_organization') ?: false) ? 'true' : 'false' }},
+              shipToBillingAddress: {{ (old('ship_to_billing_address') ?? true) ? 'true' : 'false' }}
+            }))
         });
     </script>
     @endif
-@stop
+@endpush
 

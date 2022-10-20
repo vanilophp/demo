@@ -1,4 +1,4 @@
-<div id="shipping-address" v-show="!shipToBillingAddress">
+<div id="shipping-address" x-show="!shipToBillingAddress">
     <h3>Shipping Address</h3>
     <hr>
 

@@ -107,7 +107,7 @@
     </div>
 @endsection
 
-@section('scripts')
+@push('scripts')
 <script>
     $('document').ready(function () {
         $('button[data-role="cart-qty-changer"]').click(function () {
@@ -129,4 +129,4 @@
         });
     });
 </script>
-@endsection
+@endpush
