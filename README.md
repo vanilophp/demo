@@ -1,8 +1,8 @@
 # Vanilo Demo Application
 
-![v2.2-dev](https://img.shields.io/badge/version-2.2--dev-green.svg?style=flat-square)
+![v3.0](https://img.shields.io/badge/version-3.0-green.svg?style=flat-square)
 
-This is a minimalistic Laravel 8 application that demonstrates how to build a simple storefront
+This is a simple Laravel 9 application that demonstrates how to build a simple storefront
 using the Vanilo framework. It also contains the Vanilo admin panel.
 
 > The app uses the default Bootstrap theme that comes with Laravel.
@@ -11,7 +11,7 @@ using the Vanilo framework. It also contains the Vanilo admin panel.
 
 **1. Get the app**:
 
-Either download and decompress [the zipball](https://github.com/vanilophp/demo/archive/2.x.zip)
+Either download and decompress [the zipball](https://github.com/vanilophp/demo/archive/master.zip)
 or use git:
 
 ```bash
@@ -27,7 +27,7 @@ composer install
 
 **3. Configure the environment**:
 
-> The `.env` file is in the app's [root directory](https://laravel.com/docs/8.x/configuration#environment-configuration).
+> The `.env` file is in the app's [root directory](https://laravel.com/docs/9.x/configuration#environment-configuration).
 
 - Create a database for your application.
 - Initialize .env (quickly: `cp .env.example .env && php artisan key:generate`.
