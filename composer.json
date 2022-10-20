@@ -16,13 +16,13 @@
         "laravel/ui": "^3.4",
         "vanilo/admin": "^3.1",
         "vanilo/adyen": "1.0.x-dev",
+        "vanilo/braintree": "1.0.x-dev",
         "vanilo/euplatesc": "^2.0",
         "vanilo/framework": "^3.1",
         "vanilo/netopia": "^1.3",
         "vanilo/paypal": "1.0.x-dev",
         "vanilo/simplepay": "1.0.x-dev",
-        "vanilo/stripe": "1.0.x-dev",
-        "vanilo/braintree": "1.0.x-dev"
+        "vanilo/stripe": "1.0.x-dev"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6.7",

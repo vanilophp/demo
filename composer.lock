@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d44cd402dc94235274de4abe9d5f13a9",
+    "content-hash": "edd42e7b7f336a0ae909cf99bd097593",
     "packages": [
         {
             "name": "adyen/php-api-library",
@@ -10710,10 +10710,10 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "vanilo/adyen": 20,
+        "vanilo/braintree": 20,
         "vanilo/paypal": 20,
         "vanilo/simplepay": 20,
-        "vanilo/stripe": 20,
-        "vanilo/braintree": 20
+        "vanilo/stripe": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
