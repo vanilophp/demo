@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ProductIndexRequest;
 use Vanilo\Category\Contracts\Taxon;
 use Vanilo\Category\Models\TaxonomyProxy;
-use Vanilo\Framework\Search\ProductFinder;
+use Vanilo\Foundation\Search\ProductFinder;
 use Vanilo\Product\Contracts\Product;
 use Vanilo\Properties\Models\PropertyProxy;
 

@@ -8,7 +8,7 @@ return [
                 'url' => '/admin/product'
             ]
         ],
-        Vanilo\Framework\Providers\ModuleServiceProvider::class => [
+        Vanilo\Foundation\Providers\ModuleServiceProvider::class => [
             'image' => [
                 'taxon' => [
                     'variants' => [
@@ -43,6 +43,7 @@ return [
                 ]
             ],
         ],
+        Vanilo\Admin\Providers\ModuleServiceProvider::class,
         Vanilo\Euplatesc\Providers\ModuleServiceProvider::class,
         Vanilo\Netopia\Providers\ModuleServiceProvider::class,
         Vanilo\Paypal\Providers\ModuleServiceProvider::class,

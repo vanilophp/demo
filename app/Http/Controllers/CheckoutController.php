@@ -6,11 +6,12 @@ use App\Http\Requests\CheckoutRequest;
 use Konekt\Address\Models\CountryProxy;
 use Vanilo\Cart\Contracts\CartManager;
 use Vanilo\Checkout\Contracts\Checkout;
-use Vanilo\Framework\Models\PaymentMethod;
+use Vanilo\Foundation\Models\Cart;
 use Vanilo\Order\Contracts\OrderFactory;
-use Vanilo\Framework\Models\Order;
+use Vanilo\Foundation\Models\Order;
 use Vanilo\Payment\Factories\PaymentFactory;
 use Vanilo\Payment\Models\PaymentHistory;
+use Vanilo\Payment\Models\PaymentMethod;
 
 class CheckoutController extends Controller
 {

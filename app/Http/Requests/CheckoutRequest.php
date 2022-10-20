@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 
 use Illuminate\Foundation\Http\FormRequest;
-use Vanilo\Framework\Models\PaymentMethod;
+use Vanilo\Payment\Models\PaymentMethod;
 
 class CheckoutRequest extends FormRequest
 {
