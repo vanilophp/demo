@@ -114,6 +114,55 @@
             "time": "2022-01-18T09:12:03+00:00"
         },
         {
+            "name": "braintree/braintree_php",
+            "version": "6.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/braintree/braintree_php.git",
+                "reference": "27f27bc9402deb695335556751e15a7910025ca4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/braintree/braintree_php/zipball/27f27bc9402deb695335556751e15a7910025ca4",
+                "reference": "27f27bc9402deb695335556751e15a7910025ca4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-hash": "*",
+                "ext-openssl": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Braintree\\": "lib/Braintree"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Braintree",
+                    "homepage": "https://www.braintreepayments.com"
+                }
+            ],
+            "description": "Braintree PHP Client Library",
+            "support": {
+                "issues": "https://github.com/braintree/braintree_php/issues",
+                "source": "https://github.com/braintree/braintree_php/tree/6.10.0"
+            },
+            "time": "2022-11-09T21:30:53+00:00"
+        },
+        {
             "name": "brick/math",
             "version": "0.10.2",
             "source": {
@@ -7605,15 +7654,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/braintree.git",
-                "reference": "ccba657dedc8cb598897fb8e0b8402def93e2787"
+                "reference": "64fef35326bcd38cb2c9fac5749e8f76933f2c27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/braintree/zipball/ccba657dedc8cb598897fb8e0b8402def93e2787",
-                "reference": "ccba657dedc8cb598897fb8e0b8402def93e2787",
+                "url": "https://api.github.com/repos/vanilophp/braintree/zipball/64fef35326bcd38cb2c9fac5749e8f76933f2c27",
+                "reference": "64fef35326bcd38cb2c9fac5749e8f76933f2c27",
                 "shasum": ""
             },
             "require": {
+                "braintree/braintree_php": "^6.9",
                 "illuminate/contracts": "^9.2",
                 "konekt/concord": "^1.10.2",
                 "php": "^8.0",
@@ -7651,7 +7701,7 @@
                 "issues": "https://github.com/vanilophp/braintree/issues",
                 "source": "https://github.com/vanilophp/braintree/tree/master"
             },
-            "time": "2022-10-20T14:32:33+00:00"
+            "time": "2022-11-23T15:01:05+00:00"
         },
         {
             "name": "vanilo/euplatesc",
@@ -7708,16 +7758,16 @@
         },
         {
             "name": "vanilo/framework",
-            "version": "dev-master",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "dd4994ce12bf7a2971cca05241eebb2f93a57102"
+                "reference": "f839ada20bcc04854c42a77bcb74dde26fa711b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/dd4994ce12bf7a2971cca05241eebb2f93a57102",
-                "reference": "dd4994ce12bf7a2971cca05241eebb2f93a57102",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/f839ada20bcc04854c42a77bcb74dde26fa711b2",
+                "reference": "f839ada20bcc04854c42a77bcb74dde26fa711b2",
                 "shasum": ""
             },
             "require": {
@@ -7751,7 +7801,6 @@
                 "orchestra/testbench": "6 - 7",
                 "phpunit/phpunit": "^9.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7786,7 +7835,7 @@
             "description": "E-commerce Framework for Laravel",
             "support": {
                 "issues": "https://github.com/vanilophp/framework/issues",
-                "source": "https://github.com/vanilophp/framework/tree/master"
+                "source": "https://github.com/vanilophp/framework/tree/3.1.0"
             },
             "funding": [
                 {
@@ -7794,7 +7843,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-10-13T04:44:21+00:00"
+            "time": "2022-11-07T16:27:05+00:00"
         },
         {
             "name": "vanilo/netopia",
@@ -10722,5 +10771,5 @@
         "ext-gd": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

@@ -64,7 +64,7 @@ class CheckoutController extends Controller
         PaymentHistory::begin($payment);
         $paymentRequest = $paymentMethod
             ->getGateway()
-            ->createPaymentRequest($payment, $order->getShippingAddress());
+            ->createPaymentRequest($payment, $order->getShippingAddress(), ['submitUrl' => route('payment.braintree.submit', $payment->hash)]);
 
         return view('checkout.thankyou', [
             'order' => $order,

@@ -18,5 +18,6 @@ class VerifyCsrfToken extends Middleware
         '/payment/adyen/*',
         '/payment/stripe/*',
         '/payment/simplepay/*',
+        '/payment/braintree/*',
     ];
 }
