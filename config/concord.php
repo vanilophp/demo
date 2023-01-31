@@ -46,6 +46,7 @@ return [
         Vanilo\Admin\Providers\ModuleServiceProvider::class,
         Vanilo\Adyen\Providers\ModuleServiceProvider::class,
         Vanilo\Braintree\Providers\ModuleServiceProvider::class,
+        Vanilo\Mollie\Providers\ModuleServiceProvider::class,
         Vanilo\Euplatesc\Providers\ModuleServiceProvider::class,
         Vanilo\Netopia\Providers\ModuleServiceProvider::class,
         Vanilo\Paypal\Providers\ModuleServiceProvider::class,

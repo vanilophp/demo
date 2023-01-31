@@ -58,6 +58,11 @@ Route::group(['prefix' => 'payment/simplepay', 'as' => 'payment.simplepay.'], fu
     Route::post('silent', 'SimplepayReturnController@silent')->name('silent');
 });
 
+Route::group(['prefix' => 'payment/mollie', 'as' => 'payment.mollie.'], function() {
+    Route::get('{paymentId}/return', 'MollieController@return')->name('return');
+    Route::post('webhook', 'MollieController@webhook')->name('webhook');
+});
+
 Route::group(['prefix' => 'payment/adyen', 'as' => 'payment.adyen.'], function() {
     Route::post('{paymentId}/submit', 'AdyenController@submit')->name('submit');
     Route::post('webhook', 'AdyenController@webhook')->name('webhook');
