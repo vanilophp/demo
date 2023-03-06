@@ -41,7 +41,7 @@ class CheckoutController extends Controller
         }
 
         return view('checkout.show', [
-            'checkout'  => $checkout,
+            'checkout' => $checkout,
             'countries' => CountryProxy::all(),
             'paymentMethods' => PaymentMethod::actives()->get(),
         ]);
@@ -64,11 +64,17 @@ class CheckoutController extends Controller
         PaymentHistory::begin($payment);
         $paymentRequest = $paymentMethod
             ->getGateway()
-            ->createPaymentRequest($payment, $order->getShippingAddress(), ['submitUrl' => route('payment.braintree.submit', $payment->hash)]);
+            ->createPaymentRequest($payment, options: ['webhookUrl' => route('payment.mollie.webhook'), 'redirectUrl' => route('payment.mollie.return', $payment->hash)]);
+
+        if ($paymentRequest->getRemoteId()) {
+            $payment->update([
+                'remote_id' => $paymentRequest->getRemoteId(),
+            ]);
+        }
 
         return view('checkout.thankyou', [
             'order' => $order,
-            'paymentRequest' => $paymentRequest
+            'paymentRequest' => $paymentRequest,
         ]);
     }
 }
