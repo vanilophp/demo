@@ -5,16 +5,14 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ProductIndexRequest;
 use Vanilo\Category\Contracts\Taxon;
 use Vanilo\Category\Models\TaxonomyProxy;
-use Vanilo\Foundation\Search\ProductFinder;
-use Vanilo\Product\Contracts\Product;
+use Vanilo\Foundation\Search\ProductSearch;
 use Vanilo\Properties\Models\PropertyProxy;
 
 class ProductController extends Controller
 {
-    /** @var ProductFinder */
-    private $productFinder;
+    private ProductSearch $productFinder;
 
-    public function __construct(ProductFinder $productFinder)
+    public function __construct(ProductSearch $productFinder)
     {
         $this->productFinder = $productFinder;
     }
@@ -41,8 +39,15 @@ class ProductController extends Controller
         ]);
     }
 
-    public function show(Product $product)
+    public function show(string $slug)
     {
-        return view('product.show', ['product' => $product]);
+        if (!$product = $this->productFinder->findBySlug($slug)) {
+            abort(404);
+        }
+
+        return view('product.show', [
+            'product' => $product,
+            'productType' => shorten($product::class),
+        ]);
     }
 }
