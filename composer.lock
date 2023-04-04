@@ -8109,16 +8109,16 @@
         },
         {
             "name": "vanilo/framework",
-            "version": "3.x-dev",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/framework.git",
-                "reference": "a3ec35a012adc48ce6e8f456a8a6f3f7f6d9d0e9"
+                "reference": "6b7eecd2a85d02f6fd0f83e2a5981e789d81b875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/framework/zipball/a3ec35a012adc48ce6e8f456a8a6f3f7f6d9d0e9",
-                "reference": "a3ec35a012adc48ce6e8f456a8a6f3f7f6d9d0e9",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/6b7eecd2a85d02f6fd0f83e2a5981e789d81b875",
+                "reference": "6b7eecd2a85d02f6fd0f83e2a5981e789d81b875",
                 "shasum": ""
             },
             "require": {
@@ -8188,7 +8188,7 @@
             "description": "E-commerce Framework for Laravel",
             "support": {
                 "issues": "https://github.com/vanilophp/framework/issues",
-                "source": "https://github.com/vanilophp/framework/tree/3.x"
+                "source": "https://github.com/vanilophp/framework/tree/3.7.0"
             },
             "funding": [
                 {
@@ -8196,7 +8196,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-04T14:25:44+00:00"
+            "time": "2023-04-04T18:23:37+00:00"
         },
         {
             "name": "vanilo/mollie",
