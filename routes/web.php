@@ -28,6 +28,7 @@ Route::group(['prefix' => 'shop', 'as' => 'product.'], function() {
 Route::group(['prefix' => 'cart', 'as' => 'cart.'], function() {
     Route::get('show', 'CartController@show')->name('show');
     Route::post('add/{product}', 'CartController@add')->name('add');
+    Route::post('adv/{masterProductVariant}', 'CartController@addVariant')->name('add-variant');
     Route::post('update/{cart_item}', 'CartController@update')->name('update');
     Route::post('remove/{cart_item}', 'CartController@remove')->name('remove');
 });

@@ -25,7 +25,7 @@
             @endforeach
             </div>
 
-            <form :action="'{{ route('cart.add', '0000') }}'.replace('0000', selectedId)" method="post" class="my-4" :disabled="null === selectedId">
+            <form :action="'{{ route('cart.add-variant', '0000') }}'.replace('0000', selectedId)" method="post" class="my-4" :disabled="null === selectedId">
                 {{ csrf_field() }}
 
                 <span class="mr-2 font-weight-bold text-primary btn-lg" x-text="selectedVariant.priceFmt">{{ format_price($product->price) }}</span>

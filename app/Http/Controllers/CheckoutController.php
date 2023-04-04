@@ -66,7 +66,8 @@ class CheckoutController extends Controller
             ->getGateway()
             ->createPaymentRequest($payment, options: ['webhookUrl' => route('payment.mollie.webhook'), 'redirectUrl' => route('payment.mollie.return', $payment->hash)]);
 
-        if ($paymentRequest->getRemoteId()) {
+        // @todo the method exists check can be removed after v4 upgrade
+        if (method_exists($paymentRequest, 'getRemoteId') && $paymentRequest->getRemoteId()) {
             $payment->update([
                 'remote_id' => $paymentRequest->getRemoteId(),
             ]);

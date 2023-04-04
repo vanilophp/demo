@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Vanilo\Cart\Contracts\CartItem;
 use Vanilo\Cart\Facades\Cart;
+use Vanilo\Foundation\Models\MasterProductVariant;
 use Vanilo\Product\Contracts\Product;
 
 class CartController extends Controller
@@ -13,6 +14,14 @@ class CartController extends Controller
     {
         Cart::addItem($product);
         flash()->success($product->name . ' has been added to cart');
+
+        return redirect()->route('cart.show');
+    }
+
+    public function addVariant(MasterProductVariant $masterProductVariant)
+    {
+        Cart::addItem($masterProductVariant);
+        flash()->success($masterProductVariant->name . ' has been added to cart');
 
         return redirect()->route('cart.show');
     }
