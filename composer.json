@@ -7,31 +7,28 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "ext-gd": "*",
-        "fruitcake/laravel-cors": "^2.2",
         "guzzlehttp/guzzle": "^7.4",
-        "laravel/framework": "^9.52",
+        "laravel/framework": "^11.0",
         "laravel/tinker": "^2.7",
-        "laravel/ui": "^3.4",
-        "vanilo/admin": "^3.6",
-        "vanilo/adyen": "^1.0",
-        "vanilo/braintree": "^1.0",
-        "vanilo/euplatesc": "^3.0",
-        "vanilo/framework": "^3.7",
-        "vanilo/mollie": "^1.0",
-        "vanilo/netopia": "^2.0",
-        "vanilo/paypal": "^1.0",
-        "vanilo/simplepay": "1.0.x-dev",
-        "vanilo/stripe": "1.0.x-dev"
+        "laravel/ui": "^4.0",
+        "vanilo/admin": "^4.0",
+        "vanilo/adyen": "^3.0",
+        "vanilo/braintree": "^2.0",
+        "vanilo/euplatesc": "^4.0",
+        "vanilo/framework": "^4.0",
+        "vanilo/mollie": "^2.0",
+        "vanilo/netopia": "^3.0",
+        "vanilo/paypal": "^2.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.6.7",
-        "spatie/laravel-ignition": "^1.2.3",
-        "fakerphp/faker": "^1.19",
-        "laravel/dusk": "^6.0",
-        "mockery/mockery": "^1.5",
-        "phpunit/phpunit": "^9.5.20"
+        "barryvdh/laravel-debugbar": "^3.13",
+        "spatie/laravel-ignition": "^2.5",
+        "fakerphp/faker": "^1.23",
+        "laravel/dusk": "^8.0",
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "classmap": [
