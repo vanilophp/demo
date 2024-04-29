@@ -47,7 +47,7 @@
                                 @include('checkout._payment')
 
 
-                                <div class="form-group">
+                                <div class="mb-3">
 
                                     <label>{{ __('Order Notes') }}</label>
                                     {{ Form::textarea('notes', null, [

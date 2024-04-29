@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bc1c20931df9ae99ce2d27248205488",
+    "content-hash": "367bcd5242bade52184943e921214280",
     "packages": [
         {
             "name": "adyen/php-api-library",
@@ -7974,12 +7974,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilophp/admin.git",
-                "reference": "c1e4cd9128b0b45d030b42d297529f39c7020d9e"
+                "reference": "f4c336a01ad4b6532a552f29c07d8dac529d7151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilophp/admin/zipball/c1e4cd9128b0b45d030b42d297529f39c7020d9e",
-                "reference": "c1e4cd9128b0b45d030b42d297529f39c7020d9e",
+                "url": "https://api.github.com/repos/vanilophp/admin/zipball/f4c336a01ad4b6532a552f29c07d8dac529d7151",
+                "reference": "f4c336a01ad4b6532a552f29c07d8dac529d7151",
                 "shasum": ""
             },
             "require": {
@@ -8034,7 +8034,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-24T17:00:32+00:00"
+            "time": "2024-04-29T13:52:00+00:00"
         },
         {
             "name": "vanilo/adyen",

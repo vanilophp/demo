@@ -2,7 +2,7 @@
     <h3>Payment Method</h3>
     <hr>
 
-    <div class="form-group row">
+    <div class="mb-3 row">
 
         <div class="col-md-11 offset-md-1">
         @forelse($paymentMethods as $paymentMethod)

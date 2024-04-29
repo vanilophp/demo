@@ -2,7 +2,7 @@
     <h3>Shipping Address</h3>
     <hr>
 
-    <div class="form-group row">
+    <div class="mb-3 row">
 
         <label class="col-form-label col-md-2">{{ __('Name') }}</label>
         <div class="col-md-10">
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="form-group row">
+    <div class="mb-3 row">
         <label class="col-form-label col-md-2">{{ __('Country') }}</label>
         <div class="col-md-10">
             {{ Form::select('shippingAddress[country_id]', $countries->pluck('name', 'id'),
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="form-group row">
+    <div class="mb-3 row">
 
         <label class="col-form-label col-md-2">{{ __('Address') }}</label>
         <div class="col-md-10">
@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <div class="form-group row">
+    <div class="mb-3 row">
 
         <label class="col-form-label col-md-2">{{ __('Zip code') }}</label>
         <div class="col-md-4">

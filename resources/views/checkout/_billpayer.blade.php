@@ -4,7 +4,7 @@
 <div class="row">
 
     <div class="col-md-6">
-        <div class="form-group">
+        <div class="mb-3">
             {{ Form::text('billpayer[email]', Auth::user() ? Auth::user()->email : null, [
                     'class' => 'form-control' . ($errors->has('billpayer.email') ? ' is-invalid' : ''),
                     'placeholder' => 'E-mail'
@@ -18,7 +18,7 @@
     </div>
 
     <div class="col-md-6">
-        <div class="form-group">
+        <div class="mb-3">
             {{ Form::text('billpayer[phone]', null, [
                     'class' => 'form-control' . ($errors->has('billpayer.phone') ? ' is-invalid' : ''),
                     'placeholder' => 'Telefon'
@@ -32,7 +32,7 @@
     </div>
 
     <div class="col-md-6">
-        <div class="form-group">
+        <div class="mb-3">
             {{ Form::text('billpayer[firstname]', Auth::user() ? (explode(' ', Auth::user()->name)[0] ?? ''): null, [
                     'class' => 'form-control' . ($errors->has('billpayer.firstname') ? ' is-invalid' : ''),
                     'placeholder' => __('First name')
@@ -46,7 +46,7 @@
     </div>
 
     <div class="col-md-6">
-        <div class="form-group">
+        <div class="mb-3">
             {{ Form::text('billpayer[lastname]', Auth::user() ? (explode(' ', Auth::user()->name)[1] ?? ''): null, [
                     'class' => 'form-control' . ($errors->has('billpayer.lastname') ? ' is-invalid' : ''),
                     'placeholder' => __('Last name')
@@ -62,7 +62,7 @@
 </div>
 
 
-<div class="form-group">
+<div class="mb-3">
     <div class="form-check">
         <input class="form-check-input" id="chk_is_organization" type="checkbox"
                name="billpayer[is_organization]" value="1" x-model="isOrganization">
@@ -71,7 +71,7 @@
 </div>
 
 <div id="billpayer-organization" x-show="isOrganization">
-    <div class="form-group">
+    <div class="mb-3">
         {{ Form::text('billpayer[company_name]', null, [
                 'class' => 'form-control form-control-lg' . ($errors->has('billpayer.company_name') ? ' is-invalid' : ''),
                 'placeholder' => __('Company name')
@@ -82,7 +82,7 @@
         @endif
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         {{ Form::text('billpayer[tax_nr]', null, [
                 'class' => 'form-control' . ($errors->has('billpayer.tax_nr') ? ' is-invalid' : ''),
                 'placeholder' => __('Tax no.')
